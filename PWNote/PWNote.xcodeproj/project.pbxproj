@@ -21,6 +21,13 @@
 		F81C129F21AAF676009CF497 /* PWMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C129E21AAF676009CF497 /* PWMoreViewController.m */; };
 		F81C12A321AAFEE9009CF497 /* PWCollectionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C12A221AAFEE9009CF497 /* PWCollectionDelegate.m */; };
 		F81C12A621AAFEFA009CF497 /* PWTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C12A521AAFEFA009CF497 /* PWTableViewDelegate.m */; };
+		F81C12AA21AC3BA2009CF497 /* PWTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C12A921AC3BA2009CF497 /* PWTableViewController.m */; };
+		F81C12AE21AC43F1009CF497 /* PWDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C12AD21AC43F1009CF497 /* PWDataSource.m */; };
+		F81C12B321AC4524009CF497 /* PWViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C12B221AC4524009CF497 /* PWViewModel.m */; };
+		F81C12B721AC4559009CF497 /* PWSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C12B621AC4559009CF497 /* PWSectionModel.m */; };
+		F81C12BC21AC461B009CF497 /* PWItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C12BB21AC461B009CF497 /* PWItemView.m */; };
+		F81C12C221AC4B7C009CF497 /* UITableViewCell+PWItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C12C121AC4B7C009CF497 /* UITableViewCell+PWItemView.m */; };
+		F81C12C721AC4DFB009CF497 /* PWMoreDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C12C621AC4DFB009CF497 /* PWMoreDataSource.m */; };
 		F838F1BD21AA4B2600C309F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F838F1BC21AA4B2600C309F2 /* AppDelegate.m */; };
 		F838F1C021AA4B2600C309F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F838F1BF21AA4B2600C309F2 /* ViewController.m */; };
 		F838F1C321AA4B2600C309F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F838F1C121AA4B2600C309F2 /* Main.storyboard */; };
@@ -82,6 +89,23 @@
 		F81C12A221AAFEE9009CF497 /* PWCollectionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWCollectionDelegate.m; sourceTree = "<group>"; };
 		F81C12A421AAFEFA009CF497 /* PWTableViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWTableViewDelegate.h; sourceTree = "<group>"; };
 		F81C12A521AAFEFA009CF497 /* PWTableViewDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWTableViewDelegate.m; sourceTree = "<group>"; };
+		F81C12A821AC3BA2009CF497 /* PWTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWTableViewController.h; sourceTree = "<group>"; };
+		F81C12A921AC3BA2009CF497 /* PWTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWTableViewController.m; sourceTree = "<group>"; };
+		F81C12AC21AC43F1009CF497 /* PWDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWDataSource.h; sourceTree = "<group>"; };
+		F81C12AD21AC43F1009CF497 /* PWDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWDataSource.m; sourceTree = "<group>"; };
+		F81C12B121AC4524009CF497 /* PWViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWViewModel.h; sourceTree = "<group>"; };
+		F81C12B221AC4524009CF497 /* PWViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWViewModel.m; sourceTree = "<group>"; };
+		F81C12B521AC4559009CF497 /* PWSectionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWSectionModel.h; sourceTree = "<group>"; };
+		F81C12B621AC4559009CF497 /* PWSectionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWSectionModel.m; sourceTree = "<group>"; };
+		F81C12B821AC4578009CF497 /* PWViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWViewModelProtocol.h; sourceTree = "<group>"; };
+		F81C12BA21AC461B009CF497 /* PWItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWItemView.h; sourceTree = "<group>"; };
+		F81C12BB21AC461B009CF497 /* PWItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWItemView.m; sourceTree = "<group>"; };
+		F81C12BD21AC4633009CF497 /* PWItemViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWItemViewProtocol.h; sourceTree = "<group>"; };
+		F81C12BE21AC4678009CF497 /* PWSectionModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWSectionModelProtocol.h; sourceTree = "<group>"; };
+		F81C12C021AC4B7C009CF497 /* UITableViewCell+PWItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+PWItemView.h"; sourceTree = "<group>"; };
+		F81C12C121AC4B7C009CF497 /* UITableViewCell+PWItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+PWItemView.m"; sourceTree = "<group>"; };
+		F81C12C521AC4DFB009CF497 /* PWMoreDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWMoreDataSource.h; sourceTree = "<group>"; };
+		F81C12C621AC4DFB009CF497 /* PWMoreDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWMoreDataSource.m; sourceTree = "<group>"; };
 		F838F1B821AA4B2600C309F2 /* PWNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PWNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F838F1BB21AA4B2600C309F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F838F1BC21AA4B2600C309F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -180,8 +204,6 @@
 				F81C128621AA4FA8009CF497 /* PWHomeViewController.m */,
 				F81C129A21AAF60E009CF497 /* PWSettingViewController.h */,
 				F81C129B21AAF60E009CF497 /* PWSettingViewController.m */,
-				F81C129D21AAF676009CF497 /* PWMoreViewController.h */,
-				F81C129E21AAF676009CF497 /* PWMoreViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -216,6 +238,85 @@
 			path = Delegates;
 			sourceTree = "<group>";
 		};
+		F81C12A721AC3B84009CF497 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				F838F1F021AA4C2900C309F2 /* PWViewController.h */,
+				F838F1F121AA4C2900C309F2 /* PWViewController.m */,
+				F81C12A821AC3BA2009CF497 /* PWTableViewController.h */,
+				F81C12A921AC3BA2009CF497 /* PWTableViewController.m */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
+		F81C12AB21AC43E5009CF497 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				F81C12AC21AC43F1009CF497 /* PWDataSource.h */,
+				F81C12AD21AC43F1009CF497 /* PWDataSource.m */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		F81C12B021AC44F6009CF497 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F81C12B121AC4524009CF497 /* PWViewModel.h */,
+				F81C12B221AC4524009CF497 /* PWViewModel.m */,
+				F81C12B821AC4578009CF497 /* PWViewModelProtocol.h */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F81C12B421AC4551009CF497 /* SectionModels */ = {
+			isa = PBXGroup;
+			children = (
+				F81C12B521AC4559009CF497 /* PWSectionModel.h */,
+				F81C12B621AC4559009CF497 /* PWSectionModel.m */,
+				F81C12BE21AC4678009CF497 /* PWSectionModelProtocol.h */,
+			);
+			path = SectionModels;
+			sourceTree = "<group>";
+		};
+		F81C12B921AC4608009CF497 /* ItemViews */ = {
+			isa = PBXGroup;
+			children = (
+				F81C12BA21AC461B009CF497 /* PWItemView.h */,
+				F81C12BB21AC461B009CF497 /* PWItemView.m */,
+				F81C12BD21AC4633009CF497 /* PWItemViewProtocol.h */,
+			);
+			path = ItemViews;
+			sourceTree = "<group>";
+		};
+		F81C12BF21AC4B58009CF497 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F81C12C021AC4B7C009CF497 /* UITableViewCell+PWItemView.h */,
+				F81C12C121AC4B7C009CF497 /* UITableViewCell+PWItemView.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		F81C12C321AC4DC1009CF497 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				F81C129D21AAF676009CF497 /* PWMoreViewController.h */,
+				F81C129E21AAF676009CF497 /* PWMoreViewController.m */,
+				F81C12C521AC4DFB009CF497 /* PWMoreDataSource.h */,
+				F81C12C621AC4DFB009CF497 /* PWMoreDataSource.m */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		F81C12C421AC4DD2009CF497 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				F81C128421AA4FA0009CF497 /* Home */,
+				F81C12C321AC4DC1009CF497 /* More */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
 		F838F1AF21AA4B2600C309F2 = {
 			isa = PBXGroup;
 			children = (
@@ -241,9 +342,9 @@
 		F838F1BA21AA4B2600C309F2 /* PWNote */ = {
 			isa = PBXGroup;
 			children = (
+				F81C12C421AC4DD2009CF497 /* Business */,
 				F81C129821AAF041009CF497 /* Utils */,
 				F81C128821AA4FE5009CF497 /* LocalConfig */,
-				F81C128421AA4FA0009CF497 /* Home */,
 				F81C128021AA4F1F009CF497 /* Test */,
 				F81C127C21AA4EDF009CF497 /* Router */,
 				F838F1EF21AA4C1E00C309F2 /* MVVM */,
@@ -281,9 +382,13 @@
 		F838F1EF21AA4C1E00C309F2 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				F81C12BF21AC4B58009CF497 /* Category */,
+				F81C12B921AC4608009CF497 /* ItemViews */,
+				F81C12B421AC4551009CF497 /* SectionModels */,
+				F81C12B021AC44F6009CF497 /* ViewModels */,
+				F81C12AB21AC43E5009CF497 /* DataSources */,
+				F81C12A721AC3B84009CF497 /* VCs */,
 				F81C12A021AAFEE9009CF497 /* Delegates */,
-				F838F1F021AA4C2900C309F2 /* PWViewController.h */,
-				F838F1F121AA4C2900C309F2 /* PWViewController.m */,
 				F81C127921AA4EC6009CF497 /* PWNavigationViewController.h */,
 				F81C127A21AA4EC6009CF497 /* PWNavigationViewController.m */,
 			);
@@ -493,6 +598,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F81C12AE21AC43F1009CF497 /* PWDataSource.m in Sources */,
+				F81C12AA21AC3BA2009CF497 /* PWTableViewController.m in Sources */,
 				F81C128721AA4FA8009CF497 /* PWHomeViewController.m in Sources */,
 				F81C12A321AAFEE9009CF497 /* PWCollectionDelegate.m in Sources */,
 				F838F1C021AA4B2600C309F2 /* ViewController.m in Sources */,
@@ -500,8 +607,13 @@
 				F838F1BD21AA4B2600C309F2 /* AppDelegate.m in Sources */,
 				F81C127B21AA4EC6009CF497 /* PWNavigationViewController.m in Sources */,
 				F81C129121AA551F009CF497 /* PWRouter.m in Sources */,
+				F81C12B321AC4524009CF497 /* PWViewModel.m in Sources */,
 				F81C129C21AAF60E009CF497 /* PWSettingViewController.m in Sources */,
+				F81C12C221AC4B7C009CF497 /* UITableViewCell+PWItemView.m in Sources */,
 				F81C129721AA5607009CF497 /* PWRouterAction.m in Sources */,
+				F81C12BC21AC461B009CF497 /* PWItemView.m in Sources */,
+				F81C12C721AC4DFB009CF497 /* PWMoreDataSource.m in Sources */,
+				F81C12B721AC4559009CF497 /* PWSectionModel.m in Sources */,
 				F81C128321AA4F32009CF497 /* PWTestHomeViewController.m in Sources */,
 				F81C129F21AAF676009CF497 /* PWMoreViewController.m in Sources */,
 				F81C12A621AAFEFA009CF497 /* PWTableViewDelegate.m in Sources */,

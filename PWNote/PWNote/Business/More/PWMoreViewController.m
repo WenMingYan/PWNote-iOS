@@ -7,9 +7,11 @@
 //
 
 #import "PWMoreViewController.h"
+#import "PWTableViewDelegate.h"
 
 @interface PWMoreViewController ()
 
+@property (nonatomic, strong) PWTableViewDelegate *tableDelegate;
 
 @end
 
@@ -27,7 +29,8 @@ __PW_ROUTER_REGISTER__
 }
 
 - (void)initData {
-    
+    self.tableView.delegate = self.tableDelegate;
+    self.tableView.dataSource = self.tableDelegate;
 }
 
 - (void)initView {
@@ -44,5 +47,13 @@ __PW_ROUTER_REGISTER__
 
 #pragma mark - --------------------private methods--------------
 #pragma mark - --------------------getters & setters & init members ------------------
+
+- (PWTableViewDelegate *)tableDelegate {
+    if (!_tableDelegate) {
+        _tableDelegate = [[PWTableViewDelegate alloc] init];
+    }
+    return _tableDelegate;
+}
+
 
 @end

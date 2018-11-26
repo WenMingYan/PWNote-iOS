@@ -6,11 +6,17 @@
 //  Copyright © 2018 明妍. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+@class PWDataSource;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PWTableViewDelegate : NSObject
+@interface PWTableViewDelegate : NSObject <UITableViewDelegate, UITableViewDataSource>
+
+@property(nonatomic, weak) PWDataSource *dataSource;/**< 数据源  */
+
+- (instancetype)initWithtableView:(UITableView *)tableView;
 
 @end
 
