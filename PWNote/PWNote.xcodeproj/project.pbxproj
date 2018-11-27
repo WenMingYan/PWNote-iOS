@@ -28,6 +28,7 @@
 		F81C12BC21AC461B009CF497 /* PWItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C12BB21AC461B009CF497 /* PWItemView.m */; };
 		F81C12C221AC4B7C009CF497 /* UITableViewCell+PWItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C12C121AC4B7C009CF497 /* UITableViewCell+PWItemView.m */; };
 		F81C12C721AC4DFB009CF497 /* PWMoreDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C12C621AC4DFB009CF497 /* PWMoreDataSource.m */; };
+		F81C12CA21AC4EBB009CF497 /* PWMoreViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C12C921AC4EBB009CF497 /* PWMoreViewModel.m */; };
 		F838F1BD21AA4B2600C309F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F838F1BC21AA4B2600C309F2 /* AppDelegate.m */; };
 		F838F1C021AA4B2600C309F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F838F1BF21AA4B2600C309F2 /* ViewController.m */; };
 		F838F1C321AA4B2600C309F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F838F1C121AA4B2600C309F2 /* Main.storyboard */; };
@@ -106,6 +107,8 @@
 		F81C12C121AC4B7C009CF497 /* UITableViewCell+PWItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+PWItemView.m"; sourceTree = "<group>"; };
 		F81C12C521AC4DFB009CF497 /* PWMoreDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWMoreDataSource.h; sourceTree = "<group>"; };
 		F81C12C621AC4DFB009CF497 /* PWMoreDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWMoreDataSource.m; sourceTree = "<group>"; };
+		F81C12C821AC4EBB009CF497 /* PWMoreViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWMoreViewModel.h; sourceTree = "<group>"; };
+		F81C12C921AC4EBB009CF497 /* PWMoreViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWMoreViewModel.m; sourceTree = "<group>"; };
 		F838F1B821AA4B2600C309F2 /* PWNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PWNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F838F1BB21AA4B2600C309F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F838F1BC21AA4B2600C309F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -304,6 +307,8 @@
 				F81C129E21AAF676009CF497 /* PWMoreViewController.m */,
 				F81C12C521AC4DFB009CF497 /* PWMoreDataSource.h */,
 				F81C12C621AC4DFB009CF497 /* PWMoreDataSource.m */,
+				F81C12C821AC4EBB009CF497 /* PWMoreViewModel.h */,
+				F81C12C921AC4EBB009CF497 /* PWMoreViewModel.m */,
 			);
 			path = More;
 			sourceTree = "<group>";
@@ -604,6 +609,7 @@
 				F81C12A321AAFEE9009CF497 /* PWCollectionDelegate.m in Sources */,
 				F838F1C021AA4B2600C309F2 /* ViewController.m in Sources */,
 				F838F1CB21AA4B2700C309F2 /* main.m in Sources */,
+				F81C12CA21AC4EBB009CF497 /* PWMoreViewModel.m in Sources */,
 				F838F1BD21AA4B2600C309F2 /* AppDelegate.m in Sources */,
 				F81C127B21AA4EC6009CF497 /* PWNavigationViewController.m in Sources */,
 				F81C129121AA551F009CF497 /* PWRouter.m in Sources */,
