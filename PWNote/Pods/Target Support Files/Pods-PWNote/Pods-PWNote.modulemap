@@ -1,0 +1,6 @@
+module Pods_PWNote {
+  umbrella header "Pods-PWNote-umbrella.h"
+
+  export *
+  module * { export * }
+}

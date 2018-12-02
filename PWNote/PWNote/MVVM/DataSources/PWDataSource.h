@@ -10,6 +10,9 @@
 #import "PWSectionModel.h"
 #import "PWViewModel.h"
 
+typedef void(^SuccessBlock)(void);
+typedef void(^FailBlock)(NSError *error);
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PWDataSource : NSObject
@@ -17,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString *method;
 
 @property (nonatomic, strong) NSArray<PWSectionModel<PWSectionModelProtocol> *> *sectionModels;
+
+- (void)requestWithSuccess:(SuccessBlock)successBlock fail:(FailBlock)failBlock;
 
 - (PWViewModel *)viewModelWithIndexPath:(NSIndexPath *)indexPath;
 

@@ -37,6 +37,7 @@
     UIView<PWItemViewProtocol> *itemView;
     if (!cell.itemView) {
         itemView = [[[viewModel itemViewClass] alloc] init];
+        cell.itemView = itemView;
     } else {
         itemView = cell.itemView;
     }
@@ -60,7 +61,12 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    UIView<PWItemViewProtocol> *itemView = cell.itemView;
+    if ([itemView respondsToSelector:@selector(onSelected)]) {
+        [itemView onSelected];
+    }
 }
 
 @end

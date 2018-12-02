@@ -15,6 +15,8 @@
 
 @property(nonatomic, weak) id<PWViewModelProtocol> viewModel;/**< 数据源  */
 
+- (void)onSelected;
+
 @end
 
 #endif /* PWItemViewProtocol_h */

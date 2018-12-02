@@ -10,6 +10,10 @@
 
 @implementation PWDataSource
 
+- (void)requestWithSuccess:(SuccessBlock)successBlock fail:(FailBlock)failBlock {
+    
+}
+
 - (PWViewModel *)viewModelWithIndexPath:(NSIndexPath *)indexPath {
     if (!self.sectionModels.count) {
         return nil;

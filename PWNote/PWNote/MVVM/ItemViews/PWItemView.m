@@ -24,4 +24,8 @@
 #pragma mark - --------------------getters & setters & init members ------------------
 
 
+- (void)onSelected {
+    
+}
+
 @end

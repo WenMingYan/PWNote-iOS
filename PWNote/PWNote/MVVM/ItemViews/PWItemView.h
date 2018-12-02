@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Masonry/Masonry.h>
+#import "AMIconfont.h"
+#import "PWUtils.h"
 #import "PWItemViewProtocol.h"
 #import "PWViewModelProtocol.h"
 

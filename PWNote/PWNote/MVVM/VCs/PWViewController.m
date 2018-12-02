@@ -21,6 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    self.edgesForExtendedLayout = UIRectEdgeNone;
 }
 
 - (void)routerURL:(NSString *)routerURL withParam:(NSDictionary *)param {

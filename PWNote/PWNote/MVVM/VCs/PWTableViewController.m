@@ -34,10 +34,7 @@
 - (UITableView *)tableView {
     if (!_tableView) {
         _tableView = [[UITableView alloc] init];
-#if DEBUG
-        _tableView.layer.borderWidth = 1;
-        _tableView.layer.borderColor = [UIColor redColor].CGColor;
-#endif
+        _tableView.separatorStyle = UITableViewCellEditingStyleNone;
     }
     return _tableView;
 }
