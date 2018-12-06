@@ -6,5 +6,6 @@
 'use strict'
 export const iconSquarecheckfill = e6d4;
 export const iconSquare = e6d5;
+export const iconSmile = e6af;
 export const iconShezhi = e62a;
 export const iconShouye = e62d;

@@ -7,8 +7,13 @@
 //
 
 #import "PWSettingViewController.h"
+#import "PWTableViewDelegate.h"
+#import "PWSettingDataSource.h"
 
 @interface PWSettingViewController ()
+
+@property (nonatomic, strong) PWTableViewDelegate *delegate;
+@property (nonatomic, strong) PWSettingDataSource *dataSource;
 
 @end
 
@@ -27,7 +32,9 @@ __PW_ROUTER_REGISTER__
 }
 
 - (void)initData {
-    
+    self.tableView.delegate = self.delegate;
+    self.tableView.dataSource = self.delegate;
+    [self.tableView reloadData];
 }
 
 - (void)initView {
@@ -43,4 +50,20 @@ __PW_ROUTER_REGISTER__
 
 #pragma mark - --------------------private methods--------------
 #pragma mark - --------------------getters & setters & init members ------------------
+
+- (PWSettingDataSource *)dataSource {
+    if (!_dataSource) {
+        _dataSource = [[PWSettingDataSource alloc] init];
+    }
+    return _dataSource;
+}
+
+- (PWTableViewDelegate *)delegate {
+    if (!_delegate) {
+        _delegate = [[PWTableViewDelegate alloc] initWithtableView:self.tableView];
+        _delegate.dataSource = self.dataSource;
+    }
+    return _delegate;
+}
+
 @end

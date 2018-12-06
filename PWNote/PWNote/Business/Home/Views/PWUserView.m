@@ -8,10 +8,12 @@
 
 #import "PWUserView.h"
 #import <Masonry/Masonry.h>
+#import "AMIconfont.h"
 
 @interface PWUserView ()
 
 @property (nonatomic, strong) UIImageView *userIconImageView; /**< 用户头像  */
+@property (nonatomic, strong) UILabel *defaultLabel;
 
 @end
 
@@ -40,7 +42,11 @@
 #endif
     [self addSubview:self.userIconImageView];
     [self.userIconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.and.height.mas_equalTo(58);
+        make.width.and.height.mas_equalTo(56);
+        make.center.equalTo(self);
+    }];
+    [self addSubview:self.defaultLabel];
+    [self.defaultLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(self);
     }];
 }
@@ -73,10 +79,23 @@
 
 #pragma mark - --------------------private methods--------------
 #pragma mark - --------------------getters & setters & init members ------------------
-
+- (UILabel *)defaultLabel {
+    if (!_defaultLabel) {
+        _defaultLabel = [[UILabel alloc] init];
+        _defaultLabel.textColor = [UIColor orangeColor];
+        _defaultLabel.font = [AMIconfont fontWithSize:32];
+        _defaultLabel.text = XIconSmile;
+    }
+    return _defaultLabel;
+}
 - (UIImageView *)userIconImageView {
     if (!_userIconImageView) {
         _userIconImageView = [[UIImageView alloc] init];
+        _userIconImageView.backgroundColor = [UIColor lightGrayColor];
+#if DEBUG
+        _userIconImageView.layer.borderWidth = 1;
+        _userIconImageView.layer.borderColor = [UIColor redColor].CGColor;
+#endif
     }
     return _userIconImageView;
 }

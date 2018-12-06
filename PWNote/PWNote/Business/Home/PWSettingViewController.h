@@ -6,8 +6,8 @@
 //  Copyright © 2018 明妍. All rights reserved.
 //
 
-#import "PWViewController.h"
+#import "PWTableViewController.h"
 
-@interface PWSettingViewController : PWViewController
+@interface PWSettingViewController : PWTableViewController
 
 @end

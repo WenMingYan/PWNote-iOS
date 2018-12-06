@@ -8,12 +8,12 @@
 
 #import "PWKeepViewController.h"
 #import "PWKeepDataSource.h"
-#import "PWTableViewDelegate.h"
+#import "PWTableViewAutoAlyoutDelegate.h"
 
 @interface PWKeepViewController ()
 
 @property (nonatomic, strong) PWKeepDataSource *dataSource;
-@property (nonatomic, strong) PWTableViewDelegate *delegate;
+@property (nonatomic, strong) PWTableViewAutoAlyoutDelegate *delegate;
 
 @end
 
@@ -25,6 +25,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"记事";
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.estimatedRowHeight = 60;
     self.tableView.delegate = self.delegate;
     self.tableView.dataSource = self.delegate;
     @weakify(self);
@@ -48,9 +50,9 @@
     return _dataSource;
 }
 
-- (PWTableViewDelegate *)delegate {
+- (PWTableViewAutoAlyoutDelegate *)delegate {
     if (!_delegate) {
-        _delegate = [[PWTableViewDelegate alloc] initWithtableView:self.tableView];
+        _delegate = [[PWTableViewAutoAlyoutDelegate alloc] initWithtableView:self.tableView];
         _delegate.dataSource = self.dataSource;
     }
     return _delegate;

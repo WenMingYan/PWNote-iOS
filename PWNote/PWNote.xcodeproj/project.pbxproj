@@ -47,6 +47,14 @@
 		F81C133021B3DA43009CF497 /* PWKeepViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C132F21B3DA43009CF497 /* PWKeepViewModel.m */; };
 		F81C133321B3DA52009CF497 /* PWKeepDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C133221B3DA52009CF497 /* PWKeepDataSource.m */; };
 		F81C133621B3DB65009CF497 /* PWKeepItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C133521B3DB65009CF497 /* PWKeepItemView.m */; };
+		F81C133921B3DD13009CF497 /* PWTableViewAutoAlyoutDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C133821B3DD12009CF497 /* PWTableViewAutoAlyoutDelegate.m */; };
+		F81C133C21B3F257009CF497 /* PWUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C133B21B3F257009CF497 /* PWUserManager.m */; };
+		F81C133F21B3F25F009CF497 /* PWUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C133E21B3F25F009CF497 /* PWUser.m */; };
+		F81C134321B3F3B2009CF497 /* PWNetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C134221B3F3B2009CF497 /* PWNetworkService.m */; };
+		F81C134621B3F981009CF497 /* PWSettingDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C134521B3F981009CF497 /* PWSettingDataSource.m */; };
+		F81C134921B3F99A009CF497 /* PWSettingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C134821B3F99A009CF497 /* PWSettingViewModel.m */; };
+		F81C134C21B3FA77009CF497 /* PWSettingItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C134B21B3FA77009CF497 /* PWSettingItemView.m */; };
+		F81C135721B400DA009CF497 /* MBProgressHUD+PWUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C135621B400DA009CF497 /* MBProgressHUD+PWUtils.m */; };
 		F838F1BD21AA4B2600C309F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F838F1BC21AA4B2600C309F2 /* AppDelegate.m */; };
 		F838F1C021AA4B2600C309F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F838F1BF21AA4B2600C309F2 /* ViewController.m */; };
 		F838F1C321AA4B2600C309F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F838F1C121AA4B2600C309F2 /* Main.storyboard */; };
@@ -165,6 +173,22 @@
 		F81C133221B3DA52009CF497 /* PWKeepDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWKeepDataSource.m; sourceTree = "<group>"; };
 		F81C133421B3DB65009CF497 /* PWKeepItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWKeepItemView.h; sourceTree = "<group>"; };
 		F81C133521B3DB65009CF497 /* PWKeepItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWKeepItemView.m; sourceTree = "<group>"; };
+		F81C133721B3DD12009CF497 /* PWTableViewAutoAlyoutDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWTableViewAutoAlyoutDelegate.h; sourceTree = "<group>"; };
+		F81C133821B3DD12009CF497 /* PWTableViewAutoAlyoutDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWTableViewAutoAlyoutDelegate.m; sourceTree = "<group>"; };
+		F81C133A21B3F257009CF497 /* PWUserManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWUserManager.h; sourceTree = "<group>"; };
+		F81C133B21B3F257009CF497 /* PWUserManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWUserManager.m; sourceTree = "<group>"; };
+		F81C133D21B3F25F009CF497 /* PWUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWUser.h; sourceTree = "<group>"; };
+		F81C133E21B3F25F009CF497 /* PWUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWUser.m; sourceTree = "<group>"; };
+		F81C134121B3F3B2009CF497 /* PWNetworkService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWNetworkService.h; sourceTree = "<group>"; };
+		F81C134221B3F3B2009CF497 /* PWNetworkService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWNetworkService.m; sourceTree = "<group>"; };
+		F81C134421B3F981009CF497 /* PWSettingDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWSettingDataSource.h; sourceTree = "<group>"; };
+		F81C134521B3F981009CF497 /* PWSettingDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWSettingDataSource.m; sourceTree = "<group>"; };
+		F81C134721B3F99A009CF497 /* PWSettingViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWSettingViewModel.h; sourceTree = "<group>"; };
+		F81C134821B3F99A009CF497 /* PWSettingViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWSettingViewModel.m; sourceTree = "<group>"; };
+		F81C134A21B3FA77009CF497 /* PWSettingItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWSettingItemView.h; sourceTree = "<group>"; };
+		F81C134B21B3FA77009CF497 /* PWSettingItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWSettingItemView.m; sourceTree = "<group>"; };
+		F81C135521B400DA009CF497 /* MBProgressHUD+PWUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+PWUtils.h"; sourceTree = "<group>"; };
+		F81C135621B400DA009CF497 /* MBProgressHUD+PWUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+PWUtils.m"; sourceTree = "<group>"; };
 		F838F1B821AA4B2600C309F2 /* PWNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PWNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F838F1BB21AA4B2600C309F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F838F1BC21AA4B2600C309F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -261,6 +285,12 @@
 				F81C128621AA4FA8009CF497 /* PWHomeViewController.m */,
 				F81C129A21AAF60E009CF497 /* PWSettingViewController.h */,
 				F81C129B21AAF60E009CF497 /* PWSettingViewController.m */,
+				F81C134421B3F981009CF497 /* PWSettingDataSource.h */,
+				F81C134521B3F981009CF497 /* PWSettingDataSource.m */,
+				F81C134721B3F99A009CF497 /* PWSettingViewModel.h */,
+				F81C134821B3F99A009CF497 /* PWSettingViewModel.m */,
+				F81C134A21B3FA77009CF497 /* PWSettingItemView.h */,
+				F81C134B21B3FA77009CF497 /* PWSettingItemView.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -279,6 +309,7 @@
 		F81C129821AAF041009CF497 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				F81C135121B40087009CF497 /* Category */,
 				F81C131E21B38118009CF497 /* UIView+ALMAdditons.h */,
 				F81C131F21B38118009CF497 /* UIView+ALMAdditons.m */,
 				F81C129921AAF054009CF497 /* PWUtils.h */,
@@ -293,6 +324,8 @@
 				F81C12A221AAFEE9009CF497 /* PWCollectionDelegate.m */,
 				F81C12A421AAFEFA009CF497 /* PWTableViewDelegate.h */,
 				F81C12A521AAFEFA009CF497 /* PWTableViewDelegate.m */,
+				F81C133721B3DD12009CF497 /* PWTableViewAutoAlyoutDelegate.h */,
+				F81C133821B3DD12009CF497 /* PWTableViewAutoAlyoutDelegate.m */,
 			);
 			path = Delegates;
 			sourceTree = "<group>";
@@ -472,8 +505,30 @@
 			children = (
 				F81C132521B3D0E0009CF497 /* PWUserViewController.h */,
 				F81C132621B3D0E0009CF497 /* PWUserViewController.m */,
+				F81C133A21B3F257009CF497 /* PWUserManager.h */,
+				F81C133B21B3F257009CF497 /* PWUserManager.m */,
+				F81C133D21B3F25F009CF497 /* PWUser.h */,
+				F81C133E21B3F25F009CF497 /* PWUser.m */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		F81C134021B3F3A0009CF497 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F81C134121B3F3B2009CF497 /* PWNetworkService.h */,
+				F81C134221B3F3B2009CF497 /* PWNetworkService.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F81C135121B40087009CF497 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F81C135521B400DA009CF497 /* MBProgressHUD+PWUtils.h */,
+				F81C135621B400DA009CF497 /* MBProgressHUD+PWUtils.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		F838F1AF21AA4B2600C309F2 = {
@@ -501,6 +556,7 @@
 		F838F1BA21AA4B2600C309F2 /* PWNote */ = {
 			isa = PBXGroup;
 			children = (
+				F81C134021B3F3A0009CF497 /* Network */,
 				F81C12D121B2667B009CF497 /* Iconfont */,
 				F81C12C421AC4DD2009CF497 /* Business */,
 				F81C129821AAF041009CF497 /* Utils */,
@@ -718,12 +774,16 @@
 				F81C131A21B37DE0009CF497 /* PWMissionModel.m in Sources */,
 				F81C131121B27015009CF497 /* PWSelectTitleItemCell.m in Sources */,
 				F81C12AE21AC43F1009CF497 /* PWDataSource.m in Sources */,
+				F81C135721B400DA009CF497 /* MBProgressHUD+PWUtils.m in Sources */,
 				F81C133021B3DA43009CF497 /* PWKeepViewModel.m in Sources */,
 				F81C12AA21AC3BA2009CF497 /* PWTableViewController.m in Sources */,
 				F81C128721AA4FA8009CF497 /* PWHomeViewController.m in Sources */,
+				F81C134321B3F3B2009CF497 /* PWNetworkService.m in Sources */,
+				F81C133C21B3F257009CF497 /* PWUserManager.m in Sources */,
 				F81C132D21B3D971009CF497 /* PWTodoListViewModel.m in Sources */,
 				F81C131721B37DAC009CF497 /* PWMissionViewModel.m in Sources */,
 				F81C12A321AAFEE9009CF497 /* PWCollectionDelegate.m in Sources */,
+				F81C134621B3F981009CF497 /* PWSettingDataSource.m in Sources */,
 				F838F1C021AA4B2600C309F2 /* ViewController.m in Sources */,
 				F81C130321B269B8009CF497 /* PWToDoListViewController.m in Sources */,
 				F838F1CB21AA4B2700C309F2 /* main.m in Sources */,
@@ -734,6 +794,7 @@
 				F81C133621B3DB65009CF497 /* PWKeepItemView.m in Sources */,
 				F81C127B21AA4EC6009CF497 /* PWNavigationViewController.m in Sources */,
 				F81C129121AA551F009CF497 /* PWRouter.m in Sources */,
+				F81C134C21B3FA77009CF497 /* PWSettingItemView.m in Sources */,
 				F81C12B321AC4524009CF497 /* PWViewModel.m in Sources */,
 				F81C132021B38118009CF497 /* UIView+ALMAdditons.m in Sources */,
 				F81C132721B3D0E0009CF497 /* PWUserViewController.m in Sources */,
@@ -743,9 +804,12 @@
 				F81C133321B3DA52009CF497 /* PWKeepDataSource.m in Sources */,
 				F81C132A21B3D950009CF497 /* PWToDoListDataSource.m in Sources */,
 				F81C12BC21AC461B009CF497 /* PWItemView.m in Sources */,
+				F81C134921B3F99A009CF497 /* PWSettingViewModel.m in Sources */,
 				F81C12C721AC4DFB009CF497 /* PWMoreDataSource.m in Sources */,
 				F81C12B721AC4559009CF497 /* PWSectionModel.m in Sources */,
 				F81C12FE21B2682F009CF497 /* PWMissionViewController.m in Sources */,
+				F81C133921B3DD13009CF497 /* PWTableViewAutoAlyoutDelegate.m in Sources */,
+				F81C133F21B3F25F009CF497 /* PWUser.m in Sources */,
 				F81C130E21B26EE3009CF497 /* PWSelectTitleView.m in Sources */,
 				F81C128321AA4F32009CF497 /* PWTestHomeViewController.m in Sources */,
 				F81C129F21AAF676009CF497 /* PWMoreViewController.m in Sources */,

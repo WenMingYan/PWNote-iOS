@@ -12,6 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PWKeepViewModel : PWViewModel
 
+- (NSString *)title;
+
+- (NSString *)content;
+
 @end
 
 NS_ASSUME_NONNULL_END

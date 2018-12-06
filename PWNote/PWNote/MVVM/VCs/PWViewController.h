@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Masonry/Masonry.h>
+#import "AMIconfont.h"
 #import "PWLocalManager.h"
 #import "PWRouter.h"
 #import "PWRouterAction.h"

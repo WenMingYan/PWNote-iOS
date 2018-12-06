@@ -7,6 +7,7 @@
 
 NSString *const XIconSquarecheckfill = @"\U0000e6d4";
 NSString *const XIconSquare = @"\U0000e6d5";
+NSString *const XIconSmile = @"\U0000e6af";
 NSString *const XIconShezhi = @"\U0000e62a";
 NSString *const XIconShouye = @"\U0000e62d";
 
@@ -30,6 +31,7 @@ NSString *const XIconShouye = @"\U0000e62d";
     symbolIcons = @{
       @"squarecheckfill": XIconSquarecheckfill,
       @"square": XIconSquare,
+      @"smile": XIconSmile,
       @"shezhi": XIconShezhi,
       @"shouye": XIconShouye,
     };
@@ -39,6 +41,7 @@ NSString *const XIconShouye = @"\U0000e62d";
 
 + (NSString *)iconSquarecheckfill { return XIconSquarecheckfill; }
 + (NSString *)iconSquare { return XIconSquare; }
++ (NSString *)iconSmile { return XIconSmile; }
 + (NSString *)iconShezhi { return XIconShezhi; }
 + (NSString *)iconShouye { return XIconShouye; }
 

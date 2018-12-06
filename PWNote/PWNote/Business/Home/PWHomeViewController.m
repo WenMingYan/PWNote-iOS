@@ -12,11 +12,12 @@
 #import "PWKeepViewController.h"
 #import "PWSelectTitleView.h"
 #import "PWUserView.h"
+#import "PWUserManager.h"
 
 @interface PWHomeViewController () <PWSelectTitleViewDelegate, UIScrollViewDelegate>
 
 //@property (nonatomic, strong) UIButton *moreBtn; /**< 更多  */
-//@property (nonatomic, strong) UIButton *settingBtn; /**< 设置  */
+@property (nonatomic, strong) UIButton *settingBtn; /**< 设置  */
 #if DEBUG
 @property (nonatomic, strong) UIButton *testBtn; /**< 测试button  */
 #endif
@@ -74,10 +75,12 @@ __PW_ROUTER_REGISTER__
         make.right.equalTo(self.view);
         make.bottom.equalTo(self.view);
     }];
-    
+    UIBarButtonItem *settingItem = [[UIBarButtonItem alloc] initWithCustomView:self.settingBtn];
 #if DEBUG
     UIBarButtonItem *testItem = [[UIBarButtonItem alloc] initWithCustomView:self.testBtn];
-    self.navigationItem.rightBarButtonItems = @[testItem];
+    self.navigationItem.rightBarButtonItems = @[testItem,settingItem];
+#else
+    self.navigationItem.rightBarButtonItems = @[settingItem];
 #endif
 }
 
@@ -115,7 +118,16 @@ __PW_ROUTER_REGISTER__
 
 - (void)onClickUser {
     //TODO: wmy 到我的页面
-    [self routerURL:@"pwnote://user" withParam:nil];
+    if ([[PWUserManager sharedInstance] isLogin]) {
+        [self routerURL:@"pwnote://user" withParam:nil];
+    } else {
+        @weakify(self);
+        [[PWUserManager sharedInstance] loginInWithUserName:@"wenmingyan" password:@"wenmingyan" withComplementation:^(BOOL success) {
+            @strongify(self);
+            [self routerURL:@"pwnote://user" withParam:nil];
+        }];
+
+    }
 }
 
 + (NSString *)urlName {
@@ -126,8 +138,23 @@ __PW_ROUTER_REGISTER__
     [self routerURL:@"pwnote://test" withParam:nil];
 }
 
+- (void)onClickSetting {
+    [self routerURL:@"pwnote://setting" withParam:nil];
+}
+
 #pragma mark - --------------------private methods--------------
 #pragma mark - --------------------getters & setters & init members ------------------
+
+- (UIButton *)settingBtn {
+    if (!_settingBtn) {
+        _settingBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _settingBtn.titleLabel.font = [AMIconfont fontWithSize:32];
+        [_settingBtn setTitle:XIconShezhi forState:UIControlStateNormal];
+        [_settingBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_settingBtn addTarget:self action:@selector(onClickSetting) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _settingBtn;
+}
 
 - (PWSelectTitleView *)smallScrollView {
     if (!_smallScrollView) {

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MBProgressHUD+PWUtils.h"
 #import "PWUtils.h"
 #import "PWViewModelProtocol.h"
 

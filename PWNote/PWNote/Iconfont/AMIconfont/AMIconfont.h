@@ -16,6 +16,7 @@
 
 + (NSString *)iconSquarecheckfill __deprecated_msg("Use XIconSquarecheckfill instead.");
 + (NSString *)iconSquare __deprecated_msg("Use XIconSquare instead.");
++ (NSString *)iconSmile __deprecated_msg("Use XIconSmile instead.");
 + (NSString *)iconShezhi __deprecated_msg("Use XIconShezhi instead.");
 + (NSString *)iconShouye __deprecated_msg("Use XIconShouye instead.");
 
@@ -23,6 +24,7 @@
 
 UIKIT_EXTERN NSString *const XIconSquarecheckfill;
 UIKIT_EXTERN NSString *const XIconSquare;
+UIKIT_EXTERN NSString *const XIconSmile;
 UIKIT_EXTERN NSString *const XIconShezhi;
 UIKIT_EXTERN NSString *const XIconShouye;
 

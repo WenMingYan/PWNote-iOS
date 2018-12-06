@@ -7,6 +7,8 @@ target 'PWNote' do
 
   # Pods for PWNote
   pod 'Masonry', '~> 1.1.0'
-  pod 'ReactiveObjC'  
+  pod 'ReactiveObjC'
+  pod 'AFNetworking', '~> 3.2.1'
+  pod 'MBProgressHUD', '~> 1.1.0'
 
 end
