@@ -13,10 +13,11 @@
 #import "PWSelectTitleView.h"
 #import "PWUserView.h"
 #import "PWUserManager.h"
+#import "PWCategoryViewController.h"
 
 @interface PWHomeViewController () <PWSelectTitleViewDelegate, UIScrollViewDelegate>
 
-//@property (nonatomic, strong) UIButton *moreBtn; /**< 更多  */
+@property (nonatomic, strong) UIButton *categoryBtn; /**< 分类  */
 @property (nonatomic, strong) UIButton *settingBtn; /**< 设置  */
 #if DEBUG
 @property (nonatomic, strong) UIButton *testBtn; /**< 测试button  */
@@ -30,6 +31,9 @@
 @property (nonatomic, strong) PWKeepViewController *keep;
 
 @property (nonatomic, strong) PWUserView *userView;
+@property (nonatomic, strong) PWCategoryViewController *categoryVC;
+@property (nonatomic, assign) BOOL isAnimated;/** < 是否在动画中*/
+@property (nonatomic, strong) UIView *maskView; /**< 背景  */
 
 @end
 
@@ -54,14 +58,8 @@ __PW_ROUTER_REGISTER__
     
 }
 
-- (void)initView {
-    self.title = @"Home";
+- (void)setupSmallScrollView {
     [self.view addSubview:self.smallScrollView];
-    [self.view addSubview:self.bigScrollView];
-    UITapGestureRecognizer *userViewTap = [[UITapGestureRecognizer alloc]initWithTarget:self
-                                                                                 action:@selector(onClickUser)];
-    [self.userView addGestureRecognizer:userViewTap];
-    
     [self.smallScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.equalTo(self.view);
         make.height.mas_equalTo(35);
@@ -69,19 +67,54 @@ __PW_ROUTER_REGISTER__
         make.left.equalTo(self.view);
         make.right.equalTo(self.view);
     }];
+}
+
+- (void)setupBigScrollView {
+    [self.view addSubview:self.bigScrollView];
     [self.bigScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.view);
         make.top.equalTo(self.smallScrollView.mas_bottom);
         make.right.equalTo(self.view);
         make.bottom.equalTo(self.view);
     }];
+}
+
+- (void)setupCategoryVC {
+    [self.view addSubview:self.maskView];
+    self.maskView.hidden = YES;
+    [self.maskView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
+    [self.view addSubview:self.categoryVC.view];
+    self.categoryVC.view.hidden = YES;
+    [self.categoryVC.view mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.mas_equalTo(self.view).mas_offset(-50);
+        make.right.mas_equalTo(self.view.mas_left);
+        make.top.equalTo(self.view);
+        make.bottom.equalTo(self.view);
+    }];
+}
+
+- (void)initView {
+    self.title = @"Home";
+    [self setupSmallScrollView];
+    [self setupBigScrollView];
+    [self setupCategoryVC];
+    UITapGestureRecognizer *userViewTap = [[UITapGestureRecognizer alloc]initWithTarget:self
+                                                                                 action:@selector(onClickUser)];
+    [self.userView addGestureRecognizer:userViewTap];
+
     UIBarButtonItem *settingItem = [[UIBarButtonItem alloc] initWithCustomView:self.settingBtn];
+    
 #if DEBUG
     UIBarButtonItem *testItem = [[UIBarButtonItem alloc] initWithCustomView:self.testBtn];
     self.navigationItem.rightBarButtonItems = @[testItem,settingItem];
 #else
     self.navigationItem.rightBarButtonItems = @[settingItem];
 #endif
+    
+    UIBarButtonItem *categoryItem = [[UIBarButtonItem alloc] initWithCustomView:self.categoryBtn];
+    self.navigationItem.leftBarButtonItems = @[categoryItem];
 }
 
 #pragma mark - --------------------UITableViewDelegate--------------
@@ -117,16 +150,16 @@ __PW_ROUTER_REGISTER__
 
 
 - (void)onClickUser {
-    //TODO: wmy 到我的页面
     if ([[PWUserManager sharedInstance] isLogin]) {
+        // 到我的页面
         [self routerURL:@"pwnote://user" withParam:nil];
     } else {
         @weakify(self);
-        [[PWUserManager sharedInstance] loginInWithUserName:@"wenmingyan" password:@"wenmingyan" withComplementation:^(BOOL success) {
+        //TODO: wmy test
+        [[PWUserManager sharedInstance] loginInWithUserName:@"mingyan" password:@"900523" withComplementation:^(BOOL success) {
             @strongify(self);
             [self routerURL:@"pwnote://user" withParam:nil];
         }];
-
     }
 }
 
@@ -140,6 +173,38 @@ __PW_ROUTER_REGISTER__
 
 - (void)onClickSetting {
     [self routerURL:@"pwnote://setting" withParam:nil];
+}
+
+- (void)onClickCategory {
+    //打开分类
+    if (self.isAnimated) {
+        return;
+    }
+    CGRect frame = self.categoryVC.view.frame;
+    if (self.categoryVC.view.hidden) {
+        //TODO: wmy 显示的动画
+        frame.origin.x = 0;
+        self.categoryVC.view.hidden = NO;
+        [UIView animateWithDuration:0.5 animations:^{
+            self.isAnimated = YES;
+            self.categoryVC.view.frame = frame;
+        } completion:^(BOOL finished) {
+            self.isAnimated = NO;
+            self.categoryVC.view.hidden = NO;
+            self.maskView.hidden = NO;
+        }];
+    } else {
+        //TODO: wmy 隐藏的动画
+        frame.origin.x = - frame.size.width;
+        [UIView animateWithDuration:0.5 animations:^{
+            self.isAnimated = YES;
+            self.categoryVC.view.frame = frame;
+        } completion:^(BOOL finished) {
+            self.isAnimated = NO;
+            self.categoryVC.view.hidden = YES;
+            self.maskView.hidden = YES;
+        }];
+    }
 }
 
 #pragma mark - --------------------private methods--------------
@@ -213,5 +278,34 @@ __PW_ROUTER_REGISTER__
     return _testBtn;
 }
 #endif
+
+- (UIButton *)categoryBtn {
+    if (!_categoryBtn) {
+        _categoryBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_categoryBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_categoryBtn addTarget:self action:@selector(onClickCategory) forControlEvents:UIControlEventTouchUpInside];
+        _categoryBtn.titleLabel.font = [AMIconfont fontWithSize:32];
+        [_categoryBtn setTitle:XIconCategory forState:UIControlStateNormal];
+    }
+    return _categoryBtn;
+}
+
+- (PWCategoryViewController *)categoryVC {
+    if (!_categoryVC) {
+        _categoryVC = [[PWCategoryViewController alloc] init];
+    }
+    return _categoryVC;
+}
+
+- (UIView *)maskView {
+    if (!_maskView) {
+        _maskView = [[UIView alloc] init];
+        _maskView.backgroundColor = [UIColor lightGrayColor];
+        UITapGestureRecognizer *maskTap = [[UITapGestureRecognizer alloc]initWithTarget:self
+                                                                                 action:@selector(onClickCategory)];
+        [_maskView addGestureRecognizer:maskTap];
+    }
+    return _maskView;
+}
 
 @end

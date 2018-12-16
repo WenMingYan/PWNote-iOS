@@ -10,7 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class PWDataSource;
+
 @interface PWCollectionDelegate : NSObject
+
+@property(nonatomic, weak) PWDataSource *dataSource;/**< 数据源  */
+
+- (instancetype)initWithCollectionView:(UICollectionView *)collectionView;
 
 @end
 

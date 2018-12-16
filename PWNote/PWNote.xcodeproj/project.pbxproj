@@ -64,6 +64,12 @@
 		F838F1D521AA4B2700C309F2 /* PWNoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F838F1D421AA4B2700C309F2 /* PWNoteTests.m */; };
 		F838F1E021AA4B2700C309F2 /* PWNoteUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F838F1DF21AA4B2700C309F2 /* PWNoteUITests.m */; };
 		F838F1F221AA4C2900C309F2 /* PWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F838F1F121AA4C2900C309F2 /* PWViewController.m */; };
+		F87872B821B96DFF00CA34CE /* PWCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87872B721B96DFF00CA34CE /* PWCategoryViewController.m */; };
+		F87872BB21B9705E00CA34CE /* PWCategoryDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F87872BA21B9705E00CA34CE /* PWCategoryDataSource.m */; };
+		F87872BE21B9721D00CA34CE /* PWCollectionViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87872BD21B9721D00CA34CE /* PWCollectionViewViewController.m */; };
+		F87872C121B9760D00CA34CE /* UICollectionViewCell+PWItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = F87872C021B9760D00CA34CE /* UICollectionViewCell+PWItemView.m */; };
+		F87872C421BC0B4800CA34CE /* PWCategorySectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F87872C321BC0B4800CA34CE /* PWCategorySectionModel.m */; };
+		F87872C721BC0BA200CA34CE /* PWCategoryViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F87872C621BC0BA200CA34CE /* PWCategoryViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -207,6 +213,18 @@
 		F838F1E121AA4B2700C309F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F838F1F021AA4C2900C309F2 /* PWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWViewController.h; sourceTree = "<group>"; };
 		F838F1F121AA4C2900C309F2 /* PWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWViewController.m; sourceTree = "<group>"; };
+		F87872B621B96DFF00CA34CE /* PWCategoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWCategoryViewController.h; sourceTree = "<group>"; };
+		F87872B721B96DFF00CA34CE /* PWCategoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWCategoryViewController.m; sourceTree = "<group>"; };
+		F87872B921B9705E00CA34CE /* PWCategoryDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWCategoryDataSource.h; sourceTree = "<group>"; };
+		F87872BA21B9705E00CA34CE /* PWCategoryDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWCategoryDataSource.m; sourceTree = "<group>"; };
+		F87872BC21B9721D00CA34CE /* PWCollectionViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWCollectionViewViewController.h; sourceTree = "<group>"; };
+		F87872BD21B9721D00CA34CE /* PWCollectionViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWCollectionViewViewController.m; sourceTree = "<group>"; };
+		F87872BF21B9760D00CA34CE /* UICollectionViewCell+PWItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+PWItemView.h"; sourceTree = "<group>"; };
+		F87872C021B9760D00CA34CE /* UICollectionViewCell+PWItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+PWItemView.m"; sourceTree = "<group>"; };
+		F87872C221BC0B4800CA34CE /* PWCategorySectionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWCategorySectionModel.h; sourceTree = "<group>"; };
+		F87872C321BC0B4800CA34CE /* PWCategorySectionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWCategorySectionModel.m; sourceTree = "<group>"; };
+		F87872C521BC0BA200CA34CE /* PWCategoryViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWCategoryViewModel.h; sourceTree = "<group>"; };
+		F87872C621BC0BA200CA34CE /* PWCategoryViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWCategoryViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -337,6 +355,8 @@
 				F838F1F121AA4C2900C309F2 /* PWViewController.m */,
 				F81C12A821AC3BA2009CF497 /* PWTableViewController.h */,
 				F81C12A921AC3BA2009CF497 /* PWTableViewController.m */,
+				F87872BC21B9721D00CA34CE /* PWCollectionViewViewController.h */,
+				F87872BD21B9721D00CA34CE /* PWCollectionViewViewController.m */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -385,6 +405,8 @@
 			children = (
 				F81C12C021AC4B7C009CF497 /* UITableViewCell+PWItemView.h */,
 				F81C12C121AC4B7C009CF497 /* UITableViewCell+PWItemView.m */,
+				F87872BF21B9760D00CA34CE /* UICollectionViewCell+PWItemView.h */,
+				F87872C021B9760D00CA34CE /* UICollectionViewCell+PWItemView.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -405,6 +427,7 @@
 		F81C12C421AC4DD2009CF497 /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				F87872B521B96DE500CA34CE /* Category */,
 				F81C132421B3D0BB009CF497 /* User */,
 				F81C130021B269AB009CF497 /* TODOList */,
 				F81C12FF21B269A5009CF497 /* Keep */,
@@ -556,6 +579,7 @@
 		F838F1BA21AA4B2600C309F2 /* PWNote */ = {
 			isa = PBXGroup;
 			children = (
+				F87872B421B96CC800CA34CE /* Skin */,
 				F81C134021B3F3A0009CF497 /* Network */,
 				F81C12D121B2667B009CF497 /* Iconfont */,
 				F81C12C421AC4DD2009CF497 /* Business */,
@@ -610,6 +634,28 @@
 				F81C127A21AA4EC6009CF497 /* PWNavigationViewController.m */,
 			);
 			path = MVVM;
+			sourceTree = "<group>";
+		};
+		F87872B421B96CC800CA34CE /* Skin */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Skin;
+			sourceTree = "<group>";
+		};
+		F87872B521B96DE500CA34CE /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F87872B621B96DFF00CA34CE /* PWCategoryViewController.h */,
+				F87872B721B96DFF00CA34CE /* PWCategoryViewController.m */,
+				F87872B921B9705E00CA34CE /* PWCategoryDataSource.h */,
+				F87872BA21B9705E00CA34CE /* PWCategoryDataSource.m */,
+				F87872C221BC0B4800CA34CE /* PWCategorySectionModel.h */,
+				F87872C321BC0B4800CA34CE /* PWCategorySectionModel.m */,
+				F87872C521BC0BA200CA34CE /* PWCategoryViewModel.h */,
+				F87872C621BC0BA200CA34CE /* PWCategoryViewModel.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -771,10 +817,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F81C132321B3CE61009CF497 /* PWUserView.m in Sources */,
+				F87872C121B9760D00CA34CE /* UICollectionViewCell+PWItemView.m in Sources */,
 				F81C131A21B37DE0009CF497 /* PWMissionModel.m in Sources */,
 				F81C131121B27015009CF497 /* PWSelectTitleItemCell.m in Sources */,
 				F81C12AE21AC43F1009CF497 /* PWDataSource.m in Sources */,
 				F81C135721B400DA009CF497 /* MBProgressHUD+PWUtils.m in Sources */,
+				F87872C421BC0B4800CA34CE /* PWCategorySectionModel.m in Sources */,
 				F81C133021B3DA43009CF497 /* PWKeepViewModel.m in Sources */,
 				F81C12AA21AC3BA2009CF497 /* PWTableViewController.m in Sources */,
 				F81C128721AA4FA8009CF497 /* PWHomeViewController.m in Sources */,
@@ -803,17 +851,21 @@
 				F81C129721AA5607009CF497 /* PWRouterAction.m in Sources */,
 				F81C133321B3DA52009CF497 /* PWKeepDataSource.m in Sources */,
 				F81C132A21B3D950009CF497 /* PWToDoListDataSource.m in Sources */,
+				F87872B821B96DFF00CA34CE /* PWCategoryViewController.m in Sources */,
 				F81C12BC21AC461B009CF497 /* PWItemView.m in Sources */,
 				F81C134921B3F99A009CF497 /* PWSettingViewModel.m in Sources */,
 				F81C12C721AC4DFB009CF497 /* PWMoreDataSource.m in Sources */,
 				F81C12B721AC4559009CF497 /* PWSectionModel.m in Sources */,
 				F81C12FE21B2682F009CF497 /* PWMissionViewController.m in Sources */,
+				F87872BE21B9721D00CA34CE /* PWCollectionViewViewController.m in Sources */,
 				F81C133921B3DD13009CF497 /* PWTableViewAutoAlyoutDelegate.m in Sources */,
 				F81C133F21B3F25F009CF497 /* PWUser.m in Sources */,
+				F87872BB21B9705E00CA34CE /* PWCategoryDataSource.m in Sources */,
 				F81C130E21B26EE3009CF497 /* PWSelectTitleView.m in Sources */,
 				F81C128321AA4F32009CF497 /* PWTestHomeViewController.m in Sources */,
 				F81C129F21AAF676009CF497 /* PWMoreViewController.m in Sources */,
 				F81C12A621AAFEFA009CF497 /* PWTableViewDelegate.m in Sources */,
+				F87872C721BC0BA200CA34CE /* PWCategoryViewModel.m in Sources */,
 				F81C128B21AA4FF0009CF497 /* PWLocalConfig.m in Sources */,
 				F81C128E21AA4FFE009CF497 /* PWLocalManager.m in Sources */,
 				F81C131421B37A24009CF497 /* PWMissionDataSource.m in Sources */,

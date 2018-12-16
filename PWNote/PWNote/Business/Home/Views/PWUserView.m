@@ -8,6 +8,7 @@
 
 #import "PWUserView.h"
 #import <Masonry/Masonry.h>
+#import "UIView+ALMAdditons.h"
 #import "AMIconfont.h"
 
 @interface PWUserView ()
@@ -61,7 +62,7 @@
     [superView addSubview:userView];
     [userView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.and.height.mas_equalTo(60);
-        make.bottom.mas_equalTo(-16);
+        make.bottom.mas_equalTo((-16 - kSafeArea_Bottom));
         make.right.mas_equalTo(-16);
     }];
     return userView;

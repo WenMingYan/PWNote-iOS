@@ -16,6 +16,15 @@
 #define kStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
 #define Screen3P5Inch ([[UIScreen mainScreen] currentMode].size.height < 1136)
 
+#define IS_IPHONE_X (kScreenHeight == 812.0f) ? YES : NO
+#define Height_NavContentBar    44.0f
+#define kSafeAreaStatusBarHeight (IS_IPHONE_X)?44.0f: 20.0f
+#define kSafeAreaNavBarHeight ((IS_IPHONE_X)?88.0f: 64.0f)
+#define kSafeAreaTabBarHeight ((IS_IPHONE_X)?83.0f: 49.0f)
+#define kSafeArea_Bottom ((IS_IPHONE_X)?34.f: 0.f)
+
+
+
 /**
  *  UIView的辅助类，方便快捷地访问使用UIView中的各种属性，减少冗余代码量
  */
