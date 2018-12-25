@@ -16,6 +16,8 @@
                       success:(NetworkSuccessBlock)successBlock
                          fail:(NetworkFailBlock)fail {
     AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc] init];
+    
+    //http://panyi.xyz/api/version?osType=2
     NSString *address = [NSString stringWithFormat:@"http://panyi.xyz/api/%@",method];
     
     [manager POST:address parameters:param progress:^(NSProgress * _Nonnull uploadProgress) {

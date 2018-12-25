@@ -64,6 +64,8 @@
 		F838F1D521AA4B2700C309F2 /* PWNoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F838F1D421AA4B2700C309F2 /* PWNoteTests.m */; };
 		F838F1E021AA4B2700C309F2 /* PWNoteUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F838F1DF21AA4B2700C309F2 /* PWNoteUITests.m */; };
 		F838F1F221AA4C2900C309F2 /* PWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F838F1F121AA4C2900C309F2 /* PWViewController.m */; };
+		F887CC7B21D204DD0009F5EC /* PWApplicationMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = F887CC7A21D204DD0009F5EC /* PWApplicationMessages.m */; };
+		F887CC7E21D205A00009F5EC /* PWUpdateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F887CC7D21D205A00009F5EC /* PWUpdateUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -207,6 +209,10 @@
 		F838F1E121AA4B2700C309F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F838F1F021AA4C2900C309F2 /* PWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWViewController.h; sourceTree = "<group>"; };
 		F838F1F121AA4C2900C309F2 /* PWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWViewController.m; sourceTree = "<group>"; };
+		F887CC7921D204DD0009F5EC /* PWApplicationMessages.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWApplicationMessages.h; sourceTree = "<group>"; };
+		F887CC7A21D204DD0009F5EC /* PWApplicationMessages.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWApplicationMessages.m; sourceTree = "<group>"; };
+		F887CC7C21D205A00009F5EC /* PWUpdateUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWUpdateUtils.h; sourceTree = "<group>"; };
+		F887CC7D21D205A00009F5EC /* PWUpdateUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWUpdateUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -313,6 +319,10 @@
 				F81C131E21B38118009CF497 /* UIView+ALMAdditons.h */,
 				F81C131F21B38118009CF497 /* UIView+ALMAdditons.m */,
 				F81C129921AAF054009CF497 /* PWUtils.h */,
+				F887CC7921D204DD0009F5EC /* PWApplicationMessages.h */,
+				F887CC7A21D204DD0009F5EC /* PWApplicationMessages.m */,
+				F887CC7C21D205A00009F5EC /* PWUpdateUtils.h */,
+				F887CC7D21D205A00009F5EC /* PWUpdateUtils.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -746,15 +756,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-PWNote-checkManifestLockResult.txt",
 			);
@@ -775,6 +781,7 @@
 				F81C131121B27015009CF497 /* PWSelectTitleItemCell.m in Sources */,
 				F81C12AE21AC43F1009CF497 /* PWDataSource.m in Sources */,
 				F81C135721B400DA009CF497 /* MBProgressHUD+PWUtils.m in Sources */,
+				F887CC7E21D205A00009F5EC /* PWUpdateUtils.m in Sources */,
 				F81C133021B3DA43009CF497 /* PWKeepViewModel.m in Sources */,
 				F81C12AA21AC3BA2009CF497 /* PWTableViewController.m in Sources */,
 				F81C128721AA4FA8009CF497 /* PWHomeViewController.m in Sources */,
@@ -782,6 +789,7 @@
 				F81C133C21B3F257009CF497 /* PWUserManager.m in Sources */,
 				F81C132D21B3D971009CF497 /* PWTodoListViewModel.m in Sources */,
 				F81C131721B37DAC009CF497 /* PWMissionViewModel.m in Sources */,
+				F887CC7B21D204DD0009F5EC /* PWApplicationMessages.m in Sources */,
 				F81C12A321AAFEE9009CF497 /* PWCollectionDelegate.m in Sources */,
 				F81C134621B3F981009CF497 /* PWSettingDataSource.m in Sources */,
 				F838F1C021AA4B2600C309F2 /* ViewController.m in Sources */,
@@ -992,7 +1000,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AH8FHU45PG;
+				DEVELOPMENT_TEAM = J75WQTUZC9;
 				INFOPLIST_FILE = PWNote/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1011,7 +1019,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AH8FHU45PG;
+				DEVELOPMENT_TEAM = J75WQTUZC9;
 				INFOPLIST_FILE = PWNote/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
