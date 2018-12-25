@@ -14,6 +14,8 @@
 #import "PWUserView.h"
 #import "PWUserManager.h"
 #import "PWCategoryViewController.h"
+#import "PWUpdateUtils.h"
+#import "PWRouter.h"
 
 @interface PWHomeViewController () <PWSelectTitleViewDelegate, UIScrollViewDelegate>
 
@@ -48,6 +50,32 @@ __PW_ROUTER_REGISTER__
     [super viewDidLoad];
     [self initData];
     [self initView];
+    @weakify(self);
+    [PWUpdateUtils checkUpdateWithSuccess:^(BOOL canUpdate, NSString *updateAdd) {
+        @strongify(self);
+        if (canUpdate) {        
+            [self showUpdateAlert:updateAdd];
+        }
+    } fail:^(NSError *err) {
+        NSLog(@"");
+    }];
+}
+
+- (void)showUpdateAlert:(NSString *)updateAdd {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"有版本！"
+                                                                        message:@"有新版本，是否需要升级"
+                                                                 preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        NSLog(@"点击了Cancel");
+    }];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"更新" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [[PWRouter sharedInstance] routerURL:updateAdd param:nil];
+    }];
+    [alertController addAction:cancelAction];
+    [alertController addAction:okAction];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
 }
 
 - (void)initData {

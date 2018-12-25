@@ -50,6 +50,13 @@ static PWRouter *__onetimeClass;
         if (action.actionBlock) {
             action.actionBlock(self.navigationController);
         }
+    } else if ([URL.scheme isEqualToString:@"http"] ||
+               [URL.scheme isEqualToString:@"https"]) {
+        
+    } else {
+        [[UIApplication sharedApplication] openURL:URL options:@{} completionHandler:^(BOOL success) {
+            
+        }];
     }
 }
 
