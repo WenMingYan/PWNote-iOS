@@ -10,6 +10,15 @@
 
 @implementation NSString (PWEmpty)
 
+-(BOOL)isEmpty {
+    if ([self trim].length) {
+        return NO;
+    }
+    return YES;
+}
 
+- (NSString *)trim {
+    return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+}
 
 @end

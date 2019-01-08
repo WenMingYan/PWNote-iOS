@@ -14,12 +14,14 @@
 #import "PWItemViewProtocol.h"
 #import "PWViewModelProtocol.h"
 #import "PWSkinManager.h"
+#import "PWInteractor.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PWItemView : UIView <PWItemViewProtocol>
 
 @property(nonatomic, weak) id<PWViewModelProtocol> viewModel;/**< 数据源  */
+@property(nonatomic, weak) PWInteractor *interactor;
 
 @end
 

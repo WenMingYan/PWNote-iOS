@@ -9,6 +9,7 @@
 #import "PWBigTitleTableViewController.h"
 #import "PWTableViewDelegate.h"
 #import "PWBigTitleViewModel.h"
+#import "PWInteractor.h"
 
 CGFloat kTableViewDiff = 60;
 
@@ -19,6 +20,7 @@ CGFloat kTableViewDiff = 60;
 @property (nonatomic, strong) PWTableViewDelegate *tableViewDelegate;
 @property (nonatomic, strong) UIView *titleView; /**< titleView  */
 @property (nonatomic, strong) UILabel *titleLabel; /**< titleLabel  */
+@property (nonatomic, strong) PWInteractor *defaultInteractor; /**< 交互层  */
 
 @end
 
@@ -55,14 +57,12 @@ CGFloat kTableViewDiff = 60;
     NSLog(@"offsetY = %f,end",offsetY);
     if (offsetY > kBigTitleViewHeight - diff && offsetY < kBigTitleViewHeight + diff) {
         [self.tableView setContentOffset:CGPointMake(0, kBigTitleViewHeight) animated:YES];
-        NSLog(@"in");
     }
     
     if (offsetY < diff) {
         [self.tableView setContentOffset:CGPointMake(0, 0) animated:YES];
     }
 }
-
 
 - (void)setTitle:(NSString *)title {
     self.titleLabel.text = title;
@@ -119,7 +119,6 @@ CGFloat kTableViewDiff = 60;
     return _tableView;
 }
 
-
 - (UIView *)backView {
     if (!_backView) {
         _backView = [[UIView alloc] init];
@@ -134,6 +133,13 @@ CGFloat kTableViewDiff = 60;
         _tableViewDelegate.viewController = self;
     }
     return _tableViewDelegate;
+}
+
+- (PWInteractor *)defaultInteractor {
+    if (!_defaultInteractor) {
+        _defaultInteractor = [[PWInteractor alloc] init];
+    }
+    return _defaultInteractor;
 }
 
 @end

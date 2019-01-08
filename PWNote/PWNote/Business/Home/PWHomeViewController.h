@@ -9,6 +9,12 @@
 #import "PWBigTitleTableViewController.h"
 #import "PWUtils.h"
 
+@class PWCategoryViewModel;
+
 @interface PWHomeViewController : PWBigTitleTableViewController
+
+- (void)onClickCategory;
+
+- (void)updateCategory:(PWCategoryViewModel *)viewModel;
 
 @end

@@ -10,9 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+extern NSString * const kClickCategoryItem;
+
 @interface PWCategoryViewModel : PWViewModel
 
 - (NSString *)title;
+
+- (NSString *)subTitle;
 
 - (NSString *)number;
 

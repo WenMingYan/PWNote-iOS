@@ -40,4 +40,8 @@ static PWSkinManager *__onetimeClass;
     return [UIColor orangeColor];
 }
 
+- (CGFloat)margin {
+    return 16;
+}
+
 @end

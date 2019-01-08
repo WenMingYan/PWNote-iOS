@@ -13,7 +13,7 @@
 #define kThemeColor [PWSkinManager sharedInstance].themeColor
 #define kLightSubTitleColor [PWSkinManager sharedInstance].lightSubTitleColor
 #define kWhiteColor [PWSkinManager sharedInstance].whiteColor
-
+#define kMargin [PWSkinManager sharedInstance].margin
 
 
 @interface PWSkinManager : NSObject
@@ -25,5 +25,7 @@
 @property (nonatomic, strong) UIColor *lightSubTitleColor; /**< 次副标题颜色  */
 @property (nonatomic, strong) UIColor *themeColor; /**< 主题颜色  */
 @property (nonatomic, strong) UIColor *whiteColor; /**< 白颜色  */
+
+@property (nonatomic, assign) CGFloat margin;
 
 @end

@@ -13,9 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface PWCategoryModel : NSObject
 
 @property (nonatomic, strong) NSString *title;
-
+@property (nonatomic, strong) NSString *subTitle;
 @property (nonatomic, assign) NSInteger number;
-
 @property (nonatomic, strong) NSString *iconColor;
 
 @end

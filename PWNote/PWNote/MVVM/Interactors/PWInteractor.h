@@ -8,16 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol PWAction <NSObject>
+@interface PWInteractor : NSObject
 
+- (void)registerTarget:(id)action action:(SEL)select forEventName:(NSString *)eventName;
 
-
-@end
-
-@interface PWInteractor : NSObject <PWAction>
-
-- (void)registerTarget:(id<PWAction>)action action:(SEL)select forEventName:(NSString *)eventName;
-
-- (void)onActionName:(NSString *)action;
+- (void)sendEventName:(NSString *)eventName withObjects:(id)object;
 
 @end

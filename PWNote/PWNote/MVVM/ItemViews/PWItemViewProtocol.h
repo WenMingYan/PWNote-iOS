@@ -10,10 +10,12 @@
 #define PWItemViewProtocol_h
 
 @protocol PWViewModelProtocol;
+@class PWInteractor;
 
 @protocol PWItemViewProtocol <NSObject>
 
 @property(nonatomic, weak) id<PWViewModelProtocol> viewModel;/**< 数据源  */
+@property(nonatomic, weak) PWInteractor *interactor;
 
 - (void)onSelected;
 

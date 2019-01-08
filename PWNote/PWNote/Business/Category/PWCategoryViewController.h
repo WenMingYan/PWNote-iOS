@@ -8,7 +8,11 @@
 
 #import "PWTableViewController.h"
 
+@class PWHomeViewController;
+
 @interface PWCategoryViewController : PWTableViewController
+
+@property(nonatomic, weak) PWHomeViewController *homeViewController;
 
 @end
 

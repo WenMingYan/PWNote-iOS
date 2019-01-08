@@ -8,6 +8,7 @@
 
 #import "PWViewController.h"
 #import "PWTableViewDelegate.h"
+#import "PWInteractor.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -16,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (UITableView *)tableView;
 
 - (PWTableViewDelegate *)tableViewDelegate;
+
+- (PWInteractor *)defaultInteractor;
 
 @end
 

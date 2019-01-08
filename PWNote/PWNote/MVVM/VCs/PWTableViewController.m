@@ -7,11 +7,14 @@
 //
 
 #import "PWTableViewController.h"
+#import "PWInteractor.h"
 
 @interface PWTableViewController ()
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) PWTableViewDelegate *tableViewDelegate;
+
+@property (nonatomic, strong) PWInteractor *defaultInteractor; /**< 交互层  */
 
 @end
 
@@ -49,6 +52,13 @@
         _tableViewDelegate = [[PWTableViewDelegate alloc] initWithtableView:self.tableView];
     }
     return _tableViewDelegate;
+}
+
+- (PWInteractor *)defaultInteractor {
+    if (!_defaultInteractor) {
+        _defaultInteractor = [[PWInteractor alloc] init];
+    }
+    return _defaultInteractor;
 }
 
 @end

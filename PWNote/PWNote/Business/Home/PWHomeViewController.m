@@ -18,6 +18,7 @@
 #import "PWMissionDataSource.h"
 #import "PWTableViewDelegate.h"
 #import "PWBigTitleViewModel.h"
+#import "PWCategoryViewModel.h"
 
 @interface PWHomeViewController () <UIScrollViewDelegate>
 
@@ -183,6 +184,16 @@ __PW_ROUTER_REGISTER__
     }
 }
 
+- (void)updateCategory:(PWCategoryViewModel *)viewModel {
+    [self onClickCategory];
+    self.title = viewModel.title;
+//    [self.dataSource requestWithSuccess:^{
+//        [self.tableView reloadData];
+//    } fail:^(NSError *error) {
+//
+//    }];
+}
+
 #pragma mark - --------------------private methods--------------
 #pragma mark - --------------------getters & setters & init members ------------------
 
@@ -224,6 +235,7 @@ __PW_ROUTER_REGISTER__
 - (PWCategoryViewController *)categoryVC {
     if (!_categoryVC) {
         _categoryVC = [[PWCategoryViewController alloc] init];
+        _categoryVC.homeViewController = self;
     }
     return _categoryVC;
 }

@@ -12,6 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSString (PWEmpty)
 
+-(BOOL)isEmpty;
+
+- (NSString *)trim;
+
 @end
 
 NS_ASSUME_NONNULL_END

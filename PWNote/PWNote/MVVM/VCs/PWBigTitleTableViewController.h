@@ -9,11 +9,14 @@
 #import "PWViewController.h"
 
 @class PWTableViewDelegate;
+@class PWInteractor;
 
 @interface PWBigTitleTableViewController : PWViewController
 
 - (UITableView *)tableView;
 - (PWTableViewDelegate *)tableViewDelegate;
+
+- (PWInteractor *)defaultInteractor;
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView;
 

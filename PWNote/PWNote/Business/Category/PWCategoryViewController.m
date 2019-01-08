@@ -10,6 +10,8 @@
 #import "PWCategoryDataSource.h"
 #import "PWTableViewDelegate.h"
 #import "PWCategoryUserItemView.h"
+#import "PWCategoryViewModel.h"
+#import "PWHomeViewController.h"
 
 @interface PWCategoryViewController ()
 
@@ -30,6 +32,8 @@
 }
 
 - (void)initData {
+    self.tableViewDelegate.interactor = self.defaultInteractor;
+    [self.defaultInteractor registerTarget:self action:@selector(onClickItem:) forEventName:kClickCategoryItem];
     @weakify(self);
     [self.dataSource requestWithSuccess:^{
         @strongify(self);
@@ -41,6 +45,7 @@
 
 - (void)initView {
     self.tableViewDelegate.dataSource = self.dataSource;
+    
     [self.view addSubview:self.userItemView];
     CGFloat height = 60 + kSafeAreaStatusBarHeight;
     [self.userItemView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -58,6 +63,13 @@
 #pragma mark - --------------------UICollectionViewDelegate, UICollectionViewDataSource--------------
 #pragma mark - --------------------CustomDelegate--------------
 #pragma mark - --------------------Event Response--------------
+
+- (void)onClickItem:(PWCategoryViewModel *)viewModel {
+    //TODO: wmy  关闭e页面，这里之后需要把category的进入动画改一下
+//    [self dismiss];
+    [self.homeViewController updateCategory:viewModel];
+}
+
 #pragma mark - --------------------private methods--------------
 #pragma mark - --------------------getters & setters & init members ------------------
 

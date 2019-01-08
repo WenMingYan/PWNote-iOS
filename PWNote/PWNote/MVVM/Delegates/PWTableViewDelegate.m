@@ -38,6 +38,7 @@
     UIView<PWItemViewProtocol> *itemView;
     if (!cell.itemView) {
         itemView = [[[viewModel itemViewClass] alloc] init];
+        itemView.interactor = self.interactor;
         cell.itemView = itemView;
     } else {
         itemView = cell.itemView;
@@ -102,5 +103,7 @@
         });
     }
 }
+
+
 
 @end

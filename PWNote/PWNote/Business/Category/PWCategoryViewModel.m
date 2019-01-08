@@ -10,6 +10,8 @@
 #import "PWCategoryItemView.h"
 #import "PWCategoryModel.h"
 
+NSString * const kClickCategoryItem = @"ClickCategoryItem";
+
 @interface PWCategoryViewModel ()
 
 @property (nonatomic, strong) PWCategoryModel *model;
@@ -28,7 +30,12 @@
 
 - (UIColor *)iconColor {
     //TODO: wmy 颜色
+//    return self.model.iconColor
     return kThemeColor;
+}
+
+- (NSString *)subTitle {
+    return self.model.subTitle;
 }
 
 - (NSString *)title {

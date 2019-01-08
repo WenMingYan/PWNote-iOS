@@ -9,13 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @class PWDataSource;
-
+@class PWInteractor;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PWTableViewDelegate : NSObject <UITableViewDelegate, UITableViewDataSource>
 
 @property(nonatomic, weak) PWDataSource *dataSource;/**< 数据源  */
-
+@property (nonatomic, strong) PWInteractor *interactor; /**< 交互层  */
 
 
 - (instancetype)initWithtableView:(UITableView *)tableView;

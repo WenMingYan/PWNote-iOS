@@ -64,12 +64,17 @@
 #pragma mark - --------------------getters & setters & init members ------------------
 
 - (void)setViewModel:(id<PWViewModelProtocol>)viewModel {
+    [super setViewModel:viewModel];
     if ([viewModel isKindOfClass:[PWCategoryViewModel class]]) {
         PWCategoryViewModel *model = (PWCategoryViewModel *)viewModel;
         self.titleLabel.text = model.title;
         self.numberLabel.text = model.number;
         self.iconLabel.textColor = model.iconColor;
     }
+}
+
+- (void)onSelected {
+    [self.interactor sendEventName:kClickCategoryItem withObjects:self.viewModel];
 }
 
 - (UILabel *)numberLabel {
