@@ -56,7 +56,7 @@
     return CGSizeZero;
 }
 
-- (XBaseCollectionViewCell *)collectionView:(UICollectionView *)collectionView
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
                      cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     return nil;
 }

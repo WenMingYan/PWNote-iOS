@@ -9,37 +9,71 @@
 #import "PWSettingDataSource.h"
 #import "PWSettingViewModel.h"
 #import "PWNetworkService.h"
+#import "PWUpdateUtils.h"
+#import "PWRouter.h"
+
+@interface PWSettingDataSource ()
+
+@property (nonatomic, strong) PWSettingViewModel *checkUpdateViewModel; /**< 检查更新  */
+@property (nonatomic, strong) PWSettingViewModel *showAllMissionViewModel; /**< 显示所有任务  */
+
+@end
 
 @implementation PWSettingDataSource
 
-- (instancetype)init
-{
+- (instancetype)init {
     self = [super init];
     if (self) {
         PWSectionModel *sectionModel = [[PWSectionModel alloc] init];
-        PWSettingViewModel *settingViewModel = [[PWSettingViewModel alloc] init];
-        settingViewModel.title = @"检查更新";
-        @weakify(self);
-        settingViewModel.clickBlock = ^{
-            @strongify(self);
-            [self checkUpdate];
-        };
-        sectionModel.viewModels = @[settingViewModel];
+        sectionModel.viewModels = @[self.checkUpdateViewModel];
         self.sectionModels = @[sectionModel];
     }
     return self;
 }
 
 - (void)checkUpdate {
-    PWNetworkService *service = [[PWNetworkService alloc] init];
-    NSMutableDictionary *param = [NSMutableDictionary dictionary];
-    [MBProgressHUD showSuccess:@"已经是最新版本！"];
-    //TODO: wmy
-    [service postRequestWithMethod:@"checkupdate" withParam:param success:^(NSDictionary * _Nonnull param) {
-    } fail:^(NSError * _Nonnull error) {
+    [PWUpdateUtils checkUpdateWithSuccess:^(BOOL canUpdate, NSString *updateAdd) {
+        if (canUpdate) {
+            [self showUpdateAlert:updateAdd];
+        } else {
+            [MBProgressHUD showSuccess:@"已经是最新版本！"];
+        }
+    } fail:^(NSError *err) {
+        
+    }];    
+}
+
+
+- (void)showUpdateAlert:(NSString *)updateAdd {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"有版本！"
+                                                                             message:@"有新版本，是否需要升级"
+                                                                      preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         
     }];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"更新" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [[PWRouter sharedInstance] routerURL:updateAdd param:nil];
+    }];
+    [alertController addAction:cancelAction];
+    [alertController addAction:okAction];
     
+    [self.viewController presentViewController:alertController animated:YES completion:nil];
 }
+
+
+- (PWSettingViewModel *)checkUpdateViewModel {
+    if (!_checkUpdateViewModel) {
+        _checkUpdateViewModel = [[PWSettingViewModel alloc] init];
+        _checkUpdateViewModel.title = @"检查更新";
+        @weakify(self);
+        _checkUpdateViewModel.clickBlock = ^{
+            @strongify(self);
+            [self checkUpdate];
+        };
+    }
+    return _checkUpdateViewModel;
+}
+
 
 @end

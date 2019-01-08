@@ -25,15 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"任务";
-    self.tableView.delegate = self.tableViewDelegate;
-    self.tableView.dataSource = self.tableViewDelegate;
-    @weakify(self);
-    [self.dataSource requestWithSuccess:^{
-        @strongify(self);
-        [self.tableView reloadData];
-    } fail:^(NSError *error) {
-        
-    }];
+    
 }
 
 #pragma mark - --------------------UITableViewDelegate--------------
@@ -41,20 +33,5 @@
 #pragma mark - --------------------Event Response--------------
 #pragma mark - --------------------private methods--------------
 #pragma mark - --------------------getters & setters & init members ------------------
-
-- (PWMissionDataSource *)dataSource {
-    if (!_dataSource) {
-        _dataSource = [[PWMissionDataSource alloc] init];
-    }
-    return _dataSource;
-}
-
-- (PWTableViewDelegate *)tableViewDelegate {
-    if (!_tableViewDelegate) {
-        _tableViewDelegate = [[PWTableViewDelegate alloc] initWithtableView:self.tableView];
-        _tableViewDelegate.dataSource = self.dataSource;
-    }
-    return _tableViewDelegate;
-}
 
 @end

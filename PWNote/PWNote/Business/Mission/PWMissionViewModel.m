@@ -19,7 +19,8 @@
 }
 
 - (NSString *)title {
-    return @"标题标题";
+    NSIndexPath *indexPath = self.indexPath;
+    return [NSString stringWithFormat:@"标题标题 - %ld",(long)self.indexPath.row];
 }
 
 @end

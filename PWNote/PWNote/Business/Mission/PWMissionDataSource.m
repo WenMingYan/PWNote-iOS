@@ -9,9 +9,9 @@
 #import "PWMissionDataSource.h"
 #import "PWMissionViewModel.h"
 #import "PWSectionModel.h"
+#import "PWBigTitleViewModel.h"
 
 @interface PWMissionDataSource ()
-
 
 
 @end
@@ -21,8 +21,12 @@
 - (void)requestWithSuccess:(SuccessBlock)successBlock fail:(FailBlock)failBlock {
 #ifdef DEBUG
     PWSectionModel *sectionModel = [[PWSectionModel alloc] init];
-    NSMutableArray<PWMissionViewModel<PWViewModelProtocol> *> *array = [NSMutableArray<PWMissionViewModel<PWViewModelProtocol> *> arrayWithCapacity:10];
-    for (int i = 0; i < 10; i++) {
+    NSMutableArray<PWViewModel<PWViewModelProtocol> *> *array = [NSMutableArray<PWViewModel<PWViewModelProtocol> *> arrayWithCapacity:10];
+    PWBigTitleViewModel *titleModel = [[PWBigTitleViewModel alloc] init];
+    titleModel.subTitle = @"副标题";
+    titleModel.bigTitle = @"大标题大标题";
+    [array addObject:titleModel];
+    for (int i = 0; i < 20; i++) {
         PWMissionViewModel *mission = [[PWMissionViewModel alloc] init];
         [array addObject:mission];
     }

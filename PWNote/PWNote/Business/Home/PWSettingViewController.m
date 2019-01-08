@@ -54,6 +54,7 @@ __PW_ROUTER_REGISTER__
 - (PWSettingDataSource *)dataSource {
     if (!_dataSource) {
         _dataSource = [[PWSettingDataSource alloc] init];
+        _dataSource.viewController = self;
     }
     return _dataSource;
 }

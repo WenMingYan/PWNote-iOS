@@ -10,4 +10,6 @@
 
 @interface PWSettingDataSource : PWDataSource
 
+@property(nonatomic, weak) UIViewController *viewController;/**< VC  */
+
 @end

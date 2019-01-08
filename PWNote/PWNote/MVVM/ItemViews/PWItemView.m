@@ -12,6 +12,13 @@
 
 #pragma mark - --------------------dealloc ------------------
 #pragma mark - --------------------life cycle--------------------
+- (instancetype)init {
+    if (self = [super init]) {
+        self.backgroundColor = [UIColor whiteColor];
+    }
+    return self;
+}
+
 #pragma mark - --------------------UITableViewDelegate--------------
 #pragma mark - --------------------CustomDelegate--------------
 #pragma mark - --------------------Event Response--------------

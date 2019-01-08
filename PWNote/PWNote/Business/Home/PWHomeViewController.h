@@ -6,9 +6,9 @@
 //  Copyright © 2018 明妍. All rights reserved.
 //  主页
 
-#import "PWViewController.h"
+#import "PWBigTitleTableViewController.h"
 #import "PWUtils.h"
 
-@interface PWHomeViewController : PWViewController
+@interface PWHomeViewController : PWBigTitleTableViewController
 
 @end

@@ -16,7 +16,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic, weak) PWDataSource *dataSource;/**< 数据源  */
 
+
+
 - (instancetype)initWithtableView:(UITableView *)tableView;
+
+@property(nonatomic, weak) UIViewController *viewController;
 
 @end
 

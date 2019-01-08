@@ -61,11 +61,12 @@
     if ([model isKindOfClass:[PWMissionViewModel class]]) {
         PWMissionViewModel *viewModel = (PWMissionViewModel *)model;
         self.titleLabel.text = [viewModel title];
+        NSString *oldPrice = self.titleLabel.text;
         if (viewModel.isSelected) {
             self.selectLabel.text = XIconSquarecheckfill;
-            NSString *oldPrice = self.titleLabel.text;
+            self.selectLabel.textColor = [UIColor grayColor];
             NSUInteger length = [oldPrice length];
-            
+            self.titleLabel.textColor = [UIColor grayColor];
             NSMutableAttributedString *attri = [[NSMutableAttributedString alloc] initWithString:oldPrice];
             [attri addAttribute:NSStrikethroughStyleAttributeName value:@(NSUnderlinePatternSolid | NSUnderlineStyleSingle) range:NSMakeRange(0, length)];
             [attri addAttribute:NSStrikethroughColorAttributeName value:[UIColor redColor] range:NSMakeRange(0, length)];
@@ -73,7 +74,8 @@
             
         } else {
             self.selectLabel.text = XIconSquare;
-            NSString *oldPrice = self.titleLabel.text;
+            self.titleLabel.textColor = [UIColor blackColor];
+            self.selectLabel.textColor = [UIColor blackColor];
             NSUInteger length = [oldPrice length];
             NSMutableAttributedString *attri = [[NSMutableAttributedString alloc] initWithString:oldPrice];
             [attri addAttribute:NSStrikethroughColorAttributeName value:[UIColor redColor] range:NSMakeRange(0, length)];

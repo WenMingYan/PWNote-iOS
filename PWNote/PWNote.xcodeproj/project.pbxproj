@@ -33,8 +33,6 @@
 		F81C12FE21B2682F009CF497 /* PWMissionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C12FD21B2682F009CF497 /* PWMissionViewController.m */; };
 		F81C130321B269B8009CF497 /* PWToDoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C130221B269B8009CF497 /* PWToDoListViewController.m */; };
 		F81C130621B269DE009CF497 /* PWKeepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C130521B269DE009CF497 /* PWKeepViewController.m */; };
-		F81C130E21B26EE3009CF497 /* PWSelectTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C130D21B26EE3009CF497 /* PWSelectTitleView.m */; };
-		F81C131121B27015009CF497 /* PWSelectTitleItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C131021B27015009CF497 /* PWSelectTitleItemCell.m */; };
 		F81C131421B37A24009CF497 /* PWMissionDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C131321B37A24009CF497 /* PWMissionDataSource.m */; };
 		F81C131721B37DAC009CF497 /* PWMissionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C131621B37DAC009CF497 /* PWMissionViewModel.m */; };
 		F81C131A21B37DE0009CF497 /* PWMissionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C131921B37DE0009CF497 /* PWMissionModel.m */; };
@@ -64,6 +62,11 @@
 		F838F1D521AA4B2700C309F2 /* PWNoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F838F1D421AA4B2700C309F2 /* PWNoteTests.m */; };
 		F838F1E021AA4B2700C309F2 /* PWNoteUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F838F1DF21AA4B2700C309F2 /* PWNoteUITests.m */; };
 		F838F1F221AA4C2900C309F2 /* PWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F838F1F121AA4C2900C309F2 /* PWViewController.m */; };
+		F86F1BAD21E336EC0075462E /* PWBigTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F86F1BAC21E336EC0075462E /* PWBigTitleView.m */; };
+		F86F1BB021E33DDC0075462E /* PWBigTitleViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F86F1BAF21E33DDC0075462E /* PWBigTitleViewModel.m */; };
+		F86F1BB321E343AD0075462E /* PWBigTitleCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F86F1BB221E343AD0075462E /* PWBigTitleCollectionViewController.m */; };
+		F86F1BBA21E34C9B0075462E /* PWBigTitleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F86F1BB821E34C9B0075462E /* PWBigTitleTableViewController.m */; };
+		F86F1BBF21E358260075462E /* PWInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = F86F1BBE21E358260075462E /* PWInteractor.m */; };
 		F87872B821B96DFF00CA34CE /* PWCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87872B721B96DFF00CA34CE /* PWCategoryViewController.m */; };
 		F87872BB21B9705E00CA34CE /* PWCategoryDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F87872BA21B9705E00CA34CE /* PWCategoryDataSource.m */; };
 		F87872BE21B9721D00CA34CE /* PWCollectionViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87872BD21B9721D00CA34CE /* PWCollectionViewViewController.m */; };
@@ -153,10 +156,6 @@
 		F81C130221B269B8009CF497 /* PWToDoListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWToDoListViewController.m; sourceTree = "<group>"; };
 		F81C130421B269DE009CF497 /* PWKeepViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWKeepViewController.h; sourceTree = "<group>"; };
 		F81C130521B269DE009CF497 /* PWKeepViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWKeepViewController.m; sourceTree = "<group>"; };
-		F81C130C21B26EE3009CF497 /* PWSelectTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWSelectTitleView.h; sourceTree = "<group>"; };
-		F81C130D21B26EE3009CF497 /* PWSelectTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWSelectTitleView.m; sourceTree = "<group>"; };
-		F81C130F21B27015009CF497 /* PWSelectTitleItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWSelectTitleItemCell.h; sourceTree = "<group>"; };
-		F81C131021B27015009CF497 /* PWSelectTitleItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWSelectTitleItemCell.m; sourceTree = "<group>"; };
 		F81C131221B37A24009CF497 /* PWMissionDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWMissionDataSource.h; sourceTree = "<group>"; };
 		F81C131321B37A24009CF497 /* PWMissionDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWMissionDataSource.m; sourceTree = "<group>"; };
 		F81C131521B37DAC009CF497 /* PWMissionViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWMissionViewModel.h; sourceTree = "<group>"; };
@@ -215,6 +214,16 @@
 		F838F1E121AA4B2700C309F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F838F1F021AA4C2900C309F2 /* PWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWViewController.h; sourceTree = "<group>"; };
 		F838F1F121AA4C2900C309F2 /* PWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWViewController.m; sourceTree = "<group>"; };
+		F86F1BAB21E336EC0075462E /* PWBigTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWBigTitleView.h; sourceTree = "<group>"; };
+		F86F1BAC21E336EC0075462E /* PWBigTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWBigTitleView.m; sourceTree = "<group>"; };
+		F86F1BAE21E33DDC0075462E /* PWBigTitleViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWBigTitleViewModel.h; sourceTree = "<group>"; };
+		F86F1BAF21E33DDC0075462E /* PWBigTitleViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWBigTitleViewModel.m; sourceTree = "<group>"; };
+		F86F1BB121E343AD0075462E /* PWBigTitleCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWBigTitleCollectionViewController.h; sourceTree = "<group>"; };
+		F86F1BB221E343AD0075462E /* PWBigTitleCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWBigTitleCollectionViewController.m; sourceTree = "<group>"; };
+		F86F1BB721E34C9B0075462E /* PWBigTitleTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWBigTitleTableViewController.h; sourceTree = "<group>"; };
+		F86F1BB821E34C9B0075462E /* PWBigTitleTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWBigTitleTableViewController.m; sourceTree = "<group>"; };
+		F86F1BBD21E358260075462E /* PWInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWInteractor.h; sourceTree = "<group>"; };
+		F86F1BBE21E358260075462E /* PWInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWInteractor.m; sourceTree = "<group>"; };
 		F87872B621B96DFF00CA34CE /* PWCategoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWCategoryViewController.h; sourceTree = "<group>"; };
 		F87872B721B96DFF00CA34CE /* PWCategoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWCategoryViewController.m; sourceTree = "<group>"; };
 		F87872B921B9705E00CA34CE /* PWCategoryDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWCategoryDataSource.h; sourceTree = "<group>"; };
@@ -361,12 +370,17 @@
 		F81C12A721AC3B84009CF497 /* VCs */ = {
 			isa = PBXGroup;
 			children = (
+				F86F1BAA21E336E10075462E /* BigTitle */,
 				F838F1F021AA4C2900C309F2 /* PWViewController.h */,
 				F838F1F121AA4C2900C309F2 /* PWViewController.m */,
 				F81C12A821AC3BA2009CF497 /* PWTableViewController.h */,
 				F81C12A921AC3BA2009CF497 /* PWTableViewController.m */,
 				F87872BC21B9721D00CA34CE /* PWCollectionViewViewController.h */,
 				F87872BD21B9721D00CA34CE /* PWCollectionViewViewController.m */,
+				F86F1BB121E343AD0075462E /* PWBigTitleCollectionViewController.h */,
+				F86F1BB221E343AD0075462E /* PWBigTitleCollectionViewController.m */,
+				F86F1BB721E34C9B0075462E /* PWBigTitleTableViewController.h */,
+				F86F1BB821E34C9B0075462E /* PWBigTitleTableViewController.m */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -523,10 +537,6 @@
 		F81C130B21B26ED1009CF497 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F81C130C21B26EE3009CF497 /* PWSelectTitleView.h */,
-				F81C130D21B26EE3009CF497 /* PWSelectTitleView.m */,
-				F81C130F21B27015009CF497 /* PWSelectTitleItemCell.h */,
-				F81C131021B27015009CF497 /* PWSelectTitleItemCell.m */,
 				F81C132121B3CE61009CF497 /* PWUserView.h */,
 				F81C132221B3CE61009CF497 /* PWUserView.m */,
 			);
@@ -632,6 +642,7 @@
 		F838F1EF21AA4C1E00C309F2 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				F86F1BBC21E3581C0075462E /* Interactors */,
 				F81C130721B26AE2009CF497 /* Views */,
 				F81C12BF21AC4B58009CF497 /* Category */,
 				F81C12B921AC4608009CF497 /* ItemViews */,
@@ -644,6 +655,26 @@
 				F81C127A21AA4EC6009CF497 /* PWNavigationViewController.m */,
 			);
 			path = MVVM;
+			sourceTree = "<group>";
+		};
+		F86F1BAA21E336E10075462E /* BigTitle */ = {
+			isa = PBXGroup;
+			children = (
+				F86F1BAB21E336EC0075462E /* PWBigTitleView.h */,
+				F86F1BAC21E336EC0075462E /* PWBigTitleView.m */,
+				F86F1BAE21E33DDC0075462E /* PWBigTitleViewModel.h */,
+				F86F1BAF21E33DDC0075462E /* PWBigTitleViewModel.m */,
+			);
+			path = BigTitle;
+			sourceTree = "<group>";
+		};
+		F86F1BBC21E3581C0075462E /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				F86F1BBD21E358260075462E /* PWInteractor.h */,
+				F86F1BBE21E358260075462E /* PWInteractor.m */,
+			);
+			path = Interactors;
 			sourceTree = "<group>";
 		};
 		F87872B421B96CC800CA34CE /* Skin */ = {
@@ -825,8 +856,8 @@
 				F81C132321B3CE61009CF497 /* PWUserView.m in Sources */,
 				F87872C121B9760D00CA34CE /* UICollectionViewCell+PWItemView.m in Sources */,
 				F81C131A21B37DE0009CF497 /* PWMissionModel.m in Sources */,
-				F81C131121B27015009CF497 /* PWSelectTitleItemCell.m in Sources */,
 				F81C12AE21AC43F1009CF497 /* PWDataSource.m in Sources */,
+				F86F1BBA21E34C9B0075462E /* PWBigTitleTableViewController.m in Sources */,
 				F81C135721B400DA009CF497 /* MBProgressHUD+PWUtils.m in Sources */,
 				F87872C421BC0B4800CA34CE /* PWCategorySectionModel.m in Sources */,
 				F887CC7E21D205A00009F5EC /* PWUpdateUtils.m in Sources */,
@@ -835,6 +866,7 @@
 				F81C128721AA4FA8009CF497 /* PWHomeViewController.m in Sources */,
 				F81C134321B3F3B2009CF497 /* PWNetworkService.m in Sources */,
 				F81C133C21B3F257009CF497 /* PWUserManager.m in Sources */,
+				F86F1BAD21E336EC0075462E /* PWBigTitleView.m in Sources */,
 				F81C132D21B3D971009CF497 /* PWTodoListViewModel.m in Sources */,
 				F81C131721B37DAC009CF497 /* PWMissionViewModel.m in Sources */,
 				F887CC7B21D204DD0009F5EC /* PWApplicationMessages.m in Sources */,
@@ -864,18 +896,20 @@
 				F81C134921B3F99A009CF497 /* PWSettingViewModel.m in Sources */,
 				F81C12C721AC4DFB009CF497 /* PWMoreDataSource.m in Sources */,
 				F81C12B721AC4559009CF497 /* PWSectionModel.m in Sources */,
+				F86F1BBF21E358260075462E /* PWInteractor.m in Sources */,
 				F81C12FE21B2682F009CF497 /* PWMissionViewController.m in Sources */,
 				F87872BE21B9721D00CA34CE /* PWCollectionViewViewController.m in Sources */,
 				F81C133921B3DD13009CF497 /* PWTableViewAutoAlyoutDelegate.m in Sources */,
 				F81C133F21B3F25F009CF497 /* PWUser.m in Sources */,
 				F87872BB21B9705E00CA34CE /* PWCategoryDataSource.m in Sources */,
-				F81C130E21B26EE3009CF497 /* PWSelectTitleView.m in Sources */,
 				F81C128321AA4F32009CF497 /* PWTestHomeViewController.m in Sources */,
 				F81C129F21AAF676009CF497 /* PWMoreViewController.m in Sources */,
+				F86F1BB321E343AD0075462E /* PWBigTitleCollectionViewController.m in Sources */,
 				F81C12A621AAFEFA009CF497 /* PWTableViewDelegate.m in Sources */,
 				F87872C721BC0BA200CA34CE /* PWCategoryViewModel.m in Sources */,
 				F81C128B21AA4FF0009CF497 /* PWLocalConfig.m in Sources */,
 				F81C128E21AA4FFE009CF497 /* PWLocalManager.m in Sources */,
+				F86F1BB021E33DDC0075462E /* PWBigTitleViewModel.m in Sources */,
 				F81C131421B37A24009CF497 /* PWMissionDataSource.m in Sources */,
 				F81C131D21B37E10009CF497 /* PWMissionItemView.m in Sources */,
 				F838F1F221AA4C2900C309F2 /* PWViewController.m in Sources */,
@@ -1054,7 +1088,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J75WQTUZC9;
 				INFOPLIST_FILE = PWNote/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1073,7 +1107,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J75WQTUZC9;
 				INFOPLIST_FILE = PWNote/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

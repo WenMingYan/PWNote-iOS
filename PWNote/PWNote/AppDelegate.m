@@ -25,7 +25,6 @@
     PWNavigationViewController *vc = [[PWNavigationViewController alloc] initWithRootViewController:home];
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
-    
     [[PWRouter sharedInstance] setupWithNavigation:vc];
     
     return YES;
