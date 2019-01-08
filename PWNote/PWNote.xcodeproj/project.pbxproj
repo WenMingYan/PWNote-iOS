@@ -67,6 +67,12 @@
 		F86F1BB321E343AD0075462E /* PWBigTitleCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F86F1BB221E343AD0075462E /* PWBigTitleCollectionViewController.m */; };
 		F86F1BBA21E34C9B0075462E /* PWBigTitleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F86F1BB821E34C9B0075462E /* PWBigTitleTableViewController.m */; };
 		F86F1BBF21E358260075462E /* PWInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = F86F1BBE21E358260075462E /* PWInteractor.m */; };
+		F86F1BC321E43A750075462E /* PWCategoryItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = F86F1BC221E43A750075462E /* PWCategoryItemView.m */; };
+		F86F1BC721E43B260075462E /* PWSkinManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F86F1BC621E43B260075462E /* PWSkinManager.m */; };
+		F86F1BCB21E442D70075462E /* PWCategoryUserItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = F86F1BCA21E442D70075462E /* PWCategoryUserItemView.m */; };
+		F86F1BCF21E4439B0075462E /* PWCategoryUserViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F86F1BCE21E4439B0075462E /* PWCategoryUserViewModel.m */; };
+		F86F1BD321E4495F0075462E /* UIImageView+PWWebCatch.m in Sources */ = {isa = PBXBuildFile; fileRef = F86F1BD221E4495F0075462E /* UIImageView+PWWebCatch.m */; };
+		F86F1BD621E44A160075462E /* PWImageConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F86F1BD521E44A160075462E /* PWImageConfigModel.m */; };
 		F87872B821B96DFF00CA34CE /* PWCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87872B721B96DFF00CA34CE /* PWCategoryViewController.m */; };
 		F87872BB21B9705E00CA34CE /* PWCategoryDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F87872BA21B9705E00CA34CE /* PWCategoryDataSource.m */; };
 		F87872BE21B9721D00CA34CE /* PWCollectionViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87872BD21B9721D00CA34CE /* PWCollectionViewViewController.m */; };
@@ -75,6 +81,8 @@
 		F87872C721BC0BA200CA34CE /* PWCategoryViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F87872C621BC0BA200CA34CE /* PWCategoryViewModel.m */; };
 		F887CC7B21D204DD0009F5EC /* PWApplicationMessages.m in Sources */ = {isa = PBXBuildFile; fileRef = F887CC7A21D204DD0009F5EC /* PWApplicationMessages.m */; };
 		F887CC7E21D205A00009F5EC /* PWUpdateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F887CC7D21D205A00009F5EC /* PWUpdateUtils.m */; };
+		F8FD7CB821E49649000145D6 /* PWCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FD7CB721E49649000145D6 /* PWCategoryModel.m */; };
+		F8FD7CBB21E4A23C000145D6 /* NSString+PWEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FD7CBA21E4A23C000145D6 /* NSString+PWEmpty.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -224,6 +232,18 @@
 		F86F1BB821E34C9B0075462E /* PWBigTitleTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWBigTitleTableViewController.m; sourceTree = "<group>"; };
 		F86F1BBD21E358260075462E /* PWInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWInteractor.h; sourceTree = "<group>"; };
 		F86F1BBE21E358260075462E /* PWInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWInteractor.m; sourceTree = "<group>"; };
+		F86F1BC121E43A750075462E /* PWCategoryItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWCategoryItemView.h; sourceTree = "<group>"; };
+		F86F1BC221E43A750075462E /* PWCategoryItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWCategoryItemView.m; sourceTree = "<group>"; };
+		F86F1BC521E43B260075462E /* PWSkinManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PWSkinManager.h; path = PWNote/Business/Category/PWSkinManager.h; sourceTree = SOURCE_ROOT; };
+		F86F1BC621E43B260075462E /* PWSkinManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PWSkinManager.m; path = PWNote/Business/Category/PWSkinManager.m; sourceTree = SOURCE_ROOT; };
+		F86F1BC921E442D70075462E /* PWCategoryUserItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWCategoryUserItemView.h; sourceTree = "<group>"; };
+		F86F1BCA21E442D70075462E /* PWCategoryUserItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWCategoryUserItemView.m; sourceTree = "<group>"; };
+		F86F1BCD21E4439B0075462E /* PWCategoryUserViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWCategoryUserViewModel.h; sourceTree = "<group>"; };
+		F86F1BCE21E4439B0075462E /* PWCategoryUserViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWCategoryUserViewModel.m; sourceTree = "<group>"; };
+		F86F1BD121E4495F0075462E /* UIImageView+PWWebCatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+PWWebCatch.h"; sourceTree = "<group>"; };
+		F86F1BD221E4495F0075462E /* UIImageView+PWWebCatch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+PWWebCatch.m"; sourceTree = "<group>"; };
+		F86F1BD421E44A160075462E /* PWImageConfigModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWImageConfigModel.h; sourceTree = "<group>"; };
+		F86F1BD521E44A160075462E /* PWImageConfigModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWImageConfigModel.m; sourceTree = "<group>"; };
 		F87872B621B96DFF00CA34CE /* PWCategoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWCategoryViewController.h; sourceTree = "<group>"; };
 		F87872B721B96DFF00CA34CE /* PWCategoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWCategoryViewController.m; sourceTree = "<group>"; };
 		F87872B921B9705E00CA34CE /* PWCategoryDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWCategoryDataSource.h; sourceTree = "<group>"; };
@@ -240,6 +260,10 @@
 		F887CC7A21D204DD0009F5EC /* PWApplicationMessages.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWApplicationMessages.m; sourceTree = "<group>"; };
 		F887CC7C21D205A00009F5EC /* PWUpdateUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWUpdateUtils.h; sourceTree = "<group>"; };
 		F887CC7D21D205A00009F5EC /* PWUpdateUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWUpdateUtils.m; sourceTree = "<group>"; };
+		F8FD7CB621E49649000145D6 /* PWCategoryModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWCategoryModel.h; sourceTree = "<group>"; };
+		F8FD7CB721E49649000145D6 /* PWCategoryModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWCategoryModel.m; sourceTree = "<group>"; };
+		F8FD7CB921E4A23C000145D6 /* NSString+PWEmpty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+PWEmpty.h"; sourceTree = "<group>"; };
+		F8FD7CBA21E4A23C000145D6 /* NSString+PWEmpty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+PWEmpty.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -570,6 +594,8 @@
 			children = (
 				F81C135521B400DA009CF497 /* MBProgressHUD+PWUtils.h */,
 				F81C135621B400DA009CF497 /* MBProgressHUD+PWUtils.m */,
+				F8FD7CB921E4A23C000145D6 /* NSString+PWEmpty.h */,
+				F8FD7CBA21E4A23C000145D6 /* NSString+PWEmpty.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -599,7 +625,8 @@
 		F838F1BA21AA4B2600C309F2 /* PWNote */ = {
 			isa = PBXGroup;
 			children = (
-				F87872B421B96CC800CA34CE /* Skin */,
+				F86F1BD021E449410075462E /* ImageCatch */,
+				F86F1BC421E43B130075462E /* Skin */,
 				F81C134021B3F3A0009CF497 /* Network */,
 				F81C12D121B2667B009CF497 /* Iconfont */,
 				F81C12C421AC4DD2009CF497 /* Business */,
@@ -677,16 +704,50 @@
 			path = Interactors;
 			sourceTree = "<group>";
 		};
-		F87872B421B96CC800CA34CE /* Skin */ = {
+		F86F1BC421E43B130075462E /* Skin */ = {
 			isa = PBXGroup;
 			children = (
+				F86F1BC521E43B260075462E /* PWSkinManager.h */,
+				F86F1BC621E43B260075462E /* PWSkinManager.m */,
 			);
 			path = Skin;
+			sourceTree = "<group>";
+		};
+		F86F1BC821E442C80075462E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F86F1BC921E442D70075462E /* PWCategoryUserItemView.h */,
+				F86F1BCA21E442D70075462E /* PWCategoryUserItemView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F86F1BCC21E443750075462E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F86F1BCD21E4439B0075462E /* PWCategoryUserViewModel.h */,
+				F86F1BCE21E4439B0075462E /* PWCategoryUserViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F86F1BD021E449410075462E /* ImageCatch */ = {
+			isa = PBXGroup;
+			children = (
+				F86F1BD121E4495F0075462E /* UIImageView+PWWebCatch.h */,
+				F86F1BD221E4495F0075462E /* UIImageView+PWWebCatch.m */,
+				F86F1BD421E44A160075462E /* PWImageConfigModel.h */,
+				F86F1BD521E44A160075462E /* PWImageConfigModel.m */,
+			);
+			path = ImageCatch;
 			sourceTree = "<group>";
 		};
 		F87872B521B96DE500CA34CE /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				F8FD7CB521E4963A000145D6 /* Model */,
+				F86F1BCC21E443750075462E /* ViewModel */,
+				F86F1BC821E442C80075462E /* View */,
 				F87872B621B96DFF00CA34CE /* PWCategoryViewController.h */,
 				F87872B721B96DFF00CA34CE /* PWCategoryViewController.m */,
 				F87872B921B9705E00CA34CE /* PWCategoryDataSource.h */,
@@ -695,8 +756,19 @@
 				F87872C321BC0B4800CA34CE /* PWCategorySectionModel.m */,
 				F87872C521BC0BA200CA34CE /* PWCategoryViewModel.h */,
 				F87872C621BC0BA200CA34CE /* PWCategoryViewModel.m */,
+				F86F1BC121E43A750075462E /* PWCategoryItemView.h */,
+				F86F1BC221E43A750075462E /* PWCategoryItemView.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		F8FD7CB521E4963A000145D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8FD7CB621E49649000145D6 /* PWCategoryModel.h */,
+				F8FD7CB721E49649000145D6 /* PWCategoryModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -853,6 +925,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F86F1BC721E43B260075462E /* PWSkinManager.m in Sources */,
 				F81C132321B3CE61009CF497 /* PWUserView.m in Sources */,
 				F87872C121B9760D00CA34CE /* UICollectionViewCell+PWItemView.m in Sources */,
 				F81C131A21B37DE0009CF497 /* PWMissionModel.m in Sources */,
@@ -866,10 +939,14 @@
 				F81C128721AA4FA8009CF497 /* PWHomeViewController.m in Sources */,
 				F81C134321B3F3B2009CF497 /* PWNetworkService.m in Sources */,
 				F81C133C21B3F257009CF497 /* PWUserManager.m in Sources */,
+				F8FD7CB821E49649000145D6 /* PWCategoryModel.m in Sources */,
+				F86F1BCB21E442D70075462E /* PWCategoryUserItemView.m in Sources */,
 				F86F1BAD21E336EC0075462E /* PWBigTitleView.m in Sources */,
+				F86F1BD621E44A160075462E /* PWImageConfigModel.m in Sources */,
 				F81C132D21B3D971009CF497 /* PWTodoListViewModel.m in Sources */,
 				F81C131721B37DAC009CF497 /* PWMissionViewModel.m in Sources */,
 				F887CC7B21D204DD0009F5EC /* PWApplicationMessages.m in Sources */,
+				F86F1BCF21E4439B0075462E /* PWCategoryUserViewModel.m in Sources */,
 				F81C12A321AAFEE9009CF497 /* PWCollectionDelegate.m in Sources */,
 				F81C134621B3F981009CF497 /* PWSettingDataSource.m in Sources */,
 				F838F1C021AA4B2600C309F2 /* ViewController.m in Sources */,
@@ -879,6 +956,7 @@
 				F81C12E921B2667B009CF497 /* AMButtonFactory.m in Sources */,
 				F81C12CA21AC4EBB009CF497 /* PWMoreViewModel.m in Sources */,
 				F838F1BD21AA4B2600C309F2 /* AppDelegate.m in Sources */,
+				F86F1BC321E43A750075462E /* PWCategoryItemView.m in Sources */,
 				F81C133621B3DB65009CF497 /* PWKeepItemView.m in Sources */,
 				F81C127B21AA4EC6009CF497 /* PWNavigationViewController.m in Sources */,
 				F81C129121AA551F009CF497 /* PWRouter.m in Sources */,
@@ -895,6 +973,7 @@
 				F81C12BC21AC461B009CF497 /* PWItemView.m in Sources */,
 				F81C134921B3F99A009CF497 /* PWSettingViewModel.m in Sources */,
 				F81C12C721AC4DFB009CF497 /* PWMoreDataSource.m in Sources */,
+				F8FD7CBB21E4A23C000145D6 /* NSString+PWEmpty.m in Sources */,
 				F81C12B721AC4559009CF497 /* PWSectionModel.m in Sources */,
 				F86F1BBF21E358260075462E /* PWInteractor.m in Sources */,
 				F81C12FE21B2682F009CF497 /* PWMissionViewController.m in Sources */,
@@ -907,6 +986,7 @@
 				F86F1BB321E343AD0075462E /* PWBigTitleCollectionViewController.m in Sources */,
 				F81C12A621AAFEFA009CF497 /* PWTableViewDelegate.m in Sources */,
 				F87872C721BC0BA200CA34CE /* PWCategoryViewModel.m in Sources */,
+				F86F1BD321E4495F0075462E /* UIImageView+PWWebCatch.m in Sources */,
 				F81C128B21AA4FF0009CF497 /* PWLocalConfig.m in Sources */,
 				F81C128E21AA4FFE009CF497 /* PWLocalManager.m in Sources */,
 				F86F1BB021E33DDC0075462E /* PWBigTitleViewModel.m in Sources */,

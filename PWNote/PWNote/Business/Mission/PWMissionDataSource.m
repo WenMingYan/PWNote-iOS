@@ -22,7 +22,7 @@
 #ifdef DEBUG
     PWSectionModel *sectionModel = [[PWSectionModel alloc] init];
     NSMutableArray<PWViewModel<PWViewModelProtocol> *> *array = [NSMutableArray<PWViewModel<PWViewModelProtocol> *> arrayWithCapacity:10];
-    PWBigTitleViewModel *titleModel = [[PWBigTitleViewModel alloc] init];
+    PWBigTitleViewModel *titleModel = self.titleModel;
     titleModel.subTitle = @"副标题";
     titleModel.bigTitle = @"大标题大标题";
     [array addObject:titleModel];
@@ -38,6 +38,13 @@
 #endif
     //TODO: wmy 连接网络
     
+}
+
+- (PWBigTitleViewModel *)titleModel {
+    if (!_titleModel) {
+        _titleModel = [[PWBigTitleViewModel alloc] init];
+    }
+    return _titleModel;
 }
 
 @end

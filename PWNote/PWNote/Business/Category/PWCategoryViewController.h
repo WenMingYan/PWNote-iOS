@@ -6,9 +6,9 @@
 //  Copyright © 2018 明妍. All rights reserved.
 //
 
-#import "PWCollectionViewViewController.h"
+#import "PWTableViewController.h"
 
-@interface PWCategoryViewController : PWCollectionViewViewController
+@interface PWCategoryViewController : PWTableViewController
 
 @end
 

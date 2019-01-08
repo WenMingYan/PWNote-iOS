@@ -7,11 +7,37 @@
 //
 
 #import "PWCategoryViewModel.h"
+#import "PWCategoryItemView.h"
+#import "PWCategoryModel.h"
+
+@interface PWCategoryViewModel ()
+
+@property (nonatomic, strong) PWCategoryModel *model;
+
+@end
 
 @implementation PWCategoryViewModel
 
-- (NSString *)title {
-    return @"标题";
+- (Class)itemViewClass {
+    return [PWCategoryItemView class];
 }
+
+- (CGSize)itemSize {
+    return CGSizeMake(kScreenWidth, 44);
+}
+
+- (UIColor *)iconColor {
+    //TODO: wmy 颜色
+    return kThemeColor;
+}
+
+- (NSString *)title {
+    return self.model.title;
+}
+
+- (NSString *)number {
+    return @(self.model.number).stringValue;
+}
+
 
 @end

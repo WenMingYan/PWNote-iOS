@@ -11,11 +11,12 @@
 @protocol PWAction <NSObject>
 
 
+
 @end
 
-@interface PWInteractor : NSObject
+@interface PWInteractor : NSObject <PWAction>
 
-- (void)registerActionName:(NSString *)actionName forAction:(id<PWAction>)action;
+- (void)registerTarget:(id<PWAction>)action action:(SEL)select forEventName:(NSString *)eventName;
 
 - (void)onActionName:(NSString *)action;
 

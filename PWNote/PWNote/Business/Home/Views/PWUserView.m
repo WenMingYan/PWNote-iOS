@@ -10,6 +10,7 @@
 #import <Masonry/Masonry.h>
 #import "UIView+ALMAdditons.h"
 #import "AMIconfont.h"
+#import "PWSkinManager.h"
 
 @interface PWUserView ()
 
@@ -37,10 +38,6 @@
 }
 
 - (void)initView {
-#if DEBUG
-    self.layer.borderWidth = 1;
-    self.layer.borderColor = [UIColor redColor].CGColor;
-#endif
     [self addSubview:self.userIconImageView];
     [self.userIconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.and.height.mas_equalTo(56);
@@ -83,7 +80,7 @@
 - (UILabel *)defaultLabel {
     if (!_defaultLabel) {
         _defaultLabel = [[UILabel alloc] init];
-        _defaultLabel.textColor = [UIColor orangeColor];
+        _defaultLabel.textColor = kThemeColor;
         _defaultLabel.font = [AMIconfont fontWithSize:32];
         _defaultLabel.text = XIconSmile;
     }
@@ -92,11 +89,7 @@
 - (UIImageView *)userIconImageView {
     if (!_userIconImageView) {
         _userIconImageView = [[UIImageView alloc] init];
-        _userIconImageView.backgroundColor = [UIColor lightGrayColor];
-#if DEBUG
-        _userIconImageView.layer.borderWidth = 1;
-        _userIconImageView.layer.borderColor = [UIColor redColor].CGColor;
-#endif
+        _userIconImageView.backgroundColor = kLightSubTitleColor;
     }
     return _userIconImageView;
 }

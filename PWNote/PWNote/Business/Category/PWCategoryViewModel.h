@@ -14,6 +14,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSString *)title;
 
+- (NSString *)number;
+
+- (UIColor *)iconColor;
+
 @end
 
 NS_ASSUME_NONNULL_END

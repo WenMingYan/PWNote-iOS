@@ -14,7 +14,7 @@
 #pragma mark - --------------------life cycle--------------------
 - (instancetype)init {
     if (self = [super init]) {
-        self.backgroundColor = [UIColor whiteColor];
+        self.backgroundColor = kWhiteColor;
     }
     return self;
 }

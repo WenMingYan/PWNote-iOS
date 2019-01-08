@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "MBProgressHUD+PWUtils.h"
+#import "PWViewModel.h"
 #import "PWUtils.h"
 #import "PWViewModelProtocol.h"
+#import "PWSkinManager.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -18,8 +20,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) UIView<PWItemViewProtocol> *itemView;
 @property (nonatomic, strong) NSIndexPath *indexPath;
 @property (nonatomic, strong) NSObject *model;
-
-
 
 @end
 

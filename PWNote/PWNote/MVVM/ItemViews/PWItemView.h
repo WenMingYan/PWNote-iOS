@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <Masonry/Masonry.h>
+#import "UIImageView+PWWebCatch.h"
 #import "AMIconfont.h"
 #import "PWUtils.h"
 #import "PWItemViewProtocol.h"
 #import "PWViewModelProtocol.h"
+#import "PWSkinManager.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

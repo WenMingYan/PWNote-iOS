@@ -13,6 +13,7 @@
 #import "PWRouter.h"
 #import "PWRouterAction.h"
 #import "PWUtils.h"
+#import "PWSkinManager.h"
 
 @interface PWViewController : UIViewController
 

@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PWUser : NSObject
 
+@property (nonatomic, strong) NSString *userName;
+@property (nonatomic, strong) NSString *iconImageUrl;
 @end
 
 NS_ASSUME_NONNULL_END

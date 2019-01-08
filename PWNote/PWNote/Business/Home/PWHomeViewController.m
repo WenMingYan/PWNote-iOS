@@ -17,6 +17,7 @@
 #import "PWRouter.h"
 #import "PWMissionDataSource.h"
 #import "PWTableViewDelegate.h"
+#import "PWBigTitleViewModel.h"
 
 @interface PWHomeViewController () <UIScrollViewDelegate>
 
@@ -83,6 +84,7 @@ __PW_ROUTER_REGISTER__
     [self.dataSource requestWithSuccess:^{
         @strongify(self);
         [self.tableView reloadData];
+        self.title = [self.dataSource.titleModel bigTitle];
     } fail:^(NSError *error) {
         
     }];
@@ -189,7 +191,7 @@ __PW_ROUTER_REGISTER__
         _settingBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         _settingBtn.titleLabel.font = [AMIconfont fontWithSize:24];
         [_settingBtn setTitle:XIconShezhi forState:UIControlStateNormal];
-        [_settingBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [_settingBtn setTitleColor:kWhiteColor forState:UIControlStateNormal];
         [_settingBtn addTarget:self action:@selector(onClickSetting) forControlEvents:UIControlEventTouchUpInside];
     }
     return _settingBtn;
@@ -201,8 +203,7 @@ __PW_ROUTER_REGISTER__
         _testBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_testBtn addTarget:self action:@selector(onClickTest) forControlEvents:UIControlEventTouchUpInside];
         [_testBtn setTitle:@"test" forState:UIControlStateNormal];
-        [_testBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [_testBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [_testBtn setTitleColor:kWhiteColor forState:UIControlStateNormal];
     }
     return _testBtn;
 }
@@ -211,10 +212,10 @@ __PW_ROUTER_REGISTER__
 - (UIButton *)categoryBtn {
     if (!_categoryBtn) {
         _categoryBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_categoryBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_categoryBtn setTitleColor:kTitleColor forState:UIControlStateNormal];
         [_categoryBtn addTarget:self action:@selector(onClickCategory) forControlEvents:UIControlEventTouchUpInside];
         _categoryBtn.titleLabel.font = [AMIconfont fontWithSize:24];
-        [_categoryBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [_categoryBtn setTitleColor:kWhiteColor forState:UIControlStateNormal];
         [_categoryBtn setTitle:XIconCategory forState:UIControlStateNormal];
     }
     return _categoryBtn;
@@ -230,7 +231,7 @@ __PW_ROUTER_REGISTER__
 - (UIView *)maskView {
     if (!_maskView) {
         _maskView = [[UIView alloc] init];
-        _maskView.backgroundColor = [UIColor lightGrayColor];
+        _maskView.backgroundColor = kLightSubTitleColor;
         _maskView.alpha = 0.6;
         UITapGestureRecognizer *maskTap = [[UITapGestureRecognizer alloc]initWithTarget:self
                                                                                  action:@selector(onClickCategory)];

@@ -56,4 +56,11 @@ static PWUserManager *__onetimeClass;
     }];
 }
 
+- (PWUser *)user {
+    if (!_user) {
+        _user = [[PWUser alloc] init];
+    }
+    return _user;
+}
+
 @end

@@ -74,13 +74,9 @@
 - (UILabel *)contentLabel {
     if (!_contentLabel) {
         _contentLabel = [[UILabel alloc] init];
-        _contentLabel.textColor = [UIColor grayColor];
+        _contentLabel.textColor = kSubTitleColor;
         _contentLabel.font = [UIFont systemFontOfSize:14];
         _contentLabel.numberOfLines = 4;
-#if DEBUG
-        _contentLabel.layer.borderWidth = 1;
-        _contentLabel.layer.borderColor = [UIColor redColor].CGColor;
-#endif
     }
     return _contentLabel;
 }
@@ -88,12 +84,8 @@
 - (UILabel *)titleLabel {
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc] init];
-        _titleLabel.textColor = [UIColor blackColor];
+        _titleLabel.textColor = kTitleColor;
         _titleLabel.font = [UIFont systemFontOfSize:18];
-#if DEBUG
-        _titleLabel.layer.borderWidth = 1;
-        _titleLabel.layer.borderColor = [UIColor redColor].CGColor;
-#endif
     }
     return _titleLabel;
 }

@@ -11,6 +11,7 @@
 @interface PWTableViewController ()
 
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) PWTableViewDelegate *tableViewDelegate;
 
 @end
 
@@ -25,6 +26,8 @@
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(self.view);
     }];
+    self.tableView.delegate = self.tableViewDelegate;
+    self.tableView.dataSource = self.tableViewDelegate;
 }
 
 #pragma mark - --------------------UITableViewDelegate--------------
@@ -39,6 +42,13 @@
         _tableView.separatorStyle = UITableViewCellEditingStyleNone;
     }
     return _tableView;
+}
+
+- (PWTableViewDelegate *)tableViewDelegate {
+    if (!_tableViewDelegate) {
+        _tableViewDelegate = [[PWTableViewDelegate alloc] initWithtableView:self.tableView];
+    }
+    return _tableViewDelegate;
 }
 
 @end

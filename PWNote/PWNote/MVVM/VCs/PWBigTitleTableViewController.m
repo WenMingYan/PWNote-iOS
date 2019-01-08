@@ -29,7 +29,7 @@ CGFloat kTableViewDiff = 60;
     
     self.edgesForExtendedLayout = UIRectEdgeAll;
     self.tableView.backgroundColor = [UIColor clearColor];
-    self.view.backgroundColor = [UIColor orangeColor];
+    self.view.backgroundColor = kThemeColor;
     self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
     [self.view addSubview:self.tableView];
     self.tableView.delegate = self.tableViewDelegate;
@@ -95,7 +95,7 @@ CGFloat kTableViewDiff = 60;
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc] init];
         _titleLabel.font = [UIFont systemFontOfSize:14 weight:UIFontWeightBold];
-        _titleLabel.textColor = [UIColor whiteColor];
+        _titleLabel.textColor = kWhiteColor;
     }
     return _titleLabel;
 }
@@ -123,7 +123,7 @@ CGFloat kTableViewDiff = 60;
 - (UIView *)backView {
     if (!_backView) {
         _backView = [[UIView alloc] init];
-        _backView.backgroundColor = [UIColor whiteColor];
+        _backView.backgroundColor = kWhiteColor;
     }
     return _backView;
 }

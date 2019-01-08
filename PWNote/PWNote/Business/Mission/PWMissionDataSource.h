@@ -8,8 +8,10 @@
 
 #import "PWDataSource.h"
 
-@class PWMissionViewModel;
+@class PWBigTitleViewModel;
 
 @interface PWMissionDataSource : PWDataSource
+
+@property (nonatomic, strong) PWBigTitleViewModel *titleModel;
 
 @end

@@ -8,6 +8,7 @@
 
 #import "PWMissionItemView.h"
 #import "PWMissionViewModel.h"
+#import "PWSkinManager.h"
 
 @interface PWMissionItemView ()
 
@@ -64,21 +65,21 @@
         NSString *oldPrice = self.titleLabel.text;
         if (viewModel.isSelected) {
             self.selectLabel.text = XIconSquarecheckfill;
-            self.selectLabel.textColor = [UIColor grayColor];
+            self.selectLabel.textColor = kSubTitleColor;
             NSUInteger length = [oldPrice length];
-            self.titleLabel.textColor = [UIColor grayColor];
+            self.titleLabel.textColor = kSubTitleColor;
             NSMutableAttributedString *attri = [[NSMutableAttributedString alloc] initWithString:oldPrice];
             [attri addAttribute:NSStrikethroughStyleAttributeName value:@(NSUnderlinePatternSolid | NSUnderlineStyleSingle) range:NSMakeRange(0, length)];
-            [attri addAttribute:NSStrikethroughColorAttributeName value:[UIColor redColor] range:NSMakeRange(0, length)];
+            [attri addAttribute:NSStrikethroughColorAttributeName value:kThemeColor range:NSMakeRange(0, length)];
             [self.titleLabel setAttributedText:attri];
             
         } else {
             self.selectLabel.text = XIconSquare;
-            self.titleLabel.textColor = [UIColor blackColor];
-            self.selectLabel.textColor = [UIColor blackColor];
+            self.titleLabel.textColor = kTitleColor;
+            self.selectLabel.textColor = kTitleColor;
             NSUInteger length = [oldPrice length];
             NSMutableAttributedString *attri = [[NSMutableAttributedString alloc] initWithString:oldPrice];
-            [attri addAttribute:NSStrikethroughColorAttributeName value:[UIColor redColor] range:NSMakeRange(0, length)];
+            [attri addAttribute:NSStrikethroughColorAttributeName value:kThemeColor range:NSMakeRange(0, length)];
             [self.titleLabel setAttributedText:attri];
         }
         
@@ -105,7 +106,7 @@
 - (UILabel *)titleLabel {
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc] init];
-        _titleLabel.textColor = [UIColor blackColor];
+        _titleLabel.textColor = kTitleColor;
         _titleLabel.font = [UIFont systemFontOfSize:16];
     }
     return _titleLabel;

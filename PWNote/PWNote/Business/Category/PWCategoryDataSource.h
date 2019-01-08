@@ -7,12 +7,13 @@
 //
 
 #import "PWDataSource.h"
+#import "PWCategoryUserViewModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PWCategoryDataSource : PWDataSource
 
-
+@property (nonatomic, strong) PWCategoryUserViewModel *userViewModel; /**< 用户信息  */
 
 @end
 

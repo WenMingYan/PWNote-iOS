@@ -75,7 +75,7 @@
     if (!_subTitleLabel) {
         _subTitleLabel = [[UILabel alloc] init];
         _subTitleLabel.font = [UIFont systemFontOfSize:14];
-        _subTitleLabel.textColor = [UIColor whiteColor];
+        _subTitleLabel.textColor = kWhiteColor;
     }
     return _subTitleLabel;
 }
@@ -85,7 +85,7 @@
         _bigTitleLabel = [[UILabel alloc] init];
         _bigTitleLabel.font = [UIFont boldSystemFontOfSize:28];
         _bigTitleLabel.lineBreakMode = NSLineBreakByTruncatingMiddle;
-        _bigTitleLabel.textColor = [UIColor whiteColor];
+        _bigTitleLabel.textColor = kWhiteColor;
     }
     return _bigTitleLabel;
 }
