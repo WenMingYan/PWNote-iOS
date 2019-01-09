@@ -19,6 +19,7 @@
 #import "PWTableViewDelegate.h"
 #import "PWBigTitleViewModel.h"
 #import "PWCategoryViewModel.h"
+#import "PWHomeCategoryTransition.h"
 
 @interface PWHomeViewController () <UIScrollViewDelegate>
 
@@ -33,6 +34,8 @@
 @property (nonatomic, strong) UIView *maskView; /**< 背景  */
 
 @property (nonatomic, strong) PWMissionDataSource *dataSource;
+
+@property (nonatomic, strong) PWHomeCategoryTransition *transition; /**< 首页-分类页转场动画  */
 
 @end
 
@@ -97,14 +100,6 @@ __PW_ROUTER_REGISTER__
     [self.maskView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
     }];
-    [self.view addSubview:self.categoryVC.view];
-    self.categoryVC.view.hidden = YES;
-    [self.categoryVC.view mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.mas_equalTo(self.view).mas_offset(-50);
-        make.right.mas_equalTo(self.view.mas_left);
-        make.top.equalTo(self.view);
-        make.bottom.equalTo(self.view);
-    }];
 }
 
 - (void)initView {
@@ -135,7 +130,6 @@ __PW_ROUTER_REGISTER__
 
 #pragma mark - --------------------UITableViewDelegate--------------
 #pragma mark - --------------------CustomDelegate--------------
-
 #pragma mark - --------------------Event Response--------------
 
 + (NSString *)urlName {
@@ -152,37 +146,10 @@ __PW_ROUTER_REGISTER__
 
 - (void)onClickCategory {
     //打开分类
-    if (self.isAnimated) {
-        return;
-    }
-    CGRect frame = self.categoryVC.view.frame;
-    if (self.categoryVC.view.hidden) {
-        //TODO: wmy 显示的动画
-        frame.origin.x = 0;
-        self.categoryVC.view.hidden = NO;
-        self.maskView.hidden = YES;
-        [UIView animateWithDuration:0.3 animations:^{
-            self.isAnimated = YES;
-            self.maskView.hidden = NO;
-            self.categoryVC.view.frame = frame;
-        } completion:^(BOOL finished) {
-            self.isAnimated = NO;
-            self.categoryVC.view.hidden = NO;
-        }];
-    } else {
-        //TODO: wmy 隐藏的动画
-        self.maskView.hidden = YES;
-        frame.origin.x = - frame.size.width;
-        [UIView animateWithDuration:0.3 animations:^{
-            self.isAnimated = YES;
-            self.categoryVC.view.frame = frame;
-            self.maskView.hidden = YES;
-        } completion:^(BOOL finished) {
-            self.isAnimated = NO;
-            self.categoryVC.view.hidden = YES;
-        }];
-    }
+    [self presentViewController:self.categoryVC animated:YES completion:nil];
 }
+
+
 
 - (void)updateCategory:(PWCategoryViewModel *)viewModel {
     [self onClickCategory];
@@ -236,6 +203,7 @@ __PW_ROUTER_REGISTER__
     if (!_categoryVC) {
         _categoryVC = [[PWCategoryViewController alloc] init];
         _categoryVC.homeViewController = self;
+        _categoryVC.transitioningDelegate = self.transition;
     }
     return _categoryVC;
 }
@@ -259,5 +227,11 @@ __PW_ROUTER_REGISTER__
     return _dataSource;
 }
 
+- (PWHomeCategoryTransition *)transition {
+    if (!_transition) {
+        _transition = [[PWHomeCategoryTransition alloc] init];
+    }
+    return _transition;
+}
 
 @end

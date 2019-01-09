@@ -30,6 +30,30 @@
     [self.tableView reloadData];
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    id<PWViewModelProtocol> viewModel = [self.dataSource footerViewModelWithSection:section];
+    return viewModel.itemSize.height;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    id<PWViewModelProtocol> viewModel = [self.dataSource footerViewModelWithSection:section];
+    UIView<PWItemViewProtocol> *itemView = [[[viewModel itemViewClass] alloc] init];
+    itemView.viewModel = viewModel;
+    return itemView;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    id<PWViewModelProtocol> viewModel = [self.dataSource headerViewModelWithSection:section];
+    return viewModel.itemSize.height;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    id<PWViewModelProtocol> viewModel = [self.dataSource headerViewModelWithSection:section];
+    UIView<PWItemViewProtocol> *itemView = [[[viewModel itemViewClass] alloc] init];
+    itemView.viewModel = viewModel;
+    return itemView;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     id<PWViewModelProtocol> viewModel = [self.dataSource viewModelWithIndexPath:indexPath];
     [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:NSStringFromClass([viewModel itemViewClass])];

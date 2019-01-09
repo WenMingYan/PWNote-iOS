@@ -13,6 +13,9 @@
 
 @protocol PWSectionModelProtocol <NSObject>
 
+@property (nonatomic, strong) id<PWViewModelProtocol> headerViewModel; /**< 头部  */
+@property (nonatomic, strong) id<PWViewModelProtocol> footerViewModel; /**< 头部  */
+
 @property (nonatomic, strong) NSArray<id<PWViewModelProtocol>> *viewModels;
 
 @end

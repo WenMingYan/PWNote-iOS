@@ -83,6 +83,14 @@
 		F887CC7E21D205A00009F5EC /* PWUpdateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F887CC7D21D205A00009F5EC /* PWUpdateUtils.m */; };
 		F8FD7CB821E49649000145D6 /* PWCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FD7CB721E49649000145D6 /* PWCategoryModel.m */; };
 		F8FD7CBB21E4A23C000145D6 /* NSString+PWEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FD7CBA21E4A23C000145D6 /* NSString+PWEmpty.m */; };
+		F8FD7CC121E4D407000145D6 /* PWCategoryFooterItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FD7CC021E4D407000145D6 /* PWCategoryFooterItemView.m */; };
+		F8FD7CC421E4D451000145D6 /* PWCagegoryFooterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FD7CC321E4D451000145D6 /* PWCagegoryFooterViewModel.m */; };
+		F8FD7CC721E5884B000145D6 /* NSArray+PWAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FD7CC521E5884B000145D6 /* NSArray+PWAddition.m */; };
+		F8FD7CCA21E58A4A000145D6 /* NSDictionary+PWAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FD7CC921E58A4A000145D6 /* NSDictionary+PWAddition.m */; };
+		F8FD7CCE21E5A3FF000145D6 /* PWHomeCategoryTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FD7CCD21E5A3FF000145D6 /* PWHomeCategoryTransition.m */; };
+		F8FD7CD321E5B291000145D6 /* PWPresentAnimationTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FD7CD221E5B291000145D6 /* PWPresentAnimationTransition.m */; };
+		F8FD7CD721E5C7FD000145D6 /* PWPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FD7CD621E5C7FD000145D6 /* PWPresentationController.m */; };
+		F8FD7CDA21E5CA57000145D6 /* PWDismissAnimationTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FD7CD921E5CA57000145D6 /* PWDismissAnimationTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -264,6 +272,22 @@
 		F8FD7CB721E49649000145D6 /* PWCategoryModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWCategoryModel.m; sourceTree = "<group>"; };
 		F8FD7CB921E4A23C000145D6 /* NSString+PWEmpty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+PWEmpty.h"; sourceTree = "<group>"; };
 		F8FD7CBA21E4A23C000145D6 /* NSString+PWEmpty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+PWEmpty.m"; sourceTree = "<group>"; };
+		F8FD7CBF21E4D407000145D6 /* PWCategoryFooterItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWCategoryFooterItemView.h; sourceTree = "<group>"; };
+		F8FD7CC021E4D407000145D6 /* PWCategoryFooterItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWCategoryFooterItemView.m; sourceTree = "<group>"; };
+		F8FD7CC221E4D451000145D6 /* PWCagegoryFooterViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWCagegoryFooterViewModel.h; sourceTree = "<group>"; };
+		F8FD7CC321E4D451000145D6 /* PWCagegoryFooterViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWCagegoryFooterViewModel.m; sourceTree = "<group>"; };
+		F8FD7CC521E5884B000145D6 /* NSArray+PWAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PWAddition.m"; sourceTree = "<group>"; };
+		F8FD7CC621E5884B000145D6 /* NSArray+PWAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PWAddition.h"; sourceTree = "<group>"; };
+		F8FD7CC821E58A4A000145D6 /* NSDictionary+PWAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+PWAddition.h"; sourceTree = "<group>"; };
+		F8FD7CC921E58A4A000145D6 /* NSDictionary+PWAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+PWAddition.m"; sourceTree = "<group>"; };
+		F8FD7CCC21E5A3FF000145D6 /* PWHomeCategoryTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWHomeCategoryTransition.h; sourceTree = "<group>"; };
+		F8FD7CCD21E5A3FF000145D6 /* PWHomeCategoryTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWHomeCategoryTransition.m; sourceTree = "<group>"; };
+		F8FD7CD121E5B291000145D6 /* PWPresentAnimationTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWPresentAnimationTransition.h; sourceTree = "<group>"; };
+		F8FD7CD221E5B291000145D6 /* PWPresentAnimationTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWPresentAnimationTransition.m; sourceTree = "<group>"; };
+		F8FD7CD521E5C7FD000145D6 /* PWPresentationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWPresentationController.h; sourceTree = "<group>"; };
+		F8FD7CD621E5C7FD000145D6 /* PWPresentationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWPresentationController.m; sourceTree = "<group>"; };
+		F8FD7CD821E5CA57000145D6 /* PWDismissAnimationTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWDismissAnimationTransition.h; sourceTree = "<group>"; };
+		F8FD7CD921E5CA57000145D6 /* PWDismissAnimationTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWDismissAnimationTransition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -337,6 +361,7 @@
 		F81C128421AA4FA0009CF497 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				F8FD7CCB21E5A3DD000145D6 /* Transition */,
 				F81C130B21B26ED1009CF497 /* Views */,
 				F81C128521AA4FA8009CF497 /* PWHomeViewController.h */,
 				F81C128621AA4FA8009CF497 /* PWHomeViewController.m */,
@@ -592,6 +617,10 @@
 		F81C135121B40087009CF497 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				F8FD7CC821E58A4A000145D6 /* NSDictionary+PWAddition.h */,
+				F8FD7CC921E58A4A000145D6 /* NSDictionary+PWAddition.m */,
+				F8FD7CC621E5884B000145D6 /* NSArray+PWAddition.h */,
+				F8FD7CC521E5884B000145D6 /* NSArray+PWAddition.m */,
 				F81C135521B400DA009CF497 /* MBProgressHUD+PWUtils.h */,
 				F81C135621B400DA009CF497 /* MBProgressHUD+PWUtils.m */,
 				F8FD7CB921E4A23C000145D6 /* NSString+PWEmpty.h */,
@@ -718,6 +747,8 @@
 			children = (
 				F86F1BC921E442D70075462E /* PWCategoryUserItemView.h */,
 				F86F1BCA21E442D70075462E /* PWCategoryUserItemView.m */,
+				F8FD7CBF21E4D407000145D6 /* PWCategoryFooterItemView.h */,
+				F8FD7CC021E4D407000145D6 /* PWCategoryFooterItemView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -727,6 +758,8 @@
 			children = (
 				F86F1BCD21E4439B0075462E /* PWCategoryUserViewModel.h */,
 				F86F1BCE21E4439B0075462E /* PWCategoryUserViewModel.m */,
+				F8FD7CC221E4D451000145D6 /* PWCagegoryFooterViewModel.h */,
+				F8FD7CC321E4D451000145D6 /* PWCagegoryFooterViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -769,6 +802,21 @@
 				F8FD7CB721E49649000145D6 /* PWCategoryModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F8FD7CCB21E5A3DD000145D6 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				F8FD7CCC21E5A3FF000145D6 /* PWHomeCategoryTransition.h */,
+				F8FD7CCD21E5A3FF000145D6 /* PWHomeCategoryTransition.m */,
+				F8FD7CD121E5B291000145D6 /* PWPresentAnimationTransition.h */,
+				F8FD7CD221E5B291000145D6 /* PWPresentAnimationTransition.m */,
+				F8FD7CD521E5C7FD000145D6 /* PWPresentationController.h */,
+				F8FD7CD621E5C7FD000145D6 /* PWPresentationController.m */,
+				F8FD7CD821E5CA57000145D6 /* PWDismissAnimationTransition.h */,
+				F8FD7CD921E5CA57000145D6 /* PWDismissAnimationTransition.m */,
+			);
+			path = Transition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -929,9 +977,11 @@
 				F81C132321B3CE61009CF497 /* PWUserView.m in Sources */,
 				F87872C121B9760D00CA34CE /* UICollectionViewCell+PWItemView.m in Sources */,
 				F81C131A21B37DE0009CF497 /* PWMissionModel.m in Sources */,
+				F8FD7CDA21E5CA57000145D6 /* PWDismissAnimationTransition.m in Sources */,
 				F81C12AE21AC43F1009CF497 /* PWDataSource.m in Sources */,
 				F86F1BBA21E34C9B0075462E /* PWBigTitleTableViewController.m in Sources */,
 				F81C135721B400DA009CF497 /* MBProgressHUD+PWUtils.m in Sources */,
+				F8FD7CC121E4D407000145D6 /* PWCategoryFooterItemView.m in Sources */,
 				F87872C421BC0B4800CA34CE /* PWCategorySectionModel.m in Sources */,
 				F887CC7E21D205A00009F5EC /* PWUpdateUtils.m in Sources */,
 				F81C133021B3DA43009CF497 /* PWKeepViewModel.m in Sources */,
@@ -945,8 +995,10 @@
 				F86F1BD621E44A160075462E /* PWImageConfigModel.m in Sources */,
 				F81C132D21B3D971009CF497 /* PWTodoListViewModel.m in Sources */,
 				F81C131721B37DAC009CF497 /* PWMissionViewModel.m in Sources */,
+				F8FD7CD321E5B291000145D6 /* PWPresentAnimationTransition.m in Sources */,
 				F887CC7B21D204DD0009F5EC /* PWApplicationMessages.m in Sources */,
 				F86F1BCF21E4439B0075462E /* PWCategoryUserViewModel.m in Sources */,
+				F8FD7CD721E5C7FD000145D6 /* PWPresentationController.m in Sources */,
 				F81C12A321AAFEE9009CF497 /* PWCollectionDelegate.m in Sources */,
 				F81C134621B3F981009CF497 /* PWSettingDataSource.m in Sources */,
 				F838F1C021AA4B2600C309F2 /* ViewController.m in Sources */,
@@ -961,6 +1013,8 @@
 				F81C127B21AA4EC6009CF497 /* PWNavigationViewController.m in Sources */,
 				F81C129121AA551F009CF497 /* PWRouter.m in Sources */,
 				F81C134C21B3FA77009CF497 /* PWSettingItemView.m in Sources */,
+				F8FD7CC721E5884B000145D6 /* NSArray+PWAddition.m in Sources */,
+				F8FD7CC421E4D451000145D6 /* PWCagegoryFooterViewModel.m in Sources */,
 				F81C12B321AC4524009CF497 /* PWViewModel.m in Sources */,
 				F81C132021B38118009CF497 /* UIView+ALMAdditons.m in Sources */,
 				F81C132721B3D0E0009CF497 /* PWUserViewController.m in Sources */,
@@ -984,7 +1038,9 @@
 				F81C128321AA4F32009CF497 /* PWTestHomeViewController.m in Sources */,
 				F81C129F21AAF676009CF497 /* PWMoreViewController.m in Sources */,
 				F86F1BB321E343AD0075462E /* PWBigTitleCollectionViewController.m in Sources */,
+				F8FD7CCA21E58A4A000145D6 /* NSDictionary+PWAddition.m in Sources */,
 				F81C12A621AAFEFA009CF497 /* PWTableViewDelegate.m in Sources */,
+				F8FD7CCE21E5A3FF000145D6 /* PWHomeCategoryTransition.m in Sources */,
 				F87872C721BC0BA200CA34CE /* PWCategoryViewModel.m in Sources */,
 				F86F1BD321E4495F0075462E /* UIImageView+PWWebCatch.m in Sources */,
 				F81C128B21AA4FF0009CF497 /* PWLocalConfig.m in Sources */,

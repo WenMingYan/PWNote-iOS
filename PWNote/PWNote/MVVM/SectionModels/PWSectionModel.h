@@ -14,6 +14,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PWSectionModel : NSObject <PWSectionModelProtocol>
 
+@property (nonatomic, strong) id<PWViewModelProtocol> footerViewModel; /**< 头部  */
+@property (nonatomic, strong) id<PWViewModelProtocol> headerViewModel; /**< 头部  */
+
 @property (nonatomic, strong) NSArray<PWViewModel<PWViewModelProtocol> *> *viewModels;
 
 @end

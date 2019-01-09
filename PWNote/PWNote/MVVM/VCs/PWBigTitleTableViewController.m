@@ -7,6 +7,7 @@
 //
 
 #import "PWBigTitleTableViewController.h"
+#import <Masonry/Masonry.h>
 #import "PWTableViewDelegate.h"
 #import "PWBigTitleViewModel.h"
 #import "PWInteractor.h"

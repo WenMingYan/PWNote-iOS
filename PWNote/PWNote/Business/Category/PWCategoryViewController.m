@@ -12,11 +12,14 @@
 #import "PWCategoryUserItemView.h"
 #import "PWCategoryViewModel.h"
 #import "PWHomeViewController.h"
+#import "PWCategoryFooterItemView.h"
+#import "PWCagegoryFooterViewModel.h"
 
 @interface PWCategoryViewController ()
 
 @property (nonatomic, strong) PWCategoryDataSource *dataSource;
 @property (nonatomic, strong) PWCategoryUserItemView *userItemView; /**< 用户  */
+@property (nonatomic, strong) PWCagegoryFooterViewModel *footerViewModel;
 
 @end
 
@@ -29,8 +32,11 @@
     [super viewDidLoad];
     [self initData];
     [self initView];
+    self.view.backgroundColor = [UIColor clearColor];
 }
-
+- (UIModalPresentationStyle)modalPresentationStyle {
+    return UIModalPresentationOverCurrentContext;
+}
 - (void)initData {
     self.tableViewDelegate.interactor = self.defaultInteractor;
     [self.defaultInteractor registerTarget:self action:@selector(onClickItem:) forEventName:kClickCategoryItem];
@@ -45,7 +51,6 @@
 
 - (void)initView {
     self.tableViewDelegate.dataSource = self.dataSource;
-    
     [self.view addSubview:self.userItemView];
     CGFloat height = 60 + kSafeAreaStatusBarHeight;
     [self.userItemView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -57,6 +62,11 @@
     [self.tableView mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.bottom.left.right.mas_equalTo(self.view);
         make.top.mas_equalTo(self.userItemView.mas_bottom);
+    }];
+    
+    [self.view addSubview:self.backBtn];
+    [self.backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self.view);
     }];
 }
 
@@ -86,6 +96,13 @@
         _dataSource = [[PWCategoryDataSource alloc] init];
     }
     return _dataSource;
+}
+
+- (PWCagegoryFooterViewModel *)footerViewModel {
+    if (!_footerViewModel) {
+        _footerViewModel = [[PWCagegoryFooterViewModel alloc] init];
+    }
+    return _footerViewModel;
 }
 
 @end

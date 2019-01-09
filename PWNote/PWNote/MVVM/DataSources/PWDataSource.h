@@ -25,6 +25,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (PWViewModel *)viewModelWithIndexPath:(NSIndexPath *)indexPath;
 
+- (PWViewModel *)headerViewModelWithSection:(NSInteger)section;
+
+- (PWViewModel *)footerViewModelWithSection:(NSInteger)section;
+
 @end
 
 NS_ASSUME_NONNULL_END

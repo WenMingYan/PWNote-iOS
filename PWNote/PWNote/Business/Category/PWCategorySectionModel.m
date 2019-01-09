@@ -7,7 +7,18 @@
 //
 
 #import "PWCategorySectionModel.h"
+#import "PWCagegoryFooterViewModel.h"
 
 @implementation PWCategorySectionModel
+
+@dynamic footerViewModel;
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.footerViewModel = [[PWCagegoryFooterViewModel alloc] init];
+    }
+    return self;
+}
 
 @end
