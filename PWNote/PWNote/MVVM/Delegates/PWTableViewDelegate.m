@@ -32,6 +32,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     id<PWViewModelProtocol> viewModel = [self.dataSource footerViewModelWithSection:section];
+    viewModel.indexPath = [NSIndexPath indexPathForRow:0 inSection:section];
     return viewModel.itemSize.height;
 }
 
@@ -44,6 +45,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     id<PWViewModelProtocol> viewModel = [self.dataSource headerViewModelWithSection:section];
+    viewModel.indexPath = [NSIndexPath indexPathForRow:0 inSection:section];
     return viewModel.itemSize.height;
 }
 

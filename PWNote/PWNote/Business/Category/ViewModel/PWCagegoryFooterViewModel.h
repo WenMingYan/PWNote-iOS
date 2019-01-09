@@ -12,7 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PWCagegoryFooterViewModel : PWViewModel
 
-@property (nonatomic, assign) NSInteger totalSection;
 
 @end
 

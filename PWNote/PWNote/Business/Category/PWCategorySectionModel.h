@@ -7,16 +7,7 @@
 //
 
 #import "PWSectionModel.h"
-#import "PWCategoryFooterItemView.h"
-
-@class PWCagegoryFooterViewModel;
-
-NS_ASSUME_NONNULL_BEGIN
 
 @interface PWCategorySectionModel : PWSectionModel
 
-@property (nonatomic, strong) PWCagegoryFooterViewModel<PWViewModelProtocol> *footerViewModel;
-
 @end
-
-NS_ASSUME_NONNULL_END

@@ -39,8 +39,8 @@
     
     [self.iconLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.height.mas_equalTo(24);
-        make.centerY.equalTo(self).mas_offset(-25);
-        make.left.mas_equalTo(8);
+        make.centerY.equalTo(self).mas_offset(-kSafeArea_Bottom);
+        make.left.mas_equalTo(kMargin);
     }];
     
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {

@@ -10,6 +10,7 @@
 #import "PWCategorySectionModel.h"
 #import "PWCategoryViewModel.h"
 #import "PWCategoryModel.h"
+#import "PWCagegoryFooterViewModel.h"
 
 @implementation PWCategoryDataSource
 
@@ -17,7 +18,7 @@
 #if DEBUG
     NSMutableArray *array = [NSMutableArray array];
     for (int i = 0; i < 10; i++) {
-        PWCategorySectionModel *sectionModel = [[PWCategorySectionModel alloc] init];
+        PWCategorySectionModel *sectionModel = [[PWCategorySectionModel alloc] init]; 
         NSMutableArray *viewModels = [NSMutableArray array];
         for (int j = 0; j < 5; j++) {
             PWCategoryModel *model = [[PWCategoryModel alloc] init];
@@ -32,6 +33,7 @@
         [array addObject:sectionModel];
     }
     self.sectionModels = array;
+    
     if (successBlock) {
         successBlock();
     }
