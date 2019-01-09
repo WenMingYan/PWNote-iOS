@@ -20,6 +20,8 @@
 #import "PWBigTitleViewModel.h"
 #import "PWCategoryViewModel.h"
 #import "PWHomeCategoryTransition.h"
+#import "PWCagegoryFooterViewModel.h"
+#import "PWCategoryFooterItemView.h"
 
 @interface PWHomeViewController () <UIScrollViewDelegate>
 
@@ -36,6 +38,9 @@
 @property (nonatomic, strong) PWMissionDataSource *dataSource;
 
 @property (nonatomic, strong) PWHomeCategoryTransition *transition; /**< 首页-分类页转场动画  */
+
+@property (nonatomic, strong) PWCategoryFooterItemView *footerItemView;
+@property (nonatomic, strong) PWCagegoryFooterViewModel *footerViewModel;
 
 @end
 
@@ -114,6 +119,19 @@ __PW_ROUTER_REGISTER__
 #endif
     UIBarButtonItem *categoryItem = [[UIBarButtonItem alloc] initWithCustomView:self.categoryBtn];
     self.navigationItem.leftBarButtonItems = @[categoryItem];
+    
+    [self.view addSubview:self.footerItemView];
+    CGFloat height = [self.footerItemView.viewModel itemSize].height;
+    [self.footerItemView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.left.right.mas_equalTo(self.view);
+        make.height.mas_equalTo(height);
+    }];
+    
+    [self.tableView mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(kSafeAreaNavBarHeight);
+        make.left.right.mas_equalTo(self.view);
+        make.bottom.mas_equalTo(self.footerItemView.mas_top);
+    }];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -232,6 +250,21 @@ __PW_ROUTER_REGISTER__
         _transition = [[PWHomeCategoryTransition alloc] init];
     }
     return _transition;
+}
+
+- (PWCategoryFooterItemView *)footerItemView {
+    if (!_footerItemView) {
+        _footerItemView = [[PWCategoryFooterItemView alloc] init];
+        PWCagegoryFooterViewModel *footerViewModel = [[PWCagegoryFooterViewModel alloc] init];
+        footerViewModel.title = @"添加任务";
+        _footerItemView.viewModel = footerViewModel;
+        self.footerViewModel = footerViewModel;
+        _footerItemView.layer.shadowColor = [UIColor blackColor].CGColor;
+        _footerItemView.layer.shadowOpacity = 0.2f;
+        _footerItemView.layer.shadowRadius = 4.f;
+        _footerItemView.layer.shadowOffset = CGSizeMake(0, -4);
+    }
+    return _footerItemView;
 }
 
 @end

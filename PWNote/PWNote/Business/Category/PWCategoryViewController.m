@@ -95,6 +95,11 @@
         _userItemView.layer.shadowOpacity = 0.2f;
         _userItemView.layer.shadowRadius = 4.f;
         _userItemView.layer.shadowOffset = CGSizeMake(0, 4);
+        @weakify(self);
+        _userItemView.searchBlock = ^{
+            @strongify(self);
+            [self routerURL:@"pwnote://search" withParam:nil];
+        };
     }
     return _userItemView;
 }
@@ -109,6 +114,7 @@
 - (PWCagegoryFooterViewModel *)footerViewModel {
     if (!_footerViewModel) {
         _footerViewModel = [[PWCagegoryFooterViewModel alloc] init];
+        _footerViewModel.title = @"添加清单";
     }
     return _footerViewModel;
 }

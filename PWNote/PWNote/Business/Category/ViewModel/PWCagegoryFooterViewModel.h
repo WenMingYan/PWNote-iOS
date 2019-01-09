@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PWCagegoryFooterViewModel : PWViewModel
 
+@property (nonatomic, strong) NSString *title;
 
 @end
 

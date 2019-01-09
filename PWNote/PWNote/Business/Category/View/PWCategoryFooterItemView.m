@@ -7,6 +7,7 @@
 //
 
 #import "PWCategoryFooterItemView.h"
+#import "PWCagegoryFooterViewModel.h"
 
 @interface PWCategoryFooterItemView ()
 
@@ -55,6 +56,14 @@
     [self initView];
 }
 
+- (void)setViewModel:(id<PWViewModelProtocol>)viewModel {
+    [super setViewModel:viewModel];
+    if ([viewModel isKindOfClass:[PWCagegoryFooterViewModel class]]) {
+        PWCagegoryFooterViewModel *model = (PWCagegoryFooterViewModel *)viewModel;
+        self.titleLabel.text = model.title;
+    }
+}
+
 #pragma mark - --------------------UITableViewDelegate--------------
 #pragma mark - --------------------CustomDelegate--------------
 #pragma mark - --------------------Event Response--------------
@@ -74,7 +83,7 @@
 - (UILabel *)titleLabel {
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc] init];
-        _titleLabel.text = @"添加清单";
+        _titleLabel.textColor = kThemeColor;
     }
     return _titleLabel;
 }

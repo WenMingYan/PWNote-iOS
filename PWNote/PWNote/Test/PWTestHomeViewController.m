@@ -76,6 +76,7 @@ __PW_ROUTER_REGISTER__
              @"pwnote://setting",
              @"pwnote://more",
              @"pwnote://home",
+             @"pwnote://search",
              ];
 }
 
