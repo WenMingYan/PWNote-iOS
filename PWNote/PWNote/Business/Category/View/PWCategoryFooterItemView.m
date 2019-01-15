@@ -40,7 +40,7 @@
     
     [self.iconLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.height.mas_equalTo(24);
-        make.centerY.equalTo(self).mas_offset(-kSafeArea_Bottom);
+        make.centerY.equalTo(self).mas_offset(-kSafeArea_Bottom / 2);
         make.left.mas_equalTo(kMargin);
     }];
     

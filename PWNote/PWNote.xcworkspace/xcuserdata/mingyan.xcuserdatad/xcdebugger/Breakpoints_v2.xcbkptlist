@@ -19,45 +19,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PWNote/MVVM/Interactors/PWInteractor.m"
-            timestampString = "568711023.878516"
+            filePath = "PWNote/Business/Home/PWHomeViewController.m"
+            timestampString = "565971580.088433"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "-sendEventName:withObjects:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PWNote/Business/Home/Transition/PWPresentationController.m"
-            timestampString = "568717529.369578"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "-presentationTransitionWillBegin"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "PWNote/Business/Home/Transition/PWHomeCategoryTransition.m"
-            timestampString = "568717529.36966"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "-presentationControllerForPresentedViewController:presentingViewController:sourceViewController:"
+            startingLineNumber = "154"
+            endingLineNumber = "154"
+            landmarkName = "+urlName"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
