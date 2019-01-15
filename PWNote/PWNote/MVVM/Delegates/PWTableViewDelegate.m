@@ -69,8 +69,10 @@
     } else {
         itemView = cell.itemView;
     }
+    cell.selectionStyle = (UITableViewCellSelectionStyle)itemView.itemviewStyle;
     viewModel.indexPath = indexPath;
     itemView.viewModel = viewModel;
+    viewModel.itemView = itemView;
     viewModel.itemView = itemView;
     return cell;
 }

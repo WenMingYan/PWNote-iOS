@@ -39,3 +39,14 @@ action.actionBlock = ^(UINavigationController *navigationController) {\
 };\
 [[PWRouter sharedInstance] registerRouterWithURLAddress:[self urlName] action:action];\
 }
+
+#define __PW_ROUTER_REGISTER_PRESENT__   \
++(void)load {\
+PWRouterAction *action = [[PWRouterAction alloc] init];\
+action.actionType = PWRouterActionTypePresentNewPage;\
+action.address = [self urlName];\
+action.actionBlock = ^(UINavigationController *navigationController) {\
+    [navigationController presentViewController:[[self alloc] init] animated:YES completion:nil];\
+};\
+[[PWRouter sharedInstance] registerRouterWithURLAddress:[self urlName] action:action];\
+}

@@ -40,6 +40,10 @@ static PWSkinManager *__onetimeClass;
     return [UIColor orangeColor];
 }
 
+- (UIColor *)lightBackgroundColor {
+    return [UIColor lightGrayColor];
+}
+
 - (CGFloat)margin {
     return 16;
 }

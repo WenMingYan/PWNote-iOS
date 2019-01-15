@@ -10,6 +10,8 @@
 #import "PWBigTitleView.h"
 
 CGFloat const kBigTitleViewHeight = 200;
+NSString * const kClickBigTitleLabelEvent = @"kClickBigTitleLabelEvent";
+NSString * const kTitleLabelEndEditingEvent = @"kTitleLabelEndEditingEvent";
 
 @implementation PWBigTitleViewModel
 

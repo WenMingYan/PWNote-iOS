@@ -10,12 +10,22 @@
 #define PWItemViewProtocol_h
 
 @protocol PWViewModelProtocol;
+
 @class PWInteractor;
+
+typedef enum : NSUInteger {
+    PWItemViewStyleNone,
+    PWItemViewStyleBlue,
+    PWItemViewStyleGray,
+    PWItemViewStyleDefault
+} PWItemViewSelectStyle;
 
 @protocol PWItemViewProtocol <NSObject>
 
 @property(nonatomic, weak) id<PWViewModelProtocol> viewModel;/**< 数据源  */
 @property(nonatomic, weak) PWInteractor *interactor;
+
+@property (nonatomic, assign) PWItemViewSelectStyle itemviewStyle;
 
 - (void)onSelected;
 

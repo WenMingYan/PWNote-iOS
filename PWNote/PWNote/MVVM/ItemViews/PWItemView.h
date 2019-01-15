@@ -22,6 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic, weak) id<PWViewModelProtocol> viewModel;/**< 数据源  */
 @property(nonatomic, weak) PWInteractor *interactor;
+@property (nonatomic, assign) PWItemViewSelectStyle itemviewStyle;
 
 @end
 

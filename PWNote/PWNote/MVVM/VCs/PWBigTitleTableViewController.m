@@ -132,6 +132,7 @@ CGFloat kTableViewDiff = 60;
     if (!_tableViewDelegate) {
         _tableViewDelegate = [[PWTableViewDelegate alloc] initWithtableView:self.tableView];
         _tableViewDelegate.viewController = self;
+        _tableViewDelegate.interactor = self.defaultInteractor;
     }
     return _tableViewDelegate;
 }

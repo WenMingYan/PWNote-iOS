@@ -82,6 +82,7 @@
 - (void)onClickItem:(PWCategoryViewModel *)viewModel {
     //TODO: wmy  关闭e页面，这里之后需要把category的进入动画改一下
     [self.homeViewController updateCategory:viewModel];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark - --------------------private methods--------------
@@ -98,6 +99,7 @@
         @weakify(self);
         _userItemView.searchBlock = ^{
             @strongify(self);
+            [self dismissViewControllerAnimated:YES completion:nil];
             [self routerURL:@"pwnote://search" withParam:nil];
         };
     }

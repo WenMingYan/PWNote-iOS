@@ -12,14 +12,18 @@
 #import "PWUtils.h"
 #import "PWViewModelProtocol.h"
 #import "PWSkinManager.h"
+#import "PWItemView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class PWItemView;
+
 @interface PWViewModel : NSObject <PWViewModelProtocol>
 
-@property (nonatomic, weak) UIView<PWItemViewProtocol> *itemView;
+@property (nonatomic, weak) PWItemView<PWItemViewProtocol> *itemView;
 @property (nonatomic, strong) NSIndexPath *indexPath;
 @property (nonatomic, strong) NSObject *model;
+
 
 @end
 

@@ -9,10 +9,14 @@
 #import "PWViewModel.h"
 
 extern CGFloat const kBigTitleViewHeight;
+extern NSString * const kClickBigTitleLabelEvent;
+extern NSString * const kTitleLabelEndEditingEvent;
 
 @interface PWBigTitleViewModel : PWViewModel
 
 @property (nonatomic, copy) NSString *bigTitle; /**< 大标题  */
 @property (nonatomic, copy) NSString *subTitle; /**< 副标题  */
+
+@property (nonatomic, assign) BOOL isEditing;/** < 是否在编辑中*/
 
 @end

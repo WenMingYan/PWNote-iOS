@@ -22,11 +22,13 @@
 #import "PWHomeCategoryTransition.h"
 #import "PWCagegoryFooterViewModel.h"
 #import "PWCategoryFooterItemView.h"
+#import "PWBigTitleView.h"
 
 @interface PWHomeViewController () <UIScrollViewDelegate>
 
 @property (nonatomic, strong) UIButton *categoryBtn; /**< 分类  */
 @property (nonatomic, strong) UIButton *settingBtn; /**< 设置  */
+@property (nonatomic, strong) UIButton *synchronizationBtn; /**< 同步  */
 #if DEBUG
 @property (nonatomic, strong) UIButton *testBtn; /**< 测试button  */
 #endif
@@ -41,6 +43,8 @@
 
 @property (nonatomic, strong) PWCategoryFooterItemView *footerItemView;
 @property (nonatomic, strong) PWCagegoryFooterViewModel *footerViewModel;
+
+@property(nonatomic, weak) UITextField *bigTitleTextField;
 
 @end
 
@@ -89,6 +93,7 @@ __PW_ROUTER_REGISTER__
     
     self.tableViewDelegate.dataSource = self.dataSource;
     self.tableViewDelegate.viewController = self;
+    
     @weakify(self);
     [self.dataSource requestWithSuccess:^{
         @strongify(self);
@@ -97,6 +102,13 @@ __PW_ROUTER_REGISTER__
     } fail:^(NSError *error) {
         
     }];
+    
+    [self.defaultInteractor registerTarget:self action:@selector(onClickBigTitle:) forEventName:kClickBigTitleLabelEvent];
+    
+}
+
+- (void)onClickBigTitle:(PWBigTitleViewModel *)viewModel {
+    
 }
 
 - (void)setupCategoryVC {
@@ -111,9 +123,10 @@ __PW_ROUTER_REGISTER__
     self.title = @"Home";
     [self setupCategoryVC];
     UIBarButtonItem *settingItem = [[UIBarButtonItem alloc] initWithCustomView:self.settingBtn];
+    UIBarButtonItem *refreshItem = [[UIBarButtonItem alloc] initWithCustomView:self.synchronizationBtn];
 #if DEBUG
     UIBarButtonItem *testItem = [[UIBarButtonItem alloc] initWithCustomView:self.testBtn];
-    self.navigationItem.rightBarButtonItems = @[testItem,settingItem];
+    self.navigationItem.rightBarButtonItems = @[testItem,settingItem,refreshItem];
 #else
     self.navigationItem.rightBarButtonItems = @[settingItem];
 #endif
@@ -158,6 +171,11 @@ __PW_ROUTER_REGISTER__
     [self routerURL:@"pwnote://test" withParam:nil];
 }
 
+- (void)onSync {
+    //TODO: wmy 同步接口
+    
+}
+
 - (void)onClickSetting {
     [self routerURL:@"pwnote://setting" withParam:nil];
 }
@@ -170,7 +188,7 @@ __PW_ROUTER_REGISTER__
 
 
 - (void)updateCategory:(PWCategoryViewModel *)viewModel {
-    [self onClickCategory];
+//    [self onClickCategory];
     self.title = viewModel.title;
 //    [self.dataSource requestWithSuccess:^{
 //        [self.tableView reloadData];
@@ -181,6 +199,17 @@ __PW_ROUTER_REGISTER__
 
 #pragma mark - --------------------private methods--------------
 #pragma mark - --------------------getters & setters & init members ------------------
+
+- (UIButton *)synchronizationBtn {
+    if (!_synchronizationBtn) {
+        _synchronizationBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _synchronizationBtn.titleLabel.font = [AMIconfont fontWithSize:24];
+        [_synchronizationBtn setTitle:XIconRefresh forState:UIControlStateNormal];
+        [_synchronizationBtn setTitleColor:kWhiteColor forState:UIControlStateNormal];
+        [_synchronizationBtn addTarget:self action:@selector(onSync) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _synchronizationBtn;
+}
 
 - (UIButton *)settingBtn {
     if (!_settingBtn) {
