@@ -8,6 +8,53 @@
 
 /* Begin PBXBuildFile section */
 		140AC8DA94B479A705CEA623 /* libPods-PWNote.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A04D7944F8754A62EF0F08 /* libPods-PWNote.a */; };
+		F70EBB49227FC62400CFC03A /* PWDialogTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F70EBB48227FC62400CFC03A /* PWDialogTestViewController.m */; };
+		F70EBB4E227FC85400CFC03A /* TYDeviceFunctionDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = F70EBB4C227FC85400CFC03A /* TYDeviceFunctionDialog.m */; };
+		F70EBB51227FC9EC00CFC03A /* TYDeviceFunctionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F70EBB50227FC9EC00CFC03A /* TYDeviceFunctionView.m */; };
+		F7449E9E22827D5200FA9B0C /* ty_device_function_dot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7449E9C22827D5200FA9B0C /* ty_device_function_dot@2x.png */; };
+		F7449E9F22827D5200FA9B0C /* ty_device_function_dot@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7449E9D22827D5200FA9B0C /* ty_device_function_dot@3x.png */; };
+		F7449EA422827DB900FA9B0C /* ty_device_function_sub@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7449EA022827DB800FA9B0C /* ty_device_function_sub@2x.png */; };
+		F7449EA522827DB900FA9B0C /* ty_device_function_add@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7449EA122827DB900FA9B0C /* ty_device_function_add@3x.png */; };
+		F7449EA622827DB900FA9B0C /* ty_device_function_add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7449EA222827DB900FA9B0C /* ty_device_function_add@2x.png */; };
+		F7449EA722827DB900FA9B0C /* ty_device_function_sub@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7449EA322827DB900FA9B0C /* ty_device_function_sub@3x.png */; };
+		F7449EAA2282862600FA9B0C /* ty_device_function_downarrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7449EA82282862600FA9B0C /* ty_device_function_downarrow@2x.png */; };
+		F7449EAB2282862600FA9B0C /* ty_device_function_downarrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7449EA92282862600FA9B0C /* ty_device_function_downarrow@3x.png */; };
+		F7449EAE2282864000FA9B0C /* ty_device_function_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7449EAC2282864000FA9B0C /* ty_device_function_select@2x.png */; };
+		F7449EAF2282864000FA9B0C /* ty_device_function_select@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7449EAD2282864000FA9B0C /* ty_device_function_select@3x.png */; };
+		F7449EB42282874200FA9B0C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7449EB62282874200FA9B0C /* Localizable.strings */; };
+		F7449EBB2282A4E700FA9B0C /* UIImage+TYTrim.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449EBA2282A4E700FA9B0C /* UIImage+TYTrim.m */; };
+		F7449EBE2282AC3700FA9B0C /* UIImage+TPAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449EBD2282AC3700FA9B0C /* UIImage+TPAlpha.m */; };
+		F7449EC22282CCC200FA9B0C /* TYHomeDeviceControlItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449EC12282CCC100FA9B0C /* TYHomeDeviceControlItemView.m */; };
+		F7449EC52282CDE200FA9B0C /* UIColor+TYHex.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449EC42282CDE200FA9B0C /* UIColor+TYHex.m */; };
+		F7449EC82282CFBB00FA9B0C /* UIView+TYFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449EC62282CFBB00FA9B0C /* UIView+TYFrame.m */; };
+		F7449ECB2282D30600FA9B0C /* TYDFCollectionTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449ECA2282D30600FA9B0C /* TYDFCollectionTopView.m */; };
+		F7449ECE2282D39200FA9B0C /* TYDFTopCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449ECD2282D39200FA9B0C /* TYDFTopCollectionViewCell.m */; };
+		F7449EE62283B9FC00FA9B0C /* ty_device_function_min@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7449EE22283B9FC00FA9B0C /* ty_device_function_min@2x.png */; };
+		F7449EE72283B9FC00FA9B0C /* ty_device_function_max@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7449EE32283B9FC00FA9B0C /* ty_device_function_max@2x.png */; };
+		F7449EE82283B9FC00FA9B0C /* ty_device_function_max@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7449EE42283B9FC00FA9B0C /* ty_device_function_max@3x.png */; };
+		F7449EE92283B9FC00FA9B0C /* ty_device_function_min@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7449EE52283B9FC00FA9B0C /* ty_device_function_min@3x.png */; };
+		F7449EEC2283BBE000FA9B0C /* TYDFSimpleTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449EEB2283BBE000FA9B0C /* TYDFSimpleTitleLabel.m */; };
+		F7449F1D2283BF3400FA9B0C /* TYDFCenterCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449EEE2283BF3300FA9B0C /* TYDFCenterCollectionView.m */; };
+		F7449F1E2283BF3400FA9B0C /* TYDFTimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449EF02283BF3300FA9B0C /* TYDFTimerView.m */; };
+		F7449F1F2283BF3400FA9B0C /* TYDFTimerSetView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449EF22283BF3300FA9B0C /* TYDFTimerSetView.m */; };
+		F7449F202283BF3400FA9B0C /* TYDFTimerDefaultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449EF32283BF3300FA9B0C /* TYDFTimerDefaultModel.m */; };
+		F7449F212283BF3400FA9B0C /* TYDFTimerTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449EFA2283BF3300FA9B0C /* TYDFTimerTableView.m */; };
+		F7449F222283BF3400FA9B0C /* TYDFTimerPickerColumnView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449EFB2283BF3300FA9B0C /* TYDFTimerPickerColumnView.m */; };
+		F7449F232283BF3400FA9B0C /* TYDFTimerPickerColumnCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449EFC2283BF3300FA9B0C /* TYDFTimerPickerColumnCell.m */; };
+		F7449F242283BF3400FA9B0C /* TYDFTimerPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449EFD2283BF3300FA9B0C /* TYDFTimerPickerView.m */; };
+		F7449F252283BF3400FA9B0C /* TYDFSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449F002283BF3300FA9B0C /* TYDFSliderView.m */; };
+		F7449F262283BF3400FA9B0C /* TYAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449F022283BF3300FA9B0C /* TYAlertView.m */; };
+		F7449F272283BF3400FA9B0C /* TYAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449F042283BF3300FA9B0C /* TYAlertViewController.m */; };
+		F7449F282283BF3400FA9B0C /* TYAlertViewWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449F052283BF3300FA9B0C /* TYAlertViewWindow.m */; };
+		F7449F292283BF3400FA9B0C /* TYAlertViewWindowObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449F082283BF3300FA9B0C /* TYAlertViewWindowObserver.m */; };
+		F7449F2A2283BF3400FA9B0C /* TPSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449F0A2283BF3300FA9B0C /* TPSlider.m */; };
+		F7449F2B2283BF3400FA9B0C /* TYAlertViewWindowContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449F0C2283BF3300FA9B0C /* TYAlertViewWindowContainer.m */; };
+		F7449F2C2283BF3400FA9B0C /* TYAlertViewTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449F0F2283BF3300FA9B0C /* TYAlertViewTextField.m */; };
+		F7449F2D2283BF3400FA9B0C /* TYAlertShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449F112283BF3300FA9B0C /* TYAlertShadowView.m */; };
+		F7449F2E2283BF3400FA9B0C /* TYDeviceSliderFuctionDefaultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449F122283BF3300FA9B0C /* TYDeviceSliderFuctionDefaultModel.m */; };
+		F7449F2F2283BF3400FA9B0C /* TYDeviceSingleSectionFunctionDefaultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449F182283BF3300FA9B0C /* TYDeviceSingleSectionFunctionDefaultModel.m */; };
+		F7449F302283BF3400FA9B0C /* TYDeviceFunctionSingleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449F192283BF3300FA9B0C /* TYDeviceFunctionSingleTableViewCell.m */; };
+		F7449F312283BF3400FA9B0C /* TYDFTableViewAgency.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449F1B2283BF3300FA9B0C /* TYDFTableViewAgency.m */; };
 		F81C127B21AA4EC6009CF497 /* PWNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C127A21AA4EC6009CF497 /* PWNavigationViewController.m */; };
 		F81C128321AA4F32009CF497 /* PWTestHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C128221AA4F32009CF497 /* PWTestHomeViewController.m */; };
 		F81C128721AA4FA8009CF497 /* PWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C128621AA4FA8009CF497 /* PWHomeViewController.m */; };
@@ -117,6 +164,90 @@
 		45B084998F35C9D708670F18 /* libPods-PWNoteTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PWNoteTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7258A6FF615CE16C4387B440 /* Pods-PWNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PWNote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PWNote/Pods-PWNote.debug.xcconfig"; sourceTree = "<group>"; };
 		F1A04D7944F8754A62EF0F08 /* libPods-PWNote.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PWNote.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F70EBB47227FC62400CFC03A /* PWDialogTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWDialogTestViewController.h; sourceTree = "<group>"; };
+		F70EBB48227FC62400CFC03A /* PWDialogTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWDialogTestViewController.m; sourceTree = "<group>"; };
+		F70EBB4B227FC85400CFC03A /* TYDeviceFuctionModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYDeviceFuctionModelProtocol.h; sourceTree = "<group>"; };
+		F70EBB4C227FC85400CFC03A /* TYDeviceFunctionDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYDeviceFunctionDialog.m; sourceTree = "<group>"; };
+		F70EBB4D227FC85400CFC03A /* TYDeviceFunctionDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYDeviceFunctionDialog.h; sourceTree = "<group>"; };
+		F70EBB4F227FC9EC00CFC03A /* TYDeviceFunctionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYDeviceFunctionView.h; sourceTree = "<group>"; };
+		F70EBB50227FC9EC00CFC03A /* TYDeviceFunctionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYDeviceFunctionView.m; sourceTree = "<group>"; };
+		F70EBB58227FD9D500CFC03A /* TYDeviceFunctionDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYDeviceFunctionDefine.h; sourceTree = "<group>"; };
+		F7449E9C22827D5200FA9B0C /* ty_device_function_dot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ty_device_function_dot@2x.png"; sourceTree = "<group>"; };
+		F7449E9D22827D5200FA9B0C /* ty_device_function_dot@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ty_device_function_dot@3x.png"; sourceTree = "<group>"; };
+		F7449EA022827DB800FA9B0C /* ty_device_function_sub@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ty_device_function_sub@2x.png"; sourceTree = "<group>"; };
+		F7449EA122827DB900FA9B0C /* ty_device_function_add@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ty_device_function_add@3x.png"; sourceTree = "<group>"; };
+		F7449EA222827DB900FA9B0C /* ty_device_function_add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ty_device_function_add@2x.png"; sourceTree = "<group>"; };
+		F7449EA322827DB900FA9B0C /* ty_device_function_sub@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ty_device_function_sub@3x.png"; sourceTree = "<group>"; };
+		F7449EA82282862600FA9B0C /* ty_device_function_downarrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ty_device_function_downarrow@2x.png"; sourceTree = "<group>"; };
+		F7449EA92282862600FA9B0C /* ty_device_function_downarrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ty_device_function_downarrow@3x.png"; sourceTree = "<group>"; };
+		F7449EAC2282864000FA9B0C /* ty_device_function_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ty_device_function_select@2x.png"; sourceTree = "<group>"; };
+		F7449EAD2282864000FA9B0C /* ty_device_function_select@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ty_device_function_select@3x.png"; sourceTree = "<group>"; };
+		F7449EB02282870000FA9B0C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		F7449EB12282870000FA9B0C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		F7449EB52282874200FA9B0C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F7449EB72282874300FA9B0C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		F7449EB92282A4E700FA9B0C /* UIImage+TYTrim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TYTrim.h"; sourceTree = "<group>"; };
+		F7449EBA2282A4E700FA9B0C /* UIImage+TYTrim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TYTrim.m"; sourceTree = "<group>"; };
+		F7449EBC2282AC3600FA9B0C /* UIImage+TPAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TPAlpha.h"; sourceTree = "<group>"; };
+		F7449EBD2282AC3700FA9B0C /* UIImage+TPAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TPAlpha.m"; sourceTree = "<group>"; };
+		F7449EC02282CCC100FA9B0C /* TYHomeDeviceControlItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYHomeDeviceControlItemView.h; sourceTree = "<group>"; };
+		F7449EC12282CCC100FA9B0C /* TYHomeDeviceControlItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYHomeDeviceControlItemView.m; sourceTree = "<group>"; };
+		F7449EC32282CDE200FA9B0C /* UIColor+TYHex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TYHex.h"; sourceTree = "<group>"; };
+		F7449EC42282CDE200FA9B0C /* UIColor+TYHex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TYHex.m"; sourceTree = "<group>"; };
+		F7449EC62282CFBB00FA9B0C /* UIView+TYFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TYFrame.m"; sourceTree = "<group>"; };
+		F7449EC72282CFBB00FA9B0C /* UIView+TYFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TYFrame.h"; sourceTree = "<group>"; };
+		F7449EC92282D30600FA9B0C /* TYDFCollectionTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYDFCollectionTopView.h; sourceTree = "<group>"; };
+		F7449ECA2282D30600FA9B0C /* TYDFCollectionTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYDFCollectionTopView.m; sourceTree = "<group>"; };
+		F7449ECC2282D39200FA9B0C /* TYDFTopCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYDFTopCollectionViewCell.h; sourceTree = "<group>"; };
+		F7449ECD2282D39200FA9B0C /* TYDFTopCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYDFTopCollectionViewCell.m; sourceTree = "<group>"; };
+		F7449EE22283B9FC00FA9B0C /* ty_device_function_min@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ty_device_function_min@2x.png"; sourceTree = "<group>"; };
+		F7449EE32283B9FC00FA9B0C /* ty_device_function_max@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ty_device_function_max@2x.png"; sourceTree = "<group>"; };
+		F7449EE42283B9FC00FA9B0C /* ty_device_function_max@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ty_device_function_max@3x.png"; sourceTree = "<group>"; };
+		F7449EE52283B9FC00FA9B0C /* ty_device_function_min@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ty_device_function_min@3x.png"; sourceTree = "<group>"; };
+		F7449EEA2283BBE000FA9B0C /* TYDFSimpleTitleLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYDFSimpleTitleLabel.h; sourceTree = "<group>"; };
+		F7449EEB2283BBE000FA9B0C /* TYDFSimpleTitleLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYDFSimpleTitleLabel.m; sourceTree = "<group>"; };
+		F7449EEE2283BF3300FA9B0C /* TYDFCenterCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYDFCenterCollectionView.m; sourceTree = "<group>"; };
+		F7449EF02283BF3300FA9B0C /* TYDFTimerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYDFTimerView.m; sourceTree = "<group>"; };
+		F7449EF12283BF3300FA9B0C /* TYDFTimerDefaultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYDFTimerDefaultModel.h; sourceTree = "<group>"; };
+		F7449EF22283BF3300FA9B0C /* TYDFTimerSetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYDFTimerSetView.m; sourceTree = "<group>"; };
+		F7449EF32283BF3300FA9B0C /* TYDFTimerDefaultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYDFTimerDefaultModel.m; sourceTree = "<group>"; };
+		F7449EF42283BF3300FA9B0C /* TYDFTimerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYDFTimerView.h; sourceTree = "<group>"; };
+		F7449EF52283BF3300FA9B0C /* TYDFTimerSetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYDFTimerSetView.h; sourceTree = "<group>"; };
+		F7449EF72283BF3300FA9B0C /* TYDFTimerPickerColumnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYDFTimerPickerColumnView.h; sourceTree = "<group>"; };
+		F7449EF82283BF3300FA9B0C /* TYDFTimerPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYDFTimerPickerView.h; sourceTree = "<group>"; };
+		F7449EF92283BF3300FA9B0C /* TYDFTimerPickerColumnCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYDFTimerPickerColumnCell.h; sourceTree = "<group>"; };
+		F7449EFA2283BF3300FA9B0C /* TYDFTimerTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYDFTimerTableView.m; sourceTree = "<group>"; };
+		F7449EFB2283BF3300FA9B0C /* TYDFTimerPickerColumnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYDFTimerPickerColumnView.m; sourceTree = "<group>"; };
+		F7449EFC2283BF3300FA9B0C /* TYDFTimerPickerColumnCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYDFTimerPickerColumnCell.m; sourceTree = "<group>"; };
+		F7449EFD2283BF3300FA9B0C /* TYDFTimerPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYDFTimerPickerView.m; sourceTree = "<group>"; };
+		F7449EFE2283BF3300FA9B0C /* TYDFTimerTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYDFTimerTableView.h; sourceTree = "<group>"; };
+		F7449F002283BF3300FA9B0C /* TYDFSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYDFSliderView.m; sourceTree = "<group>"; };
+		F7449F022283BF3300FA9B0C /* TYAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAlertView.m; sourceTree = "<group>"; };
+		F7449F032283BF3300FA9B0C /* TYAlertViewWindowContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAlertViewWindowContainer.h; sourceTree = "<group>"; };
+		F7449F042283BF3300FA9B0C /* TYAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAlertViewController.m; sourceTree = "<group>"; };
+		F7449F052283BF3300FA9B0C /* TYAlertViewWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAlertViewWindow.m; sourceTree = "<group>"; };
+		F7449F062283BF3300FA9B0C /* TPSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPSlider.h; sourceTree = "<group>"; };
+		F7449F072283BF3300FA9B0C /* TYAlertViewTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAlertViewTextField.h; sourceTree = "<group>"; };
+		F7449F082283BF3300FA9B0C /* TYAlertViewWindowObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAlertViewWindowObserver.m; sourceTree = "<group>"; };
+		F7449F092283BF3300FA9B0C /* TYAlertShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAlertShadowView.h; sourceTree = "<group>"; };
+		F7449F0A2283BF3300FA9B0C /* TPSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSlider.m; sourceTree = "<group>"; };
+		F7449F0B2283BF3300FA9B0C /* TYAlertViewWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAlertViewWindow.h; sourceTree = "<group>"; };
+		F7449F0C2283BF3300FA9B0C /* TYAlertViewWindowContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAlertViewWindowContainer.m; sourceTree = "<group>"; };
+		F7449F0D2283BF3300FA9B0C /* TYAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAlertViewController.h; sourceTree = "<group>"; };
+		F7449F0E2283BF3300FA9B0C /* TYAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAlertView.h; sourceTree = "<group>"; };
+		F7449F0F2283BF3300FA9B0C /* TYAlertViewTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAlertViewTextField.m; sourceTree = "<group>"; };
+		F7449F102283BF3300FA9B0C /* TYAlertViewWindowObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAlertViewWindowObserver.h; sourceTree = "<group>"; };
+		F7449F112283BF3300FA9B0C /* TYAlertShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAlertShadowView.m; sourceTree = "<group>"; };
+		F7449F122283BF3300FA9B0C /* TYDeviceSliderFuctionDefaultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYDeviceSliderFuctionDefaultModel.m; sourceTree = "<group>"; };
+		F7449F132283BF3300FA9B0C /* TYDFSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYDFSliderView.h; sourceTree = "<group>"; };
+		F7449F142283BF3300FA9B0C /* TYDeviceSliderFuctionDefaultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYDeviceSliderFuctionDefaultModel.h; sourceTree = "<group>"; };
+		F7449F172283BF3300FA9B0C /* TYDFTableViewAgency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYDFTableViewAgency.h; sourceTree = "<group>"; };
+		F7449F182283BF3300FA9B0C /* TYDeviceSingleSectionFunctionDefaultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYDeviceSingleSectionFunctionDefaultModel.m; sourceTree = "<group>"; };
+		F7449F192283BF3300FA9B0C /* TYDeviceFunctionSingleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYDeviceFunctionSingleTableViewCell.m; sourceTree = "<group>"; };
+		F7449F1A2283BF3300FA9B0C /* TYDeviceSingleSectionFunctionDefaultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYDeviceSingleSectionFunctionDefaultModel.h; sourceTree = "<group>"; };
+		F7449F1B2283BF3300FA9B0C /* TYDFTableViewAgency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYDFTableViewAgency.m; sourceTree = "<group>"; };
+		F7449F1C2283BF3300FA9B0C /* TYDeviceFunctionSingleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYDeviceFunctionSingleTableViewCell.h; sourceTree = "<group>"; };
+		F7449F322283C07E00FA9B0C /* TYDFCenterCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYDFCenterCollectionView.h; sourceTree = "<group>"; };
 		F81C127921AA4EC6009CF497 /* PWNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWNavigationViewController.h; sourceTree = "<group>"; };
 		F81C127A21AA4EC6009CF497 /* PWNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWNavigationViewController.m; sourceTree = "<group>"; };
 		F81C128121AA4F32009CF497 /* PWTestHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWTestHomeViewController.h; sourceTree = "<group>"; };
@@ -341,6 +472,172 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F70EBB46227FC60300CFC03A /* TYTest */ = {
+			isa = PBXGroup;
+			children = (
+				F70EBB4A227FC85400CFC03A /* DeviceFuctionDialog */,
+				F70EBB47227FC62400CFC03A /* PWDialogTestViewController.h */,
+				F70EBB48227FC62400CFC03A /* PWDialogTestViewController.m */,
+			);
+			path = TYTest;
+			sourceTree = "<group>";
+		};
+		F70EBB4A227FC85400CFC03A /* DeviceFuctionDialog */ = {
+			isa = PBXGroup;
+			children = (
+				F7449EED2283BF3300FA9B0C /* CenterView */,
+				F7449EBF2282CCA400FA9B0C /* TopView */,
+				F7449EB82282A4DE00FA9B0C /* Utils */,
+				F70EBB4B227FC85400CFC03A /* TYDeviceFuctionModelProtocol.h */,
+				F70EBB4C227FC85400CFC03A /* TYDeviceFunctionDialog.m */,
+				F70EBB4D227FC85400CFC03A /* TYDeviceFunctionDialog.h */,
+				F70EBB4F227FC9EC00CFC03A /* TYDeviceFunctionView.h */,
+				F70EBB50227FC9EC00CFC03A /* TYDeviceFunctionView.m */,
+				F70EBB58227FD9D500CFC03A /* TYDeviceFunctionDefine.h */,
+			);
+			path = DeviceFuctionDialog;
+			sourceTree = "<group>";
+		};
+		F7449E9322827CFB00FA9B0C /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				F7449EE32283B9FC00FA9B0C /* ty_device_function_max@2x.png */,
+				F7449EE42283B9FC00FA9B0C /* ty_device_function_max@3x.png */,
+				F7449EE22283B9FC00FA9B0C /* ty_device_function_min@2x.png */,
+				F7449EE52283B9FC00FA9B0C /* ty_device_function_min@3x.png */,
+				F7449EA222827DB900FA9B0C /* ty_device_function_add@2x.png */,
+				F7449EA122827DB900FA9B0C /* ty_device_function_add@3x.png */,
+				F7449EA022827DB800FA9B0C /* ty_device_function_sub@2x.png */,
+				F7449EA322827DB900FA9B0C /* ty_device_function_sub@3x.png */,
+				F7449E9C22827D5200FA9B0C /* ty_device_function_dot@2x.png */,
+				F7449E9D22827D5200FA9B0C /* ty_device_function_dot@3x.png */,
+				F7449EA82282862600FA9B0C /* ty_device_function_downarrow@2x.png */,
+				F7449EA92282862600FA9B0C /* ty_device_function_downarrow@3x.png */,
+				F7449EAC2282864000FA9B0C /* ty_device_function_select@2x.png */,
+				F7449EAD2282864000FA9B0C /* ty_device_function_select@3x.png */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		F7449EB82282A4DE00FA9B0C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F7449EC02282CCC100FA9B0C /* TYHomeDeviceControlItemView.h */,
+				F7449EC12282CCC100FA9B0C /* TYHomeDeviceControlItemView.m */,
+				F7449EC72282CFBB00FA9B0C /* UIView+TYFrame.h */,
+				F7449EC62282CFBB00FA9B0C /* UIView+TYFrame.m */,
+				F7449EC32282CDE200FA9B0C /* UIColor+TYHex.h */,
+				F7449EC42282CDE200FA9B0C /* UIColor+TYHex.m */,
+				F7449EBC2282AC3600FA9B0C /* UIImage+TPAlpha.h */,
+				F7449EBD2282AC3700FA9B0C /* UIImage+TPAlpha.m */,
+				F7449EB92282A4E700FA9B0C /* UIImage+TYTrim.h */,
+				F7449EBA2282A4E700FA9B0C /* UIImage+TYTrim.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F7449EBF2282CCA400FA9B0C /* TopView */ = {
+			isa = PBXGroup;
+			children = (
+				F7449EC92282D30600FA9B0C /* TYDFCollectionTopView.h */,
+				F7449ECA2282D30600FA9B0C /* TYDFCollectionTopView.m */,
+				F7449ECC2282D39200FA9B0C /* TYDFTopCollectionViewCell.h */,
+				F7449ECD2282D39200FA9B0C /* TYDFTopCollectionViewCell.m */,
+				F7449EEA2283BBE000FA9B0C /* TYDFSimpleTitleLabel.h */,
+				F7449EEB2283BBE000FA9B0C /* TYDFSimpleTitleLabel.m */,
+			);
+			path = TopView;
+			sourceTree = "<group>";
+		};
+		F7449EED2283BF3300FA9B0C /* CenterView */ = {
+			isa = PBXGroup;
+			children = (
+				F7449F322283C07E00FA9B0C /* TYDFCenterCollectionView.h */,
+				F7449EEE2283BF3300FA9B0C /* TYDFCenterCollectionView.m */,
+				F7449EEF2283BF3300FA9B0C /* Timer */,
+				F7449EFF2283BF3300FA9B0C /* Slider */,
+				F7449F162283BF3300FA9B0C /* Select */,
+			);
+			path = CenterView;
+			sourceTree = "<group>";
+		};
+		F7449EEF2283BF3300FA9B0C /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				F7449EF02283BF3300FA9B0C /* TYDFTimerView.m */,
+				F7449EF12283BF3300FA9B0C /* TYDFTimerDefaultModel.h */,
+				F7449EF22283BF3300FA9B0C /* TYDFTimerSetView.m */,
+				F7449EF32283BF3300FA9B0C /* TYDFTimerDefaultModel.m */,
+				F7449EF42283BF3300FA9B0C /* TYDFTimerView.h */,
+				F7449EF52283BF3300FA9B0C /* TYDFTimerSetView.h */,
+				F7449EF62283BF3300FA9B0C /* TimerSet */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		F7449EF62283BF3300FA9B0C /* TimerSet */ = {
+			isa = PBXGroup;
+			children = (
+				F7449EF72283BF3300FA9B0C /* TYDFTimerPickerColumnView.h */,
+				F7449EF82283BF3300FA9B0C /* TYDFTimerPickerView.h */,
+				F7449EF92283BF3300FA9B0C /* TYDFTimerPickerColumnCell.h */,
+				F7449EFA2283BF3300FA9B0C /* TYDFTimerTableView.m */,
+				F7449EFB2283BF3300FA9B0C /* TYDFTimerPickerColumnView.m */,
+				F7449EFC2283BF3300FA9B0C /* TYDFTimerPickerColumnCell.m */,
+				F7449EFD2283BF3300FA9B0C /* TYDFTimerPickerView.m */,
+				F7449EFE2283BF3300FA9B0C /* TYDFTimerTableView.h */,
+			);
+			path = TimerSet;
+			sourceTree = "<group>";
+		};
+		F7449EFF2283BF3300FA9B0C /* Slider */ = {
+			isa = PBXGroup;
+			children = (
+				F7449F002283BF3300FA9B0C /* TYDFSliderView.m */,
+				F7449F012283BF3300FA9B0C /* inner */,
+				F7449F122283BF3300FA9B0C /* TYDeviceSliderFuctionDefaultModel.m */,
+				F7449F132283BF3300FA9B0C /* TYDFSliderView.h */,
+				F7449F142283BF3300FA9B0C /* TYDeviceSliderFuctionDefaultModel.h */,
+			);
+			path = Slider;
+			sourceTree = "<group>";
+		};
+		F7449F012283BF3300FA9B0C /* inner */ = {
+			isa = PBXGroup;
+			children = (
+				F7449F022283BF3300FA9B0C /* TYAlertView.m */,
+				F7449F032283BF3300FA9B0C /* TYAlertViewWindowContainer.h */,
+				F7449F042283BF3300FA9B0C /* TYAlertViewController.m */,
+				F7449F052283BF3300FA9B0C /* TYAlertViewWindow.m */,
+				F7449F062283BF3300FA9B0C /* TPSlider.h */,
+				F7449F072283BF3300FA9B0C /* TYAlertViewTextField.h */,
+				F7449F082283BF3300FA9B0C /* TYAlertViewWindowObserver.m */,
+				F7449F092283BF3300FA9B0C /* TYAlertShadowView.h */,
+				F7449F0A2283BF3300FA9B0C /* TPSlider.m */,
+				F7449F0B2283BF3300FA9B0C /* TYAlertViewWindow.h */,
+				F7449F0C2283BF3300FA9B0C /* TYAlertViewWindowContainer.m */,
+				F7449F0D2283BF3300FA9B0C /* TYAlertViewController.h */,
+				F7449F0E2283BF3300FA9B0C /* TYAlertView.h */,
+				F7449F0F2283BF3300FA9B0C /* TYAlertViewTextField.m */,
+				F7449F102283BF3300FA9B0C /* TYAlertViewWindowObserver.h */,
+				F7449F112283BF3300FA9B0C /* TYAlertShadowView.m */,
+			);
+			path = inner;
+			sourceTree = "<group>";
+		};
+		F7449F162283BF3300FA9B0C /* Select */ = {
+			isa = PBXGroup;
+			children = (
+				F7449F172283BF3300FA9B0C /* TYDFTableViewAgency.h */,
+				F7449F182283BF3300FA9B0C /* TYDeviceSingleSectionFunctionDefaultModel.m */,
+				F7449F192283BF3300FA9B0C /* TYDeviceFunctionSingleTableViewCell.m */,
+				F7449F1A2283BF3300FA9B0C /* TYDeviceSingleSectionFunctionDefaultModel.h */,
+				F7449F1B2283BF3300FA9B0C /* TYDFTableViewAgency.m */,
+				F7449F1C2283BF3300FA9B0C /* TYDeviceFunctionSingleTableViewCell.h */,
+			);
+			path = Select;
+			sourceTree = "<group>";
+		};
 		F81C127C21AA4EDF009CF497 /* Router */ = {
 			isa = PBXGroup;
 			children = (
@@ -503,6 +800,7 @@
 		F81C12C421AC4DD2009CF497 /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				F70EBB46227FC60300CFC03A /* TYTest */,
 				F866B00A21E5F4360058BDEB /* Search */,
 				F87872B521B96DE500CA34CE /* Category */,
 				F81C132421B3D0BB009CF497 /* User */,
@@ -658,6 +956,7 @@
 		F838F1BA21AA4B2600C309F2 /* PWNote */ = {
 			isa = PBXGroup;
 			children = (
+				F7449E9322827CFB00FA9B0C /* resources */,
 				F86F1BD021E449410075462E /* ImageCatch */,
 				F86F1BC421E43B130075462E /* Skin */,
 				F81C134021B3F3A0009CF497 /* Network */,
@@ -674,6 +973,7 @@
 				F838F1BF21AA4B2600C309F2 /* ViewController.m */,
 				F838F1C121AA4B2600C309F2 /* Main.storyboard */,
 				F838F1C421AA4B2700C309F2 /* Assets.xcassets */,
+				F7449EB62282874200FA9B0C /* Localizable.strings */,
 				F838F1C621AA4B2700C309F2 /* LaunchScreen.storyboard */,
 				F838F1C921AA4B2700C309F2 /* Info.plist */,
 				F838F1CA21AA4B2700C309F2 /* main.m */,
@@ -919,6 +1219,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = F838F1AF21AA4B2600C309F2;
 			productRefGroup = F838F1B921AA4B2600C309F2 /* Products */;
@@ -937,9 +1238,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7449E9E22827D5200FA9B0C /* ty_device_function_dot@2x.png in Resources */,
 				F838F1C821AA4B2700C309F2 /* LaunchScreen.storyboard in Resources */,
+				F7449EE72283B9FC00FA9B0C /* ty_device_function_max@2x.png in Resources */,
+				F7449EAE2282864000FA9B0C /* ty_device_function_select@2x.png in Resources */,
+				F7449E9F22827D5200FA9B0C /* ty_device_function_dot@3x.png in Resources */,
+				F7449EE92283B9FC00FA9B0C /* ty_device_function_min@3x.png in Resources */,
+				F7449EA722827DB900FA9B0C /* ty_device_function_sub@3x.png in Resources */,
+				F7449EAB2282862600FA9B0C /* ty_device_function_downarrow@3x.png in Resources */,
+				F7449EE82283B9FC00FA9B0C /* ty_device_function_max@3x.png in Resources */,
+				F7449EAA2282862600FA9B0C /* ty_device_function_downarrow@2x.png in Resources */,
+				F7449EA622827DB900FA9B0C /* ty_device_function_add@2x.png in Resources */,
 				F81C12EB21B2667B009CF497 /* iconfont.ttf in Resources */,
 				F838F1C521AA4B2700C309F2 /* Assets.xcassets in Resources */,
+				F7449EA522827DB900FA9B0C /* ty_device_function_add@3x.png in Resources */,
+				F7449EA422827DB900FA9B0C /* ty_device_function_sub@2x.png in Resources */,
+				F7449EB42282874200FA9B0C /* Localizable.strings in Resources */,
+				F7449EAF2282864000FA9B0C /* ty_device_function_select@3x.png in Resources */,
+				F7449EE62283B9FC00FA9B0C /* ty_device_function_min@2x.png in Resources */,
 				F838F1C321AA4B2600C309F2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -992,27 +1308,42 @@
 				F81C131A21B37DE0009CF497 /* PWMissionModel.m in Sources */,
 				F8FD7CDA21E5CA57000145D6 /* PWDismissAnimationTransition.m in Sources */,
 				F81C12AE21AC43F1009CF497 /* PWDataSource.m in Sources */,
+				F7449F2F2283BF3400FA9B0C /* TYDeviceSingleSectionFunctionDefaultModel.m in Sources */,
+				F7449EC82282CFBB00FA9B0C /* UIView+TYFrame.m in Sources */,
 				F86F1BBA21E34C9B0075462E /* PWBigTitleTableViewController.m in Sources */,
 				F81C135721B400DA009CF497 /* MBProgressHUD+PWUtils.m in Sources */,
 				F8FD7CC121E4D407000145D6 /* PWCategoryFooterItemView.m in Sources */,
 				F87872C421BC0B4800CA34CE /* PWCategorySectionModel.m in Sources */,
 				F887CC7E21D205A00009F5EC /* PWUpdateUtils.m in Sources */,
 				F81C133021B3DA43009CF497 /* PWKeepViewModel.m in Sources */,
+				F7449EBE2282AC3700FA9B0C /* UIImage+TPAlpha.m in Sources */,
 				F81C12AA21AC3BA2009CF497 /* PWTableViewController.m in Sources */,
+				F70EBB49227FC62400CFC03A /* PWDialogTestViewController.m in Sources */,
 				F81C128721AA4FA8009CF497 /* PWHomeViewController.m in Sources */,
 				F81C134321B3F3B2009CF497 /* PWNetworkService.m in Sources */,
 				F81C133C21B3F257009CF497 /* PWUserManager.m in Sources */,
 				F8FD7CB821E49649000145D6 /* PWCategoryModel.m in Sources */,
+				F7449EBB2282A4E700FA9B0C /* UIImage+TYTrim.m in Sources */,
 				F86F1BCB21E442D70075462E /* PWCategoryUserItemView.m in Sources */,
+				F7449F1D2283BF3400FA9B0C /* TYDFCenterCollectionView.m in Sources */,
 				F86F1BAD21E336EC0075462E /* PWBigTitleView.m in Sources */,
+				F7449EC22282CCC200FA9B0C /* TYHomeDeviceControlItemView.m in Sources */,
 				F86F1BD621E44A160075462E /* PWImageConfigModel.m in Sources */,
 				F81C132D21B3D971009CF497 /* PWTodoListViewModel.m in Sources */,
 				F81C131721B37DAC009CF497 /* PWMissionViewModel.m in Sources */,
 				F8FD7CD321E5B291000145D6 /* PWPresentAnimationTransition.m in Sources */,
 				F887CC7B21D204DD0009F5EC /* PWApplicationMessages.m in Sources */,
 				F86F1BCF21E4439B0075462E /* PWCategoryUserViewModel.m in Sources */,
+				F7449F302283BF3400FA9B0C /* TYDeviceFunctionSingleTableViewCell.m in Sources */,
 				F8FD7CD721E5C7FD000145D6 /* PWPresentationController.m in Sources */,
+				F7449F1F2283BF3400FA9B0C /* TYDFTimerSetView.m in Sources */,
+				F7449F282283BF3400FA9B0C /* TYAlertViewWindow.m in Sources */,
+				F7449F2E2283BF3400FA9B0C /* TYDeviceSliderFuctionDefaultModel.m in Sources */,
 				F81C12A321AAFEE9009CF497 /* PWCollectionDelegate.m in Sources */,
+				F7449F1E2283BF3400FA9B0C /* TYDFTimerView.m in Sources */,
+				F7449F312283BF3400FA9B0C /* TYDFTableViewAgency.m in Sources */,
+				F7449F262283BF3400FA9B0C /* TYAlertView.m in Sources */,
+				F7449F2A2283BF3400FA9B0C /* TPSlider.m in Sources */,
 				F81C134621B3F981009CF497 /* PWSettingDataSource.m in Sources */,
 				F838F1C021AA4B2600C309F2 /* ViewController.m in Sources */,
 				F866B00D21E5F44D0058BDEB /* PWSearchViewController.m in Sources */,
@@ -1023,32 +1354,48 @@
 				F81C12CA21AC4EBB009CF497 /* PWMoreViewModel.m in Sources */,
 				F838F1BD21AA4B2600C309F2 /* AppDelegate.m in Sources */,
 				F86F1BC321E43A750075462E /* PWCategoryItemView.m in Sources */,
+				F7449F242283BF3400FA9B0C /* TYDFTimerPickerView.m in Sources */,
+				F70EBB51227FC9EC00CFC03A /* TYDeviceFunctionView.m in Sources */,
 				F81C133621B3DB65009CF497 /* PWKeepItemView.m in Sources */,
 				F81C127B21AA4EC6009CF497 /* PWNavigationViewController.m in Sources */,
 				F81C129121AA551F009CF497 /* PWRouter.m in Sources */,
 				F81C134C21B3FA77009CF497 /* PWSettingItemView.m in Sources */,
+				F7449F222283BF3400FA9B0C /* TYDFTimerPickerColumnView.m in Sources */,
 				F8FD7CC721E5884B000145D6 /* NSArray+PWAddition.m in Sources */,
 				F8FD7CC421E4D451000145D6 /* PWCagegoryFooterViewModel.m in Sources */,
 				F81C12B321AC4524009CF497 /* PWViewModel.m in Sources */,
 				F81C132021B38118009CF497 /* UIView+ALMAdditons.m in Sources */,
+				F7449F2C2283BF3400FA9B0C /* TYAlertViewTextField.m in Sources */,
 				F81C132721B3D0E0009CF497 /* PWUserViewController.m in Sources */,
 				F81C129C21AAF60E009CF497 /* PWSettingViewController.m in Sources */,
+				F7449F212283BF3400FA9B0C /* TYDFTimerTableView.m in Sources */,
+				F7449F232283BF3400FA9B0C /* TYDFTimerPickerColumnCell.m in Sources */,
 				F81C12C221AC4B7C009CF497 /* UITableViewCell+PWItemView.m in Sources */,
 				F81C129721AA5607009CF497 /* PWRouterAction.m in Sources */,
+				F7449F252283BF3400FA9B0C /* TYDFSliderView.m in Sources */,
 				F81C133321B3DA52009CF497 /* PWKeepDataSource.m in Sources */,
+				F7449EC52282CDE200FA9B0C /* UIColor+TYHex.m in Sources */,
+				F7449EEC2283BBE000FA9B0C /* TYDFSimpleTitleLabel.m in Sources */,
 				F81C132A21B3D950009CF497 /* PWToDoListDataSource.m in Sources */,
 				F87872B821B96DFF00CA34CE /* PWCategoryViewController.m in Sources */,
 				F81C12BC21AC461B009CF497 /* PWItemView.m in Sources */,
+				F70EBB4E227FC85400CFC03A /* TYDeviceFunctionDialog.m in Sources */,
 				F81C134921B3F99A009CF497 /* PWSettingViewModel.m in Sources */,
 				F81C12C721AC4DFB009CF497 /* PWMoreDataSource.m in Sources */,
 				F8FD7CBB21E4A23C000145D6 /* NSString+PWEmpty.m in Sources */,
 				F81C12B721AC4559009CF497 /* PWSectionModel.m in Sources */,
 				F86F1BBF21E358260075462E /* PWInteractor.m in Sources */,
+				F7449ECB2282D30600FA9B0C /* TYDFCollectionTopView.m in Sources */,
+				F7449F292283BF3400FA9B0C /* TYAlertViewWindowObserver.m in Sources */,
 				F81C12FE21B2682F009CF497 /* PWMissionViewController.m in Sources */,
+				F7449F2D2283BF3400FA9B0C /* TYAlertShadowView.m in Sources */,
+				F7449ECE2282D39200FA9B0C /* TYDFTopCollectionViewCell.m in Sources */,
+				F7449F2B2283BF3400FA9B0C /* TYAlertViewWindowContainer.m in Sources */,
 				F87872BE21B9721D00CA34CE /* PWCollectionViewViewController.m in Sources */,
 				F81C133921B3DD13009CF497 /* PWTableViewAutoAlyoutDelegate.m in Sources */,
 				F81C133F21B3F25F009CF497 /* PWUser.m in Sources */,
 				F87872BB21B9705E00CA34CE /* PWCategoryDataSource.m in Sources */,
+				F7449F202283BF3400FA9B0C /* TYDFTimerDefaultModel.m in Sources */,
 				F81C128321AA4F32009CF497 /* PWTestHomeViewController.m in Sources */,
 				F81C129F21AAF676009CF497 /* PWMoreViewController.m in Sources */,
 				F86F1BB321E343AD0075462E /* PWBigTitleCollectionViewController.m in Sources */,
@@ -1059,6 +1406,7 @@
 				F86F1BD321E4495F0075462E /* UIImageView+PWWebCatch.m in Sources */,
 				F81C128B21AA4FF0009CF497 /* PWLocalConfig.m in Sources */,
 				F81C128E21AA4FFE009CF497 /* PWLocalManager.m in Sources */,
+				F7449F272283BF3400FA9B0C /* TYAlertViewController.m in Sources */,
 				F86F1BB021E33DDC0075462E /* PWBigTitleViewModel.m in Sources */,
 				F81C131421B37A24009CF497 /* PWMissionDataSource.m in Sources */,
 				F81C131D21B37E10009CF497 /* PWMissionItemView.m in Sources */,
@@ -1099,10 +1447,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		F7449EB62282874200FA9B0C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F7449EB52282874200FA9B0C /* en */,
+				F7449EB72282874300FA9B0C /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		F838F1C121AA4B2600C309F2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F838F1C221AA4B2600C309F2 /* Base */,
+				F7449EB02282870000FA9B0C /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1111,6 +1469,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				F838F1C721AA4B2700C309F2 /* Base */,
+				F7449EB12282870000FA9B0C /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1122,6 +1481,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1181,6 +1541,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1236,7 +1597,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J75WQTUZC9;
+				DEVELOPMENT_TEAM = AH8FHU45PG;
 				INFOPLIST_FILE = PWNote/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1255,7 +1616,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J75WQTUZC9;
+				DEVELOPMENT_TEAM = AH8FHU45PG;
 				INFOPLIST_FILE = PWNote/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (

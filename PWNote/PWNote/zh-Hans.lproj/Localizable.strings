@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  PWNote
+
+  Created by 温明妍 on 2019/5/8.
+  Copyright © 2019 明妍. All rights reserved.
+*/
+"scene_time_unit_hour" = "时";
+"scene_time_unit_minute" = "分";
+"scene_time_unit_second" = "秒";
+
+"action_cancel" = "取消";
+"action_start" = "开始";

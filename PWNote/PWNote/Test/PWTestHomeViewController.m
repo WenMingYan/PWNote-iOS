@@ -77,6 +77,7 @@ __PW_ROUTER_REGISTER__
              @"pwnote://more",
              @"pwnote://home",
              @"pwnote://search",
+             @"pwnote://tydialog",
              ];
 }
 
