@@ -73,7 +73,6 @@
     viewModel.indexPath = indexPath;
     itemView.viewModel = viewModel;
     viewModel.itemView = itemView;
-    viewModel.itemView = itemView;
     return cell;
 }
 
@@ -100,6 +99,8 @@
     }
 }
 
+
+//TODO: wmy 需要优化
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     if ([self.viewController respondsToSelector:@selector(scrollViewDidEndDecelerating:)]) {
         @weakify(self);

@@ -37,7 +37,6 @@
         model.selector = select;
         self.actionDict[eventName] = model;
     }
-    
 }
 
 - (void)sendEventName:(NSString *)eventName withObjects:(id)object {
