@@ -4,7 +4,7 @@
 //
 //  Created by 温明妍 on 2019/5/6.
 //  Copyright © 2019 明妍. All rights reserved.
-//
+//TODO: wmy to delete
 
 #ifndef TYDeviceFunctionDefine_h
 #define TYDeviceFunctionDefine_h

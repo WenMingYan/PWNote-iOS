@@ -9,11 +9,11 @@
 #import "TYSmartActionDialogTimerSetView.h"
 #import <Masonry/Masonry.h>
 #import "TYDeviceFunctionDefine.h"
-#import "TYDFTimerPickerView.h"
+#import "TYSmartActionDialogTimerPickerView.h"
 
 @interface TYSmartActionDialogTimerSetView () <TYDFTimerPickerViewDelegate,TYDFTimerPickerViewDataSource>
 
-@property (nonatomic, strong) TYDFTimerPickerView *pickerView;
+@property (nonatomic, strong) TYSmartActionDialogTimerPickerView *pickerView;
 
 @property (nonatomic, copy) NSString *hours;
 @property (nonatomic, copy) NSString *minutes;
@@ -124,7 +124,7 @@
 #pragma mark - --------------------UITableViewDelegate--------------
 #pragma mark - --------------------CustomDelegate--------------
 
-- (NSInteger)numberOfComponentsInPickerView:(TYDFTimerPickerView *)pickerView {
+- (NSInteger)numberOfComponentsInPickerView:(TYSmartActionDialogTimerPickerView *)pickerView {
     return self.components;
 }
 
@@ -152,7 +152,7 @@
     return 60;
 }
 
-- (NSInteger)pickerView:(TYDFTimerPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+- (NSInteger)pickerView:(TYSmartActionDialogTimerPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
     NSInteger hour = self.model.dialogTimer / 60 / 60;
     if (hour) {
         if (component == 0) {
@@ -175,7 +175,7 @@
     return 0;
 }
 
-- (NSAttributedString *)pickerView:(TYDFTimerPickerView *)pickerView attributedTitleForRow:(NSInteger)row forComponent:(NSInteger)component {
+- (NSAttributedString *)pickerView:(TYSmartActionDialogTimerPickerView *)pickerView attributedTitleForRow:(NSInteger)row forComponent:(NSInteger)component {
     NSString *string = [NSString stringWithFormat:@"%.2ld",(long)row];
     NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:string];
     [attrString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:TYScreenAdaptor(44) weight:UIFontWeightSemibold] range:NSMakeRange(0, 2)];
@@ -183,7 +183,7 @@
     return attrString;
 }
 
-- (void)pickerView:(TYDFTimerPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+- (void)pickerView:(TYSmartActionDialogTimerPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     NSInteger hour = self.model.dialogTimer / 60 / 60;
     if (hour) {
         if (component == 0) {
@@ -220,19 +220,19 @@
 }
 
 
-- (CGFloat)rowHeightInPickerView:(TYDFTimerPickerView *)pickerView forComponent:(NSInteger)component {
+- (CGFloat)rowHeightInPickerView:(TYSmartActionDialogTimerPickerView *)pickerView forComponent:(NSInteger)component {
     return TYScreenAdaptor(60);
 }
 
-- (CGFloat)pickerView:(TYDFTimerPickerView *)pickerView middleTextVerticalOffsetForcomponent:(NSInteger)component {
+- (CGFloat)pickerView:(TYSmartActionDialogTimerPickerView *)pickerView middleTextVerticalOffsetForcomponent:(NSInteger)component {
     return TYScreenAdaptor(-3);
 }
 
-- (CGFloat)pickerView:(TYDFTimerPickerView *)pickerView middleTextHorizontalOffsetForcomponent:(NSInteger)component {
+- (CGFloat)pickerView:(TYSmartActionDialogTimerPickerView *)pickerView middleTextHorizontalOffsetForcomponent:(NSInteger)component {
     return TYScreenAdaptor(3 + 26);
 }
 
-- (NSString *)pickerView:(TYDFTimerPickerView *)pickerView middleTextForcomponent:(NSInteger)component {
+- (NSString *)pickerView:(TYSmartActionDialogTimerPickerView *)pickerView middleTextForcomponent:(NSInteger)component {
     if (self.components == 3) {
         if (component == 0) {
             return NSLocalizedString(@"scene_time_unit_hour", nil);
@@ -275,8 +275,8 @@
 
 //TODO: wmy 把懒加载改成以下方式
 
-- (TYDFTimerPickerView *)timePickerView {
-    TYDFTimerPickerView *timePickerView = [[TYDFTimerPickerView alloc] init];
+- (TYSmartActionDialogTimerPickerView *)timePickerView {
+    TYSmartActionDialogTimerPickerView *timePickerView = [[TYSmartActionDialogTimerPickerView alloc] init];
     timePickerView.dataSource = self;
     timePickerView.delegate = self;
     timePickerView.lineHeight = 0;
@@ -289,7 +289,7 @@
     return timePickerView;
 }
 
-TYLazyPropertyWithInit(TYDFTimerPickerView, pickerView, {
+TYLazyPropertyWithInit(TYSmartActionDialogTimerPickerView, pickerView, {
     _pickerView = [self timePickerView];
 });
 

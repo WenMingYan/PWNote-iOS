@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "PWNavigationViewController.h"
 #import "PWHomeViewController.h"
+#import "PWDialogTestViewController.h"
 #import "PWRouter.h"
 
 @interface AppDelegate ()
@@ -19,9 +20,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // 初始化Router
-    
-    PWHomeViewController *home = [[PWHomeViewController alloc] init];
-    PWNavigationViewController *vc = [[PWNavigationViewController alloc] initWithRootViewController:home];
+    PWDialogTestViewController *test = [[PWDialogTestViewController alloc] init];
+//    PWHomeViewController *home = [[PWHomeViewController alloc] init];
+    PWNavigationViewController *vc = [[PWNavigationViewController alloc] initWithRootViewController:test];
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
     [[PWRouter sharedInstance] setupWithNavigation:vc];

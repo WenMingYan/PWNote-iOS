@@ -1,0 +1,520 @@
+//
+//  TYDFTimerPickerView.m
+//  PWNote
+//
+//  Created by 温明妍 on 2019/5/7.
+//  Copyright © 2019 明妍. All rights reserved.
+//
+
+#import "TYSmartActionDialogTimerPickerView.h"
+#import "TYSmartActionDialogTimerPickerColumnView.h"
+#import "UIView+ALMAdditons.h"
+
+@interface TYSmartActionDialogTimerPickerView()<TYDFTimerPickerColumnViewDelegate>
+
+@property (nonatomic, strong) NSMutableArray<NSNumber *> *animationOfSelectedRowList;
+@property (nonatomic, strong) NSMutableArray<NSNumber *> *numberOfSelectedRowList;
+@property (nonatomic, strong) NSMutableArray<NSNumber *> *numberOfSelectedComponentList;
+
+@property (nonatomic, strong) NSArray<UIView *> *upLines;
+@property (nonatomic, strong) NSArray<UIView *> *downLines;
+@property (nonatomic, assign) NSUInteger numberOfRows;
+@property (nonatomic, strong) NSArray<TYSmartActionDialogTimerPickerColumnView *> *columnViewList;
+
+@property (nonatomic, assign) BOOL isSubViewLayouted;
+@property (nonatomic, assign) BOOL isSelected;
+@end
+
+@implementation TYSmartActionDialogTimerPickerView
+
+
+#pragma mark - --------------------dealloc ------------------
+#pragma mark - --------------------life cycle--------------------
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame]) {
+        [self setup];
+    }
+    return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    if (self = [super initWithCoder:aDecoder]) {
+        [self setup];
+    }
+    return self;
+}
+
+- (void)setup {
+    self.lineBackgroundColor = [UIColor lightGrayColor];
+    self.textColorOfSelectedRow = [UIColor blackColor];
+    self.textColorOfOtherRow = [UIColor lightGrayColor];
+    self.isHiddenMiddleText = true;
+    self.isHiddenWheels = true;
+    self.lineHeight = 0.5;
+    self.verticalLineWidth = 0.5;
+    self.verticalLineBackgroundColor = self.lineBackgroundColor;
+}
+
+#pragma mark - --------------------UITableViewDelegate--------------
+#pragma mark - --------------------CustomDelegate--------------
+#pragma mark - --------------------Event Response--------------
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    if (_isSubViewLayouted) {
+        return;
+    }
+    _isSubViewLayouted = true;
+    [self setupColumnView];
+    [self setupView];
+    [self.upLines enumerateObjectsUsingBlock:^(UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [self bringSubviewToFront:obj];
+        [self bringSubviewToFront:self.downLines[idx]];
+    }];
+    
+    if (_isSelected) {
+        [self.numberOfSelectedRowList enumerateObjectsUsingBlock:^(NSNumber * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            NSInteger component = [self.numberOfSelectedComponentList[idx] integerValue];
+            BOOL isAnimation = [self.animationOfSelectedRowList[idx] boolValue];
+            [self selectRow:[obj integerValue] inComponent:component animated:isAnimation];
+        }];
+    }
+}
+#pragma mark - --------------------private methods--------------
+#pragma mark - --------------------getters & setters & init members ------------------
+
+- (TYSmartActionDialogTimerPickerColumnView *)createColumnViewAtComponent:(NSUInteger)component refresh:(BOOL)refresh {
+    CGFloat width = self.width / _numberOfComponents;
+    NSUInteger row = [self.dataSource pickerView:self numberOfRowsInComponent:component];
+    NSMutableArray *datas = [NSMutableArray arrayWithCapacity:row];
+    NSMutableArray *colors = [NSMutableArray arrayWithCapacity:row];
+    for (int j = 0; j < row; j++) {
+        BOOL tf = true;
+        NSAttributedString *attriStr = [[NSAttributedString alloc]initWithString:@"?"];
+        UIColor *color = [UIColor clearColor];
+        if (self.delegate) {
+            if ([self.delegate respondsToSelector:@selector(pickerView:attributedTitleForRow:forComponent:)]) {
+                attriStr = [self.delegate pickerView:self attributedTitleForRow:j forComponent:component];
+                if (!attriStr) {
+                    tf = false;
+                }
+            }else {
+                tf = false;
+            }
+            if (!tf && [self.delegate respondsToSelector:@selector(pickerView:titleForRow:forComponent:)]) {
+                NSString *title = [self.delegate pickerView:self titleForRow:j forComponent:component];
+                title = title ? title : @"?";
+                attriStr = [[NSAttributedString alloc]initWithString:title];
+            }
+            
+            if ([self.delegate respondsToSelector:@selector(pickerView:viewBackgroundColorForRow:forComponent:)]) {
+                UIColor *temp = [self.delegate pickerView:self viewBackgroundColorForRow:j forComponent:component];
+                if (temp) {
+                    color = temp;
+                }
+            }
+        }
+        [colors addObject:color];
+        [datas addObject:attriStr];
+    }
+    TYSmartActionDialogTimerPickerColumnView *view = [self columnViewInComponent:component];
+    if (!view) {
+        CGFloat rowHeight = [self rowHeightInComponent:component];
+        CGFloat upLineHeight = [self upLineHeightForComponent:component];
+        CGFloat downLineHeight = [self downLineHeightForComponent:component];
+        view = [[TYSmartActionDialogTimerPickerColumnView alloc]initWithFrame:CGRectMake(component * width, 0, width, self.height) rowHeight: rowHeight upLineHeight:upLineHeight downLineHeight:downLineHeight isCycleScroll:self.isCycleScroll datas:datas];
+        view.delegate = self;
+        [self addSubview:view];
+    }
+    view.isHiddenWheels = self.isHiddenWheels;
+    view.refresh = refresh;
+    view.viewBackgroundColors = colors;
+    view.textFontOfSelectedRow = [self textFontOfSelectedRowInComponent:component];
+    view.textFontOfOtherRow = [self textFontOfOtherRowInComponent:component];
+    view.component = component;
+    view.datas = datas;
+    view.textColorOfSelectedRow = [self textColorOfSelectedRowInComponent:component];
+    view.textColorOfOtherRow = [self textColorOfOtherRowInComponent:component];
+    return view;
+}
+
+- (void)setupColumnView {
+    NSMutableArray *columnViewList = [NSMutableArray arrayWithCapacity:_numberOfComponents];
+    for (int i = 0; i < _numberOfComponents; i++) {
+        TYSmartActionDialogTimerPickerColumnView *view = [self createColumnViewAtComponent:i refresh:false];
+        [columnViewList addObject:view];
+    }
+    self.columnViewList = columnViewList;
+}
+
+- (void)setupView {
+    if (!self.isHiddenMiddleText) {
+        [self setupMiddleTextLogic];
+    }
+    switch (self.type) {
+        case TYDFTimerPickerViewLineTypeline:
+        {
+            [self setupLineView1];
+            return;
+        }
+        case TYDFTimerPickerViewLineTypelineSegment:
+        {
+            [self setupLineView2];
+            return;
+        }
+        case TYDFTimerPickerViewLineTypelineVertical:
+        {
+            [self setupLineView3];
+            return;
+        }
+    }
+}
+
+- (void)setupLineView1 {
+    NSMutableArray *upLines = [NSMutableArray arrayWithCapacity:_numberOfComponents];
+    NSMutableArray *downLines = [NSMutableArray arrayWithCapacity:_numberOfComponents];
+    CGFloat lineWidth = (self.width / _numberOfComponents);
+    for (int i = 0; i < _numberOfComponents; i++) {
+        CGFloat rowHeight = [self rowHeightInComponent:i];
+        CGFloat upLineHeight = [self upLineHeightForComponent:i];
+        CGFloat upLinePosY = self.height / 2 - rowHeight / 2 - upLineHeight;
+        UIView *upLine = [[UIView alloc]initWithFrame:CGRectMake(i * lineWidth, upLinePosY, lineWidth, upLineHeight)];
+        upLine.backgroundColor = self.lineBackgroundColor;
+        [self addSubview:upLine];
+        [upLines addObject:upLine];
+        
+        CGFloat downLineHeight = [self downLineHeightForComponent:i];
+        CGFloat downLinePosY = CGRectGetMaxY(upLine.frame) + rowHeight;
+        UIView *downLine = [[UIView alloc]initWithFrame:CGRectMake(i * lineWidth, downLinePosY, lineWidth, downLineHeight)];
+        downLine.backgroundColor = self.lineBackgroundColor;
+        [self addSubview:downLine];
+        [downLines addObject:downLine];
+    }
+    self.upLines = upLines;
+    self.downLines = downLines;
+}
+
+- (void)setupLineView2 {
+    NSMutableArray *upLines = [NSMutableArray arrayWithCapacity:_numberOfComponents];
+    NSMutableArray *downLines = [NSMutableArray arrayWithCapacity:_numberOfComponents];
+    CGFloat lineWidth = (self.frame.size.width / _numberOfComponents) - 20;
+    CGFloat space = (self.frame.size.width / _numberOfComponents);
+    if (_numberOfComponents == 1) {
+        CGFloat rowHeight = [self rowHeightInComponent:0];
+        CGFloat upLineHeight = [self upLineHeightForComponent:0];
+        upLineHeight = upLineHeight > 1.5 ? upLineHeight: 1.5;
+        CGFloat upLinePosY = self.height / 2 - rowHeight / 2 - upLineHeight;
+        UIView *upLine = [[UIView alloc]initWithFrame:CGRectMake(self.frame.size.width / 2 - 43, upLinePosY, 90, upLineHeight)];
+        upLine.backgroundColor = self.lineBackgroundColor;
+        [self addSubview:upLine];
+        [upLines addObject:upLine];
+        
+        CGFloat downLineHeight = [self downLineHeightForComponent:0];
+        downLineHeight = downLineHeight > 1.5 ? downLineHeight: 1.5;
+        CGFloat downLinePosY = CGRectGetMaxY(upLine.frame) + rowHeight;
+        UIView *downLine = [[UIView alloc]initWithFrame:CGRectMake(self.frame.size.width / 2 - 43, downLinePosY, 90, downLineHeight)];
+        downLine.backgroundColor = self.lineBackgroundColor;
+        [self addSubview:downLine];
+        [downLines addObject:downLine];
+        
+        self.upLines = upLines;
+        self.downLines = downLines;
+        return;
+    }
+    for (int i = 0; i < _numberOfComponents; i++) {
+        CGFloat rowHeight = [self rowHeightInComponent:i];
+        CGFloat upLineHeight = [self upLineHeightForComponent:i];
+        upLineHeight = upLineHeight > 1.5 ? upLineHeight: 1.5;
+        CGFloat upLinePosY = self.height / 2 - rowHeight / 2 - upLineHeight;
+        UIView *upLine = [[UIView alloc]initWithFrame:CGRectMake(10 + space * i, upLinePosY, lineWidth, upLineHeight)];
+        upLine.backgroundColor = [self upLineBackgroundColorForComponent:i];
+        [self addSubview:upLine];
+        [upLines addObject:upLine];
+        
+        CGFloat downLineHeight = [self downLineHeightForComponent:i];
+        downLineHeight = downLineHeight > 1.5 ? downLineHeight: 1.5;
+        CGFloat downLinePosY = CGRectGetMaxY(upLine.frame) + rowHeight;
+        UIView *downLine = [[UIView alloc]initWithFrame:CGRectMake(10 + space * i, downLinePosY, lineWidth, downLineHeight)];
+        downLine.backgroundColor = [self downLineBackgroundColorForComponent:i];
+        [self addSubview:downLine];
+        [downLines addObject:downLine];
+    }
+    self.upLines = upLines;
+    self.downLines = downLines;
+}
+
+- (void)setupLineView3 {
+    CGFloat space = (self.frame.size.width / _numberOfComponents);
+    [self setupLineView2];
+    for (int i = 0; i < _numberOfComponents; i++) {
+        if (i != _numberOfComponents - 1) {
+            CGFloat width = [self verticalLineWidthForComponent:i];
+            UIView *verticalLine = [[UIView alloc]initWithFrame:CGRectMake(space * (i+1), 0, width, self.height)];
+            verticalLine.backgroundColor = [self verticalLineBackgroundColorForComponent:i];
+            [self addSubview:verticalLine];
+        }
+    }
+}
+
+- (void)setupMiddleTextLogic {
+    CGFloat lineWidth = (self.frame.size.width / _numberOfComponents);
+    CGFloat HorizontalOffset = 0;
+    CGFloat VerticalOffset = 0;
+    for (int i = 0; i < _numberOfComponents; i++) {
+        UILabel *label = [[UILabel alloc]init];
+        if ([self.delegate respondsToSelector:@selector(pickerView:middleTextHorizontalOffsetForcomponent:)]) {
+            HorizontalOffset = [self.delegate pickerView:self middleTextHorizontalOffsetForcomponent:i];
+        }
+        if ([self.delegate respondsToSelector:@selector(pickerView:middleTextVerticalOffsetForcomponent:)]) {
+            VerticalOffset = [self.delegate pickerView:self middleTextVerticalOffsetForcomponent:i];
+        }
+        label.frame = CGRectMake(lineWidth / 2 + lineWidth * i + HorizontalOffset, self.height / 2 + VerticalOffset, 30, 30);
+        NSString *text = @"";
+        if ([self.delegate respondsToSelector:@selector(pickerView:middleTextForcomponent:)]) {
+            text = [self.delegate pickerView:self middleTextForcomponent:i];
+        }
+        label.text = text;
+        label.textColor = self.middleTextColor;
+        label.font = self.middleTextFont;
+        [self addSubview:label];
+        
+    }
+}
+
+- (UIColor *)verticalLineBackgroundColorForComponent:(NSInteger)component {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(pickerView:verticalLineBackgroundColorForComponent:)]) {
+        return [self.delegate pickerView:self verticalLineBackgroundColorForComponent:component];
+    }
+    return self.verticalLineBackgroundColor;
+}
+
+- (CGFloat)verticalLineWidthForComponent:(NSInteger)component {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(pickerView:verticalLineWidthForComponent:)]) {
+        return [self.delegate pickerView:self verticalLineWidthForComponent:component];
+    }
+    return self.verticalLineWidth;
+}
+
+- (UIColor *)upLineBackgroundColorForComponent:(NSInteger)component {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(pickerView:upLineBackgroundColorForComponent:)]) {
+        return [self.delegate pickerView:self upLineBackgroundColorForComponent:component];
+    }
+    return self.lineBackgroundColor;
+}
+
+- (UIColor *)downLineBackgroundColorForComponent:(NSInteger)component {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(pickerView:downLineBackgroundColorForComponent:)]) {
+        return [self.delegate pickerView:self downLineBackgroundColorForComponent:component];
+    }
+    return self.lineBackgroundColor;
+}
+
+- (CGFloat)upLineHeightForComponent:(NSInteger)component {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(pickerView:upLineHeightForComponent:)]) {
+        return [self.delegate pickerView:self upLineHeightForComponent:component];
+    }
+    return self.lineHeight;
+}
+
+- (CGFloat)downLineHeightForComponent:(NSInteger)component {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(pickerView:downLineHeightForComponent:)]) {
+        return [self.delegate pickerView:self downLineHeightForComponent:component];
+    }
+    return self.lineHeight;
+}
+
+- (UIColor *)textColorOfSelectedRowInComponent:(NSInteger)component {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(pickerView:textColorOfSelectedRowInComponent:)]) {
+        return [self.delegate pickerView:self textColorOfSelectedRowInComponent:component];
+    }
+    return self.textColorOfSelectedRow;
+}
+
+- (UIColor *)textColorOfOtherRowInComponent:(NSInteger)component {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(pickerView:textColorOfOtherRowInComponent:)]) {
+        return [self.delegate pickerView:self textColorOfOtherRowInComponent:component];
+    }
+    return self.textColorOfOtherRow;
+}
+
+- (NSInteger)numberOfRowsInComponent:(NSInteger)component {
+    if (self.dataSource && [self.dataSource respondsToSelector:@selector(pickerView:numberOfRowsInComponent:)]) {
+        return [self.dataSource pickerView:self numberOfRowsInComponent:component];
+    }
+    return 0;
+}
+
+- (NSInteger)selectedRowInComponent:(NSInteger)component {
+    TYSmartActionDialogTimerPickerColumnView *view = [self columnViewInComponent:component];
+    if (view) {
+        return view.selectedRow;
+    }
+    return -1;
+}
+
+- (NSString *)textOfSelectedRowInComponent:(NSInteger)component {
+    TYSmartActionDialogTimerPickerColumnView *view = [self columnViewInComponent:component];
+    if (view) {
+        return view.textOfSelectedRow;
+    }
+    return nil;
+}
+
+- (void)selectRow:(NSInteger)row inComponent:(NSInteger)component animated:(BOOL)animated {
+    if (_isSubViewLayouted) {
+        TYSmartActionDialogTimerPickerColumnView *view = [self columnViewInComponent:component];
+        [view selectRow:row animated:animated];
+        return;
+    }
+    if (!_isSubViewLayouted) {
+        [self.numberOfSelectedComponentList addObject:@(component)];
+        [self.numberOfSelectedRowList addObject:@(row)];
+        [self.animationOfSelectedRowList addObject:@(animated)];
+    }
+    _isSelected = true;
+}
+
+- (CGFloat)rowHeightInComponent:(NSInteger)component {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(rowHeightInPickerView:forComponent:)]) {
+        return [self.delegate rowHeightInPickerView:self forComponent: component];
+    }else if (self.rowHeight != 0) {
+        return self.rowHeight;
+    }
+    self.rowHeight = 44;
+    return self.rowHeight;
+}
+
+- (UIFont *)textFontOfSelectedRowInComponent:(NSInteger)component {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(pickerView:textFontOfSelectedRowInComponent:)]) {
+        return [self.delegate pickerView:self textFontOfSelectedRowInComponent:component];
+    }
+    return self.textFontOfSelectedRow;
+}
+
+- (UIFont *)textFontOfOtherRowInComponent:(NSInteger)component {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(pickerView:textFontOfOtherRowInComponent:)]) {
+        return [self.delegate pickerView:self textFontOfOtherRowInComponent:component];
+    }
+    return self.textFontOfOtherRow;
+}
+
+- (TYSmartActionDialogTimerPickerColumnView *)columnViewInComponent:(NSUInteger)component {
+    if (!self.columnViewList || self.columnViewList.count == 0) {
+        return nil;
+    }
+    __block TYSmartActionDialogTimerPickerColumnView *view = nil;
+    [self.columnViewList enumerateObjectsUsingBlock:^(TYSmartActionDialogTimerPickerColumnView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if (obj.component == component) {
+            view = obj;
+            *stop = true;
+        }
+    }];
+    return view;
+}
+
+- (void)reloadComponent:(NSInteger)component {
+    [self createColumnViewAtComponent:component refresh:false];
+}
+
+- (void)reloadComponent:(NSInteger)component refresh:(BOOL)refresh {
+    [self createColumnViewAtComponent:component refresh:refresh];
+}
+
+- (void)reloadAllComponents {
+    [self setupColumnView];
+}
+
+#pragma mark - TYDFTimerPickerColumnViewDelegate
+- (void)pickerColumnView:(TYSmartActionDialogTimerPickerColumnView *)pickerColumnView didSelectRow:(NSInteger)row {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(pickerView:didSelectRow:inComponent:)]) {
+        [self.delegate pickerView:self didSelectRow:row inComponent:pickerColumnView.component];
+    }
+}
+
+- (void)pickerColumnView:(TYSmartActionDialogTimerPickerColumnView *)pickerColumnView title:(NSString *)title didSelectRow:(NSInteger)row {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(pickerView:title:didSelectRow:inComponent:)]) {
+        [self.delegate pickerView:self title:title didSelectRow:row inComponent:pickerColumnView.component];
+    }
+}
+
+- (UIFont *)pickerColumnView:(TYSmartActionDialogTimerPickerColumnView *)pickerColumnView textFontOfOtherRow:(NSInteger)row InComponent:(NSInteger)component {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(pickerView:textFontOfOtherRow:InComponent:)]) {
+        return [self.delegate pickerView:self textFontOfOtherRow:row InComponent:component];
+    }
+    return self.textFontOfOtherRow;
+}
+
+- (UIColor *)pickerColumnView:(TYSmartActionDialogTimerPickerColumnView *)pickerColumnView textColorOfOtherRow:(NSInteger)row InComponent:(NSInteger)component {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(pickerView:textColorOfOtherRow:InComponent:)]) {
+        return [self.delegate pickerView:self textColorOfOtherRow:row InComponent:component];
+    }
+    return self.textColorOfOtherRow;
+}
+
+#pragma mark - Setter
+- (void)setDataSource:(id<TYDFTimerPickerViewDataSource>)dataSource {
+    _dataSource = dataSource;
+    if (dataSource && [dataSource respondsToSelector:@selector(numberOfComponentsInPickerView:)]) {
+        _numberOfComponents = [dataSource numberOfComponentsInPickerView:self];
+    }
+}
+
+- (void)setTextColorOfSelectedRow:(UIColor *)textColorOfSelectedRow {
+    _textColorOfSelectedRow = textColorOfSelectedRow;
+    [self.columnViewList enumerateObjectsUsingBlock:^(TYSmartActionDialogTimerPickerColumnView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        obj.textColorOfSelectedRow = textColorOfSelectedRow;
+    }];
+}
+
+- (void)setTextColorOfOtherRow:(UIColor *)textColorOfOtherRow {
+    _textColorOfOtherRow = textColorOfOtherRow;
+    [self.columnViewList enumerateObjectsUsingBlock:^(TYSmartActionDialogTimerPickerColumnView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        obj.textColorOfOtherRow = textColorOfOtherRow;
+    }];
+}
+
+- (void)setLineBackgroundColor:(UIColor *)lineBackgroundColor {
+    _lineBackgroundColor = lineBackgroundColor;
+    [self.upLines enumerateObjectsUsingBlock:^(UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        obj.backgroundColor = lineBackgroundColor;
+        self.downLines[idx].backgroundColor = lineBackgroundColor;
+    }];
+}
+
+#pragma mark - Getter
+
+- (NSUInteger)numberOfRows {
+    if (!_numberOfRows) {
+        if (self.dataSource && [self.dataSource respondsToSelector:@selector(pickerView:numberOfRowsInComponent:)]) {
+            _numberOfRows = [self.dataSource pickerView:self numberOfRowsInComponent:_numberOfComponents];
+        }else {
+            _numberOfRows = 0;
+        }
+    }
+    return _numberOfRows;
+}
+
+- (NSMutableArray<NSNumber *> *)animationOfSelectedRowList {
+    if (!_animationOfSelectedRowList) {
+        _animationOfSelectedRowList = [NSMutableArray array];
+    }
+    return _animationOfSelectedRowList;
+}
+
+- (NSMutableArray<NSNumber *> *)numberOfSelectedRowList {
+    if (!_numberOfSelectedRowList) {
+        _numberOfSelectedRowList = [NSMutableArray array];
+    }
+    return _numberOfSelectedRowList;
+}
+
+- (NSMutableArray<NSNumber *> *)numberOfSelectedComponentList {
+    if (!_numberOfSelectedComponentList) {
+        _numberOfSelectedComponentList = [NSMutableArray array];
+    }
+    return _numberOfSelectedComponentList;
+}
+
+@end
+
