@@ -1,8 +1,8 @@
 //
-//  PWDialogTestViewController.h
+//  PWNetworkTestViewController.h
 //  PWNote
 //
-//  Created by 温明妍 on 2019/5/6.
+//  Created by 温明妍 on 2019/11/18.
 //  Copyright © 2019 明妍. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PWDialogTestViewController : PWViewController
+@interface PWNetworkTestViewController : PWViewController
 
 @end
 
