@@ -7,67 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		140AC8DA94B479A705CEA623 /* libPods-PWNote.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A04D7944F8754A62EF0F08 /* libPods-PWNote.a */; };
-		F70EBB49227FC62400CFC03A /* PWDialogTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F70EBB48227FC62400CFC03A /* PWDialogTestViewController.m */; };
-		F70EBB4E227FC85400CFC03A /* TYSmartActionDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = F70EBB4C227FC85400CFC03A /* TYSmartActionDialog.m */; };
-		F70EBB51227FC9EC00CFC03A /* TYActionDialogView.m in Sources */ = {isa = PBXBuildFile; fileRef = F70EBB50227FC9EC00CFC03A /* TYActionDialogView.m */; };
-		F7449E9E22827D5200FA9B0C /* ty_device_function_dot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7449E9C22827D5200FA9B0C /* ty_device_function_dot@2x.png */; };
-		F7449E9F22827D5200FA9B0C /* ty_device_function_dot@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7449E9D22827D5200FA9B0C /* ty_device_function_dot@3x.png */; };
-		F7449EA422827DB900FA9B0C /* ty_device_function_sub@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7449EA022827DB800FA9B0C /* ty_device_function_sub@2x.png */; };
-		F7449EA522827DB900FA9B0C /* ty_device_function_add@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7449EA122827DB900FA9B0C /* ty_device_function_add@3x.png */; };
-		F7449EA622827DB900FA9B0C /* ty_device_function_add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7449EA222827DB900FA9B0C /* ty_device_function_add@2x.png */; };
-		F7449EA722827DB900FA9B0C /* ty_device_function_sub@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7449EA322827DB900FA9B0C /* ty_device_function_sub@3x.png */; };
-		F7449EAA2282862600FA9B0C /* ty_device_function_downarrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7449EA82282862600FA9B0C /* ty_device_function_downarrow@2x.png */; };
-		F7449EAB2282862600FA9B0C /* ty_device_function_downarrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7449EA92282862600FA9B0C /* ty_device_function_downarrow@3x.png */; };
-		F7449EAE2282864000FA9B0C /* ty_device_function_select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7449EAC2282864000FA9B0C /* ty_device_function_select@2x.png */; };
-		F7449EAF2282864000FA9B0C /* ty_device_function_select@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7449EAD2282864000FA9B0C /* ty_device_function_select@3x.png */; };
+		D0244E19966B9B3854DB3F3A /* libPods-PWNote.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6645BB3A98C70301B72C55E4 /* libPods-PWNote.a */; };
+		DEE1B31423822DCF00B23588 /* PWNetworkTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE1B31323822DCF00B23588 /* PWNetworkTestViewController.m */; };
 		F7449EB42282874200FA9B0C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F7449EB62282874200FA9B0C /* Localizable.strings */; };
-		F7449EBB2282A4E700FA9B0C /* UIImage+TYTrim.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449EBA2282A4E700FA9B0C /* UIImage+TYTrim.m */; };
-		F7449EBE2282AC3700FA9B0C /* UIImage+TPAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449EBD2282AC3700FA9B0C /* UIImage+TPAlpha.m */; };
-		F7449EC52282CDE200FA9B0C /* UIColor+TYHex.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449EC42282CDE200FA9B0C /* UIColor+TYHex.m */; };
-		F7449EC82282CFBB00FA9B0C /* UIView+TYFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449EC62282CFBB00FA9B0C /* UIView+TYFrame.m */; };
-		F7449ECB2282D30600FA9B0C /* TYSmartActionDialogCollectionTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449ECA2282D30600FA9B0C /* TYSmartActionDialogCollectionTopView.m */; };
-		F7449ECE2282D39200FA9B0C /* TYSmartActionDialogTopCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449ECD2282D39200FA9B0C /* TYSmartActionDialogTopCollectionViewCell.m */; };
-		F7449EE62283B9FC00FA9B0C /* ty_device_function_min@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7449EE22283B9FC00FA9B0C /* ty_device_function_min@2x.png */; };
-		F7449EE72283B9FC00FA9B0C /* ty_device_function_max@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7449EE32283B9FC00FA9B0C /* ty_device_function_max@2x.png */; };
-		F7449EE82283B9FC00FA9B0C /* ty_device_function_max@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7449EE42283B9FC00FA9B0C /* ty_device_function_max@3x.png */; };
-		F7449EE92283B9FC00FA9B0C /* ty_device_function_min@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7449EE52283B9FC00FA9B0C /* ty_device_function_min@3x.png */; };
-		F7449EEC2283BBE000FA9B0C /* TYSmartActionDialogSimpleTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449EEB2283BBE000FA9B0C /* TYSmartActionDialogSimpleTitleLabel.m */; };
-		F7449F1D2283BF3400FA9B0C /* TYSmartActionDialogCenterCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449EEE2283BF3300FA9B0C /* TYSmartActionDialogCenterCollectionView.m */; };
-		F7449F1E2283BF3400FA9B0C /* TYSmartActionDialogTimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449EF02283BF3300FA9B0C /* TYSmartActionDialogTimerView.m */; };
-		F7449F1F2283BF3400FA9B0C /* TYSmartActionDialogTimerSetView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449EF22283BF3300FA9B0C /* TYSmartActionDialogTimerSetView.m */; };
-		F7449F202283BF3400FA9B0C /* TYSmartActionDialogTimerDefaultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449EF32283BF3300FA9B0C /* TYSmartActionDialogTimerDefaultModel.m */; };
-		F7449F212283BF3400FA9B0C /* TYSmartActionDialogTimerTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449EFA2283BF3300FA9B0C /* TYSmartActionDialogTimerTableView.m */; };
-		F7449F222283BF3400FA9B0C /* TYSmartActionDialogTimerPickerColumnView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449EFB2283BF3300FA9B0C /* TYSmartActionDialogTimerPickerColumnView.m */; };
-		F7449F232283BF3400FA9B0C /* TYSmartActionDialogTimerPickerColumnCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449EFC2283BF3300FA9B0C /* TYSmartActionDialogTimerPickerColumnCell.m */; };
-		F7449F242283BF3400FA9B0C /* TYSmartActionDialogTimerPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449EFD2283BF3300FA9B0C /* TYSmartActionDialogTimerPickerView.m */; };
-		F7449F252283BF3400FA9B0C /* TYSmartActionDialogNumberSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449F002283BF3300FA9B0C /* TYSmartActionDialogNumberSliderView.m */; };
-		F7449F262283BF3400FA9B0C /* TYAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449F022283BF3300FA9B0C /* TYAlertView.m */; };
-		F7449F272283BF3400FA9B0C /* TYAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449F042283BF3300FA9B0C /* TYAlertViewController.m */; };
-		F7449F282283BF3400FA9B0C /* TYAlertViewWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449F052283BF3300FA9B0C /* TYAlertViewWindow.m */; };
-		F7449F292283BF3400FA9B0C /* TYAlertViewWindowObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449F082283BF3300FA9B0C /* TYAlertViewWindowObserver.m */; };
-		F7449F2A2283BF3400FA9B0C /* TPSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449F0A2283BF3300FA9B0C /* TPSlider.m */; };
-		F7449F2B2283BF3400FA9B0C /* TYAlertViewWindowContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449F0C2283BF3300FA9B0C /* TYAlertViewWindowContainer.m */; };
-		F7449F2C2283BF3400FA9B0C /* TYAlertViewTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449F0F2283BF3300FA9B0C /* TYAlertViewTextField.m */; };
-		F7449F2D2283BF3400FA9B0C /* TYAlertShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449F112283BF3300FA9B0C /* TYAlertShadowView.m */; };
-		F7449F2E2283BF3400FA9B0C /* TYSmartActionDialogSliderNumberDefaultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449F122283BF3300FA9B0C /* TYSmartActionDialogSliderNumberDefaultModel.m */; };
-		F7449F2F2283BF3400FA9B0C /* TYSmartActionDialogSingleSectionDefaultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449F182283BF3300FA9B0C /* TYSmartActionDialogSingleSectionDefaultModel.m */; };
-		F7449F302283BF3400FA9B0C /* TYSmartActionDialogSingleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449F192283BF3300FA9B0C /* TYSmartActionDialogSingleTableViewCell.m */; };
-		F7449F312283BF3400FA9B0C /* TYSmartActionDialogTableViewAgency.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449F1B2283BF3300FA9B0C /* TYSmartActionDialogTableViewAgency.m */; };
-		F7449F3622855B4800FA9B0C /* TYSmartActionDialogSliderColoursModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449F3522855B4800FA9B0C /* TYSmartActionDialogSliderColoursModel.m */; };
-		F7449F3A22855C5000FA9B0C /* TYSmartActionDialogPaletteSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449F3922855C5000FA9B0C /* TYSmartActionDialogPaletteSliderView.m */; };
-		F7449F412285808400FA9B0C /* TYSmartActionDialogTimerBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449F402285808400FA9B0C /* TYSmartActionDialogTimerBaseView.m */; };
-		F7449F4422858FA700FA9B0C /* TYSmartActionDialogColoursSaturabilitySliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449F4322858FA700FA9B0C /* TYSmartActionDialogColoursSaturabilitySliderView.m */; };
-		F7449F4722859FD700FA9B0C /* TYSmartActionDialogTempColorSliderDefaultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7449F4622859FD700FA9B0C /* TYSmartActionDialogTempColorSliderDefaultModel.m */; };
-		F7A71D612287090A00B0E9A3 /* TYSmartActionDialogColoursSaturabilityIntensityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A71D602287090A00B0E9A3 /* TYSmartActionDialogColoursSaturabilityIntensityCell.m */; };
-		F7A71D642287123100B0E9A3 /* TYSmartActionDialogTimerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A71D632287123100B0E9A3 /* TYSmartActionDialogTimerCell.m */; };
-		F7A71D672289023A00B0E9A3 /* TYSmartActionDialogTimerSetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A71D662289023A00B0E9A3 /* TYSmartActionDialogTimerSetCell.m */; };
-		F7F8176A228661CE004330DC /* TYSmartActionDialogColoursSaturabilityIntensitySliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F81769228661CE004330DC /* TYSmartActionDialogColoursSaturabilityIntensitySliderView.m */; };
-		F7F8176D22866780004330DC /* TYSmartActionDialogSliderColoursSaturabilityIntensityDefaultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F8176C22866780004330DC /* TYSmartActionDialogSliderColoursSaturabilityIntensityDefaultModel.m */; };
-		F7F817712286AF48004330DC /* TYSmartActionDialogSingleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F817702286AF48004330DC /* TYSmartActionDialogSingleCell.m */; };
-		F7F817742286B54E004330DC /* TYSmartActionDialogNumberSliderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F817732286B54E004330DC /* TYSmartActionDialogNumberSliderCell.m */; };
-		F7F817772286C92B004330DC /* TYSmartActionDialogColoursSliderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F817762286C92B004330DC /* TYSmartActionDialogColoursSliderCell.m */; };
-		F7F8177A2286CF6A004330DC /* TYSmartActionDialogColoursSaturabilityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7F817792286CF6A004330DC /* TYSmartActionDialogColoursSaturabilityCell.m */; };
 		F81C127B21AA4EC6009CF497 /* PWNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C127A21AA4EC6009CF497 /* PWNavigationViewController.m */; };
 		F81C128321AA4F32009CF497 /* PWTestHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C128221AA4F32009CF497 /* PWTestHomeViewController.m */; };
 		F81C128721AA4FA8009CF497 /* PWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F81C128621AA4FA8009CF497 /* PWHomeViewController.m */; };
@@ -174,121 +116,15 @@
 /* Begin PBXFileReference section */
 		098A9301941826400E4489BC /* libPods-PWNoteUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PWNoteUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CF38FAFBEB73E094EC36422 /* Pods-PWNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PWNote.release.xcconfig"; path = "Pods/Target Support Files/Pods-PWNote/Pods-PWNote.release.xcconfig"; sourceTree = "<group>"; };
-		45B084998F35C9D708670F18 /* libPods-PWNoteTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PWNoteTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6645BB3A98C70301B72C55E4 /* libPods-PWNote.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PWNote.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7258A6FF615CE16C4387B440 /* Pods-PWNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PWNote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PWNote/Pods-PWNote.debug.xcconfig"; sourceTree = "<group>"; };
-		F1A04D7944F8754A62EF0F08 /* libPods-PWNote.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PWNote.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F70EBB47227FC62400CFC03A /* PWDialogTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWDialogTestViewController.h; sourceTree = "<group>"; };
-		F70EBB48227FC62400CFC03A /* PWDialogTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWDialogTestViewController.m; sourceTree = "<group>"; };
-		F70EBB4B227FC85400CFC03A /* TYSmartActionDialogModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYSmartActionDialogModelProtocol.h; sourceTree = "<group>"; };
-		F70EBB4C227FC85400CFC03A /* TYSmartActionDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSmartActionDialog.m; sourceTree = "<group>"; };
-		F70EBB4D227FC85400CFC03A /* TYSmartActionDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYSmartActionDialog.h; sourceTree = "<group>"; };
-		F70EBB4F227FC9EC00CFC03A /* TYActionDialogView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYActionDialogView.h; sourceTree = "<group>"; };
-		F70EBB50227FC9EC00CFC03A /* TYActionDialogView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYActionDialogView.m; sourceTree = "<group>"; };
-		F70EBB58227FD9D500CFC03A /* TYDeviceFunctionDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYDeviceFunctionDefine.h; sourceTree = "<group>"; };
-		F7449E9C22827D5200FA9B0C /* ty_device_function_dot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ty_device_function_dot@2x.png"; sourceTree = "<group>"; };
-		F7449E9D22827D5200FA9B0C /* ty_device_function_dot@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ty_device_function_dot@3x.png"; sourceTree = "<group>"; };
-		F7449EA022827DB800FA9B0C /* ty_device_function_sub@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ty_device_function_sub@2x.png"; sourceTree = "<group>"; };
-		F7449EA122827DB900FA9B0C /* ty_device_function_add@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ty_device_function_add@3x.png"; sourceTree = "<group>"; };
-		F7449EA222827DB900FA9B0C /* ty_device_function_add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ty_device_function_add@2x.png"; sourceTree = "<group>"; };
-		F7449EA322827DB900FA9B0C /* ty_device_function_sub@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ty_device_function_sub@3x.png"; sourceTree = "<group>"; };
-		F7449EA82282862600FA9B0C /* ty_device_function_downarrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ty_device_function_downarrow@2x.png"; sourceTree = "<group>"; };
-		F7449EA92282862600FA9B0C /* ty_device_function_downarrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ty_device_function_downarrow@3x.png"; sourceTree = "<group>"; };
-		F7449EAC2282864000FA9B0C /* ty_device_function_select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ty_device_function_select@2x.png"; sourceTree = "<group>"; };
-		F7449EAD2282864000FA9B0C /* ty_device_function_select@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ty_device_function_select@3x.png"; sourceTree = "<group>"; };
+		CAF7BBEEB21A3F759D0C8D18 /* Pods-PWNote.test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PWNote.test.xcconfig"; path = "Pods/Target Support Files/Pods-PWNote/Pods-PWNote.test.xcconfig"; sourceTree = "<group>"; };
+		DEE1B31223822DCF00B23588 /* PWNetworkTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWNetworkTestViewController.h; sourceTree = "<group>"; };
+		DEE1B31323822DCF00B23588 /* PWNetworkTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWNetworkTestViewController.m; sourceTree = "<group>"; };
 		F7449EB02282870000FA9B0C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		F7449EB12282870000FA9B0C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		F7449EB52282874200FA9B0C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F7449EB72282874300FA9B0C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		F7449EB92282A4E700FA9B0C /* UIImage+TYTrim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TYTrim.h"; sourceTree = "<group>"; };
-		F7449EBA2282A4E700FA9B0C /* UIImage+TYTrim.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TYTrim.m"; sourceTree = "<group>"; };
-		F7449EBC2282AC3600FA9B0C /* UIImage+TPAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TPAlpha.h"; sourceTree = "<group>"; };
-		F7449EBD2282AC3700FA9B0C /* UIImage+TPAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TPAlpha.m"; sourceTree = "<group>"; };
-		F7449EC32282CDE200FA9B0C /* UIColor+TYHex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+TYHex.h"; sourceTree = "<group>"; };
-		F7449EC42282CDE200FA9B0C /* UIColor+TYHex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+TYHex.m"; sourceTree = "<group>"; };
-		F7449EC62282CFBB00FA9B0C /* UIView+TYFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TYFrame.m"; sourceTree = "<group>"; };
-		F7449EC72282CFBB00FA9B0C /* UIView+TYFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TYFrame.h"; sourceTree = "<group>"; };
-		F7449EC92282D30600FA9B0C /* TYSmartActionDialogCollectionTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYSmartActionDialogCollectionTopView.h; sourceTree = "<group>"; };
-		F7449ECA2282D30600FA9B0C /* TYSmartActionDialogCollectionTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYSmartActionDialogCollectionTopView.m; sourceTree = "<group>"; };
-		F7449ECC2282D39200FA9B0C /* TYSmartActionDialogTopCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYSmartActionDialogTopCollectionViewCell.h; sourceTree = "<group>"; };
-		F7449ECD2282D39200FA9B0C /* TYSmartActionDialogTopCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYSmartActionDialogTopCollectionViewCell.m; sourceTree = "<group>"; };
-		F7449EE22283B9FC00FA9B0C /* ty_device_function_min@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ty_device_function_min@2x.png"; sourceTree = "<group>"; };
-		F7449EE32283B9FC00FA9B0C /* ty_device_function_max@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ty_device_function_max@2x.png"; sourceTree = "<group>"; };
-		F7449EE42283B9FC00FA9B0C /* ty_device_function_max@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ty_device_function_max@3x.png"; sourceTree = "<group>"; };
-		F7449EE52283B9FC00FA9B0C /* ty_device_function_min@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ty_device_function_min@3x.png"; sourceTree = "<group>"; };
-		F7449EEA2283BBE000FA9B0C /* TYSmartActionDialogSimpleTitleLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYSmartActionDialogSimpleTitleLabel.h; sourceTree = "<group>"; };
-		F7449EEB2283BBE000FA9B0C /* TYSmartActionDialogSimpleTitleLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYSmartActionDialogSimpleTitleLabel.m; sourceTree = "<group>"; };
-		F7449EEE2283BF3300FA9B0C /* TYSmartActionDialogCenterCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSmartActionDialogCenterCollectionView.m; sourceTree = "<group>"; };
-		F7449EF02283BF3300FA9B0C /* TYSmartActionDialogTimerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSmartActionDialogTimerView.m; sourceTree = "<group>"; };
-		F7449EF12283BF3300FA9B0C /* TYSmartActionDialogTimerDefaultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYSmartActionDialogTimerDefaultModel.h; sourceTree = "<group>"; };
-		F7449EF22283BF3300FA9B0C /* TYSmartActionDialogTimerSetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSmartActionDialogTimerSetView.m; sourceTree = "<group>"; };
-		F7449EF32283BF3300FA9B0C /* TYSmartActionDialogTimerDefaultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSmartActionDialogTimerDefaultModel.m; sourceTree = "<group>"; };
-		F7449EF42283BF3300FA9B0C /* TYSmartActionDialogTimerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYSmartActionDialogTimerView.h; sourceTree = "<group>"; };
-		F7449EF52283BF3300FA9B0C /* TYSmartActionDialogTimerSetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYSmartActionDialogTimerSetView.h; sourceTree = "<group>"; };
-		F7449EF72283BF3300FA9B0C /* TYSmartActionDialogTimerPickerColumnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYSmartActionDialogTimerPickerColumnView.h; sourceTree = "<group>"; };
-		F7449EF82283BF3300FA9B0C /* TYSmartActionDialogTimerPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYSmartActionDialogTimerPickerView.h; sourceTree = "<group>"; };
-		F7449EF92283BF3300FA9B0C /* TYSmartActionDialogTimerPickerColumnCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYSmartActionDialogTimerPickerColumnCell.h; sourceTree = "<group>"; };
-		F7449EFA2283BF3300FA9B0C /* TYSmartActionDialogTimerTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSmartActionDialogTimerTableView.m; sourceTree = "<group>"; };
-		F7449EFB2283BF3300FA9B0C /* TYSmartActionDialogTimerPickerColumnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSmartActionDialogTimerPickerColumnView.m; sourceTree = "<group>"; };
-		F7449EFC2283BF3300FA9B0C /* TYSmartActionDialogTimerPickerColumnCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSmartActionDialogTimerPickerColumnCell.m; sourceTree = "<group>"; };
-		F7449EFD2283BF3300FA9B0C /* TYSmartActionDialogTimerPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSmartActionDialogTimerPickerView.m; sourceTree = "<group>"; };
-		F7449EFE2283BF3300FA9B0C /* TYSmartActionDialogTimerTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYSmartActionDialogTimerTableView.h; sourceTree = "<group>"; };
-		F7449F002283BF3300FA9B0C /* TYSmartActionDialogNumberSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSmartActionDialogNumberSliderView.m; sourceTree = "<group>"; };
-		F7449F022283BF3300FA9B0C /* TYAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAlertView.m; sourceTree = "<group>"; };
-		F7449F032283BF3300FA9B0C /* TYAlertViewWindowContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAlertViewWindowContainer.h; sourceTree = "<group>"; };
-		F7449F042283BF3300FA9B0C /* TYAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAlertViewController.m; sourceTree = "<group>"; };
-		F7449F052283BF3300FA9B0C /* TYAlertViewWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAlertViewWindow.m; sourceTree = "<group>"; };
-		F7449F062283BF3300FA9B0C /* TPSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPSlider.h; sourceTree = "<group>"; };
-		F7449F072283BF3300FA9B0C /* TYAlertViewTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAlertViewTextField.h; sourceTree = "<group>"; };
-		F7449F082283BF3300FA9B0C /* TYAlertViewWindowObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAlertViewWindowObserver.m; sourceTree = "<group>"; };
-		F7449F092283BF3300FA9B0C /* TYAlertShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAlertShadowView.h; sourceTree = "<group>"; };
-		F7449F0A2283BF3300FA9B0C /* TPSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPSlider.m; sourceTree = "<group>"; };
-		F7449F0B2283BF3300FA9B0C /* TYAlertViewWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAlertViewWindow.h; sourceTree = "<group>"; };
-		F7449F0C2283BF3300FA9B0C /* TYAlertViewWindowContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAlertViewWindowContainer.m; sourceTree = "<group>"; };
-		F7449F0D2283BF3300FA9B0C /* TYAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAlertViewController.h; sourceTree = "<group>"; };
-		F7449F0E2283BF3300FA9B0C /* TYAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAlertView.h; sourceTree = "<group>"; };
-		F7449F0F2283BF3300FA9B0C /* TYAlertViewTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAlertViewTextField.m; sourceTree = "<group>"; };
-		F7449F102283BF3300FA9B0C /* TYAlertViewWindowObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAlertViewWindowObserver.h; sourceTree = "<group>"; };
-		F7449F112283BF3300FA9B0C /* TYAlertShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAlertShadowView.m; sourceTree = "<group>"; };
-		F7449F122283BF3300FA9B0C /* TYSmartActionDialogSliderNumberDefaultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSmartActionDialogSliderNumberDefaultModel.m; sourceTree = "<group>"; };
-		F7449F132283BF3300FA9B0C /* TYSmartActionDialogNumericSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYSmartActionDialogNumericSliderView.h; sourceTree = "<group>"; };
-		F7449F142283BF3300FA9B0C /* TYSmartActionDialogSliderNumberDefaultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYSmartActionDialogSliderNumberDefaultModel.h; sourceTree = "<group>"; };
-		F7449F172283BF3300FA9B0C /* TYSmartActionDialogTableViewAgency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYSmartActionDialogTableViewAgency.h; sourceTree = "<group>"; };
-		F7449F182283BF3300FA9B0C /* TYSmartActionDialogSingleSectionDefaultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSmartActionDialogSingleSectionDefaultModel.m; sourceTree = "<group>"; };
-		F7449F192283BF3300FA9B0C /* TYSmartActionDialogSingleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSmartActionDialogSingleTableViewCell.m; sourceTree = "<group>"; };
-		F7449F1A2283BF3300FA9B0C /* TYSmartActionDialogSingleSectionDefaultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYSmartActionDialogSingleSectionDefaultModel.h; sourceTree = "<group>"; };
-		F7449F1B2283BF3300FA9B0C /* TYSmartActionDialogTableViewAgency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYSmartActionDialogTableViewAgency.m; sourceTree = "<group>"; };
-		F7449F1C2283BF3300FA9B0C /* TYSmartActionDialogSingleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYSmartActionDialogSingleTableViewCell.h; sourceTree = "<group>"; };
-		F7449F322283C07E00FA9B0C /* TYSmartActionDialogCenterCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYSmartActionDialogCenterCollectionView.h; sourceTree = "<group>"; };
-		F7449F332285453B00FA9B0C /* TYDeviceFunctionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYDeviceFunctionDelegate.h; sourceTree = "<group>"; };
-		F7449F3422855B4800FA9B0C /* TYSmartActionDialogSliderColoursModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYSmartActionDialogSliderColoursModel.h; sourceTree = "<group>"; };
-		F7449F3522855B4800FA9B0C /* TYSmartActionDialogSliderColoursModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYSmartActionDialogSliderColoursModel.m; sourceTree = "<group>"; };
-		F7449F3822855C5000FA9B0C /* TYSmartActionDialogPaletteSliderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYSmartActionDialogPaletteSliderView.h; sourceTree = "<group>"; };
-		F7449F3922855C5000FA9B0C /* TYSmartActionDialogPaletteSliderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYSmartActionDialogPaletteSliderView.m; sourceTree = "<group>"; };
-		F7449F3B22855DEE00FA9B0C /* TYSmartActionDialogEventDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYSmartActionDialogEventDelegate.h; sourceTree = "<group>"; };
-		F7449F3F2285808400FA9B0C /* TYSmartActionDialogTimerBaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYSmartActionDialogTimerBaseView.h; sourceTree = "<group>"; };
-		F7449F402285808400FA9B0C /* TYSmartActionDialogTimerBaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYSmartActionDialogTimerBaseView.m; sourceTree = "<group>"; };
-		F7449F4222858FA700FA9B0C /* TYSmartActionDialogColoursSaturabilitySliderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYSmartActionDialogColoursSaturabilitySliderView.h; sourceTree = "<group>"; };
-		F7449F4322858FA700FA9B0C /* TYSmartActionDialogColoursSaturabilitySliderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYSmartActionDialogColoursSaturabilitySliderView.m; sourceTree = "<group>"; };
-		F7449F4522859FD700FA9B0C /* TYSmartActionDialogTempColorSliderDefaultModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYSmartActionDialogTempColorSliderDefaultModel.h; sourceTree = "<group>"; };
-		F7449F4622859FD700FA9B0C /* TYSmartActionDialogTempColorSliderDefaultModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYSmartActionDialogTempColorSliderDefaultModel.m; sourceTree = "<group>"; };
-		F7A71D5F2287090A00B0E9A3 /* TYSmartActionDialogColoursSaturabilityIntensityCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYSmartActionDialogColoursSaturabilityIntensityCell.h; sourceTree = "<group>"; };
-		F7A71D602287090A00B0E9A3 /* TYSmartActionDialogColoursSaturabilityIntensityCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYSmartActionDialogColoursSaturabilityIntensityCell.m; sourceTree = "<group>"; };
-		F7A71D622287123100B0E9A3 /* TYSmartActionDialogTimerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYSmartActionDialogTimerCell.h; sourceTree = "<group>"; };
-		F7A71D632287123100B0E9A3 /* TYSmartActionDialogTimerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYSmartActionDialogTimerCell.m; sourceTree = "<group>"; };
-		F7A71D652289023A00B0E9A3 /* TYSmartActionDialogTimerSetCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYSmartActionDialogTimerSetCell.h; sourceTree = "<group>"; };
-		F7A71D662289023A00B0E9A3 /* TYSmartActionDialogTimerSetCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYSmartActionDialogTimerSetCell.m; sourceTree = "<group>"; };
-		F7F81768228661CE004330DC /* TYSmartActionDialogColoursSaturabilityIntensitySliderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYSmartActionDialogColoursSaturabilityIntensitySliderView.h; sourceTree = "<group>"; };
-		F7F81769228661CE004330DC /* TYSmartActionDialogColoursSaturabilityIntensitySliderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYSmartActionDialogColoursSaturabilityIntensitySliderView.m; sourceTree = "<group>"; };
-		F7F8176B22866780004330DC /* TYSmartActionDialogSliderColoursSaturabilityIntensityDefaultModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYSmartActionDialogSliderColoursSaturabilityIntensityDefaultModel.h; sourceTree = "<group>"; };
-		F7F8176C22866780004330DC /* TYSmartActionDialogSliderColoursSaturabilityIntensityDefaultModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYSmartActionDialogSliderColoursSaturabilityIntensityDefaultModel.m; sourceTree = "<group>"; };
-		F7F8176F2286AF48004330DC /* TYSmartActionDialogSingleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYSmartActionDialogSingleCell.h; sourceTree = "<group>"; };
-		F7F817702286AF48004330DC /* TYSmartActionDialogSingleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYSmartActionDialogSingleCell.m; sourceTree = "<group>"; };
-		F7F817722286B54E004330DC /* TYSmartActionDialogNumberSliderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYSmartActionDialogNumberSliderCell.h; sourceTree = "<group>"; };
-		F7F817732286B54E004330DC /* TYSmartActionDialogNumberSliderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYSmartActionDialogNumberSliderCell.m; sourceTree = "<group>"; };
-		F7F817752286C92B004330DC /* TYSmartActionDialogColoursSliderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYSmartActionDialogColoursSliderCell.h; sourceTree = "<group>"; };
-		F7F817762286C92B004330DC /* TYSmartActionDialogColoursSliderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYSmartActionDialogColoursSliderCell.m; sourceTree = "<group>"; };
-		F7F817782286CF6A004330DC /* TYSmartActionDialogColoursSaturabilityCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYSmartActionDialogColoursSaturabilityCell.h; sourceTree = "<group>"; };
-		F7F817792286CF6A004330DC /* TYSmartActionDialogColoursSaturabilityCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYSmartActionDialogColoursSaturabilityCell.m; sourceTree = "<group>"; };
 		F81C127921AA4EC6009CF497 /* PWNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWNavigationViewController.h; sourceTree = "<group>"; };
 		F81C127A21AA4EC6009CF497 /* PWNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWNavigationViewController.m; sourceTree = "<group>"; };
 		F81C128121AA4F32009CF497 /* PWTestHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWTestHomeViewController.h; sourceTree = "<group>"; };
@@ -470,7 +306,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				140AC8DA94B479A705CEA623 /* libPods-PWNote.a in Frameworks */,
+				D0244E19966B9B3854DB3F3A /* libPods-PWNote.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +332,7 @@
 			children = (
 				7258A6FF615CE16C4387B440 /* Pods-PWNote.debug.xcconfig */,
 				2CF38FAFBEB73E094EC36422 /* Pods-PWNote.release.xcconfig */,
+				CAF7BBEEB21A3F759D0C8D18 /* Pods-PWNote.test.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -506,221 +343,17 @@
 				F81C12CF21AD17F2009CF497 /* libReactiveCocoa.a */,
 				F81C12CD21AD17EC009CF497 /* libMasonry.a */,
 				F81C12CB21AD1664009CF497 /* libsqlite3.0.tbd */,
-				F1A04D7944F8754A62EF0F08 /* libPods-PWNote.a */,
-				45B084998F35C9D708670F18 /* libPods-PWNoteTests.a */,
 				098A9301941826400E4489BC /* libPods-PWNoteUITests.a */,
+				6645BB3A98C70301B72C55E4 /* libPods-PWNote.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F70EBB46227FC60300CFC03A /* TYTest */ = {
+		DEE1B30E23822C9500B23588 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				F70EBB4A227FC85400CFC03A /* DeviceFuctionDialog */,
-				F70EBB47227FC62400CFC03A /* PWDialogTestViewController.h */,
-				F70EBB48227FC62400CFC03A /* PWDialogTestViewController.m */,
 			);
-			path = TYTest;
-			sourceTree = "<group>";
-		};
-		F70EBB4A227FC85400CFC03A /* DeviceFuctionDialog */ = {
-			isa = PBXGroup;
-			children = (
-				F7449EED2283BF3300FA9B0C /* CenterView */,
-				F7449EBF2282CCA400FA9B0C /* TopView */,
-				F7449EB82282A4DE00FA9B0C /* Utils */,
-				F70EBB4B227FC85400CFC03A /* TYSmartActionDialogModelProtocol.h */,
-				F7449F3B22855DEE00FA9B0C /* TYSmartActionDialogEventDelegate.h */,
-				F70EBB4C227FC85400CFC03A /* TYSmartActionDialog.m */,
-				F70EBB4D227FC85400CFC03A /* TYSmartActionDialog.h */,
-				F70EBB4F227FC9EC00CFC03A /* TYActionDialogView.h */,
-				F70EBB50227FC9EC00CFC03A /* TYActionDialogView.m */,
-				F70EBB58227FD9D500CFC03A /* TYDeviceFunctionDefine.h */,
-				F7449F332285453B00FA9B0C /* TYDeviceFunctionDelegate.h */,
-			);
-			path = DeviceFuctionDialog;
-			sourceTree = "<group>";
-		};
-		F7449E9322827CFB00FA9B0C /* resources */ = {
-			isa = PBXGroup;
-			children = (
-				F7449EE32283B9FC00FA9B0C /* ty_device_function_max@2x.png */,
-				F7449EE42283B9FC00FA9B0C /* ty_device_function_max@3x.png */,
-				F7449EE22283B9FC00FA9B0C /* ty_device_function_min@2x.png */,
-				F7449EE52283B9FC00FA9B0C /* ty_device_function_min@3x.png */,
-				F7449EA222827DB900FA9B0C /* ty_device_function_add@2x.png */,
-				F7449EA122827DB900FA9B0C /* ty_device_function_add@3x.png */,
-				F7449EA022827DB800FA9B0C /* ty_device_function_sub@2x.png */,
-				F7449EA322827DB900FA9B0C /* ty_device_function_sub@3x.png */,
-				F7449E9C22827D5200FA9B0C /* ty_device_function_dot@2x.png */,
-				F7449E9D22827D5200FA9B0C /* ty_device_function_dot@3x.png */,
-				F7449EA82282862600FA9B0C /* ty_device_function_downarrow@2x.png */,
-				F7449EA92282862600FA9B0C /* ty_device_function_downarrow@3x.png */,
-				F7449EAC2282864000FA9B0C /* ty_device_function_select@2x.png */,
-				F7449EAD2282864000FA9B0C /* ty_device_function_select@3x.png */,
-			);
-			path = resources;
-			sourceTree = "<group>";
-		};
-		F7449EB82282A4DE00FA9B0C /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				F7449EC72282CFBB00FA9B0C /* UIView+TYFrame.h */,
-				F7449EC62282CFBB00FA9B0C /* UIView+TYFrame.m */,
-				F7449EC32282CDE200FA9B0C /* UIColor+TYHex.h */,
-				F7449EC42282CDE200FA9B0C /* UIColor+TYHex.m */,
-				F7449EBC2282AC3600FA9B0C /* UIImage+TPAlpha.h */,
-				F7449EBD2282AC3700FA9B0C /* UIImage+TPAlpha.m */,
-				F7449EB92282A4E700FA9B0C /* UIImage+TYTrim.h */,
-				F7449EBA2282A4E700FA9B0C /* UIImage+TYTrim.m */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		F7449EBF2282CCA400FA9B0C /* TopView */ = {
-			isa = PBXGroup;
-			children = (
-				F7449EC92282D30600FA9B0C /* TYSmartActionDialogCollectionTopView.h */,
-				F7449ECA2282D30600FA9B0C /* TYSmartActionDialogCollectionTopView.m */,
-				F7449ECC2282D39200FA9B0C /* TYSmartActionDialogTopCollectionViewCell.h */,
-				F7449ECD2282D39200FA9B0C /* TYSmartActionDialogTopCollectionViewCell.m */,
-				F7449EEA2283BBE000FA9B0C /* TYSmartActionDialogSimpleTitleLabel.h */,
-				F7449EEB2283BBE000FA9B0C /* TYSmartActionDialogSimpleTitleLabel.m */,
-			);
-			path = TopView;
-			sourceTree = "<group>";
-		};
-		F7449EED2283BF3300FA9B0C /* CenterView */ = {
-			isa = PBXGroup;
-			children = (
-				F7449F322283C07E00FA9B0C /* TYSmartActionDialogCenterCollectionView.h */,
-				F7449EEE2283BF3300FA9B0C /* TYSmartActionDialogCenterCollectionView.m */,
-				F7F8176E2286AF2F004330DC /* ItemCells */,
-				F7449EEF2283BF3300FA9B0C /* Timer */,
-				F7449EFF2283BF3300FA9B0C /* Slider */,
-				F7449F162283BF3300FA9B0C /* Select */,
-			);
-			path = CenterView;
-			sourceTree = "<group>";
-		};
-		F7449EEF2283BF3300FA9B0C /* Timer */ = {
-			isa = PBXGroup;
-			children = (
-				F7449F3F2285808400FA9B0C /* TYSmartActionDialogTimerBaseView.h */,
-				F7449F402285808400FA9B0C /* TYSmartActionDialogTimerBaseView.m */,
-				F7449EF02283BF3300FA9B0C /* TYSmartActionDialogTimerView.m */,
-				F7449EF42283BF3300FA9B0C /* TYSmartActionDialogTimerView.h */,
-				F7449EF22283BF3300FA9B0C /* TYSmartActionDialogTimerSetView.m */,
-				F7449EF52283BF3300FA9B0C /* TYSmartActionDialogTimerSetView.h */,
-				F7449EF12283BF3300FA9B0C /* TYSmartActionDialogTimerDefaultModel.h */,
-				F7449EF32283BF3300FA9B0C /* TYSmartActionDialogTimerDefaultModel.m */,
-				F7449EF62283BF3300FA9B0C /* TimerSet */,
-			);
-			path = Timer;
-			sourceTree = "<group>";
-		};
-		F7449EF62283BF3300FA9B0C /* TimerSet */ = {
-			isa = PBXGroup;
-			children = (
-				F7449EF72283BF3300FA9B0C /* TYSmartActionDialogTimerPickerColumnView.h */,
-				F7449EFB2283BF3300FA9B0C /* TYSmartActionDialogTimerPickerColumnView.m */,
-				F7449EF82283BF3300FA9B0C /* TYSmartActionDialogTimerPickerView.h */,
-				F7449EFD2283BF3300FA9B0C /* TYSmartActionDialogTimerPickerView.m */,
-				F7449EF92283BF3300FA9B0C /* TYSmartActionDialogTimerPickerColumnCell.h */,
-				F7449EFC2283BF3300FA9B0C /* TYSmartActionDialogTimerPickerColumnCell.m */,
-				F7449EFA2283BF3300FA9B0C /* TYSmartActionDialogTimerTableView.m */,
-				F7449EFE2283BF3300FA9B0C /* TYSmartActionDialogTimerTableView.h */,
-			);
-			path = TimerSet;
-			sourceTree = "<group>";
-		};
-		F7449EFF2283BF3300FA9B0C /* Slider */ = {
-			isa = PBXGroup;
-			children = (
-				F7449F3722855C3300FA9B0C /* View */,
-				F7449F012283BF3300FA9B0C /* inner */,
-				F7449F142283BF3300FA9B0C /* TYSmartActionDialogSliderNumberDefaultModel.h */,
-				F7449F122283BF3300FA9B0C /* TYSmartActionDialogSliderNumberDefaultModel.m */,
-				F7449F3422855B4800FA9B0C /* TYSmartActionDialogSliderColoursModel.h */,
-				F7449F3522855B4800FA9B0C /* TYSmartActionDialogSliderColoursModel.m */,
-				F7449F4522859FD700FA9B0C /* TYSmartActionDialogTempColorSliderDefaultModel.h */,
-				F7449F4622859FD700FA9B0C /* TYSmartActionDialogTempColorSliderDefaultModel.m */,
-				F7F8176B22866780004330DC /* TYSmartActionDialogSliderColoursSaturabilityIntensityDefaultModel.h */,
-				F7F8176C22866780004330DC /* TYSmartActionDialogSliderColoursSaturabilityIntensityDefaultModel.m */,
-			);
-			path = Slider;
-			sourceTree = "<group>";
-		};
-		F7449F012283BF3300FA9B0C /* inner */ = {
-			isa = PBXGroup;
-			children = (
-				F7449F022283BF3300FA9B0C /* TYAlertView.m */,
-				F7449F032283BF3300FA9B0C /* TYAlertViewWindowContainer.h */,
-				F7449F042283BF3300FA9B0C /* TYAlertViewController.m */,
-				F7449F052283BF3300FA9B0C /* TYAlertViewWindow.m */,
-				F7449F062283BF3300FA9B0C /* TPSlider.h */,
-				F7449F072283BF3300FA9B0C /* TYAlertViewTextField.h */,
-				F7449F082283BF3300FA9B0C /* TYAlertViewWindowObserver.m */,
-				F7449F092283BF3300FA9B0C /* TYAlertShadowView.h */,
-				F7449F0A2283BF3300FA9B0C /* TPSlider.m */,
-				F7449F0B2283BF3300FA9B0C /* TYAlertViewWindow.h */,
-				F7449F0C2283BF3300FA9B0C /* TYAlertViewWindowContainer.m */,
-				F7449F0D2283BF3300FA9B0C /* TYAlertViewController.h */,
-				F7449F0E2283BF3300FA9B0C /* TYAlertView.h */,
-				F7449F0F2283BF3300FA9B0C /* TYAlertViewTextField.m */,
-				F7449F102283BF3300FA9B0C /* TYAlertViewWindowObserver.h */,
-				F7449F112283BF3300FA9B0C /* TYAlertShadowView.m */,
-			);
-			path = inner;
-			sourceTree = "<group>";
-		};
-		F7449F162283BF3300FA9B0C /* Select */ = {
-			isa = PBXGroup;
-			children = (
-				F7449F172283BF3300FA9B0C /* TYSmartActionDialogTableViewAgency.h */,
-				F7449F1B2283BF3300FA9B0C /* TYSmartActionDialogTableViewAgency.m */,
-				F7449F182283BF3300FA9B0C /* TYSmartActionDialogSingleSectionDefaultModel.m */,
-				F7449F1A2283BF3300FA9B0C /* TYSmartActionDialogSingleSectionDefaultModel.h */,
-				F7449F1C2283BF3300FA9B0C /* TYSmartActionDialogSingleTableViewCell.h */,
-				F7449F192283BF3300FA9B0C /* TYSmartActionDialogSingleTableViewCell.m */,
-			);
-			path = Select;
-			sourceTree = "<group>";
-		};
-		F7449F3722855C3300FA9B0C /* View */ = {
-			isa = PBXGroup;
-			children = (
-				F7449F132283BF3300FA9B0C /* TYSmartActionDialogNumericSliderView.h */,
-				F7449F002283BF3300FA9B0C /* TYSmartActionDialogNumberSliderView.m */,
-				F7449F3822855C5000FA9B0C /* TYSmartActionDialogPaletteSliderView.h */,
-				F7449F3922855C5000FA9B0C /* TYSmartActionDialogPaletteSliderView.m */,
-				F7449F4222858FA700FA9B0C /* TYSmartActionDialogColoursSaturabilitySliderView.h */,
-				F7449F4322858FA700FA9B0C /* TYSmartActionDialogColoursSaturabilitySliderView.m */,
-				F7F81768228661CE004330DC /* TYSmartActionDialogColoursSaturabilityIntensitySliderView.h */,
-				F7F81769228661CE004330DC /* TYSmartActionDialogColoursSaturabilityIntensitySliderView.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		F7F8176E2286AF2F004330DC /* ItemCells */ = {
-			isa = PBXGroup;
-			children = (
-				F7F8176F2286AF48004330DC /* TYSmartActionDialogSingleCell.h */,
-				F7F817702286AF48004330DC /* TYSmartActionDialogSingleCell.m */,
-				F7F817722286B54E004330DC /* TYSmartActionDialogNumberSliderCell.h */,
-				F7F817732286B54E004330DC /* TYSmartActionDialogNumberSliderCell.m */,
-				F7F817752286C92B004330DC /* TYSmartActionDialogColoursSliderCell.h */,
-				F7F817762286C92B004330DC /* TYSmartActionDialogColoursSliderCell.m */,
-				F7F817782286CF6A004330DC /* TYSmartActionDialogColoursSaturabilityCell.h */,
-				F7F817792286CF6A004330DC /* TYSmartActionDialogColoursSaturabilityCell.m */,
-				F7A71D5F2287090A00B0E9A3 /* TYSmartActionDialogColoursSaturabilityIntensityCell.h */,
-				F7A71D602287090A00B0E9A3 /* TYSmartActionDialogColoursSaturabilityIntensityCell.m */,
-				F7A71D622287123100B0E9A3 /* TYSmartActionDialogTimerCell.h */,
-				F7A71D632287123100B0E9A3 /* TYSmartActionDialogTimerCell.m */,
-				F7A71D652289023A00B0E9A3 /* TYSmartActionDialogTimerSetCell.h */,
-				F7A71D662289023A00B0E9A3 /* TYSmartActionDialogTimerSetCell.m */,
-			);
-			path = ItemCells;
+			path = UI;
 			sourceTree = "<group>";
 		};
 		F81C127C21AA4EDF009CF497 /* Router */ = {
@@ -885,7 +518,6 @@
 		F81C12C421AC4DD2009CF497 /* Business */ = {
 			isa = PBXGroup;
 			children = (
-				F70EBB46227FC60300CFC03A /* TYTest */,
 				F866B00A21E5F4360058BDEB /* Search */,
 				F87872B521B96DE500CA34CE /* Category */,
 				F81C132421B3D0BB009CF497 /* User */,
@@ -997,6 +629,8 @@
 			children = (
 				F81C134121B3F3B2009CF497 /* PWNetworkService.h */,
 				F81C134221B3F3B2009CF497 /* PWNetworkService.m */,
+				DEE1B31223822DCF00B23588 /* PWNetworkTestViewController.h */,
+				DEE1B31323822DCF00B23588 /* PWNetworkTestViewController.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -1041,7 +675,7 @@
 		F838F1BA21AA4B2600C309F2 /* PWNote */ = {
 			isa = PBXGroup;
 			children = (
-				F7449E9322827CFB00FA9B0C /* resources */,
+				DEE1B30E23822C9500B23588 /* UI */,
 				F86F1BD021E449410075462E /* ImageCatch */,
 				F86F1BC421E43B130075462E /* Skin */,
 				F81C134021B3F3A0009CF497 /* Network */,
@@ -1323,24 +957,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7449E9E22827D5200FA9B0C /* ty_device_function_dot@2x.png in Resources */,
 				F838F1C821AA4B2700C309F2 /* LaunchScreen.storyboard in Resources */,
-				F7449EE72283B9FC00FA9B0C /* ty_device_function_max@2x.png in Resources */,
-				F7449EAE2282864000FA9B0C /* ty_device_function_select@2x.png in Resources */,
-				F7449E9F22827D5200FA9B0C /* ty_device_function_dot@3x.png in Resources */,
-				F7449EE92283B9FC00FA9B0C /* ty_device_function_min@3x.png in Resources */,
-				F7449EA722827DB900FA9B0C /* ty_device_function_sub@3x.png in Resources */,
-				F7449EAB2282862600FA9B0C /* ty_device_function_downarrow@3x.png in Resources */,
-				F7449EE82283B9FC00FA9B0C /* ty_device_function_max@3x.png in Resources */,
-				F7449EAA2282862600FA9B0C /* ty_device_function_downarrow@2x.png in Resources */,
-				F7449EA622827DB900FA9B0C /* ty_device_function_add@2x.png in Resources */,
 				F81C12EB21B2667B009CF497 /* iconfont.ttf in Resources */,
 				F838F1C521AA4B2700C309F2 /* Assets.xcassets in Resources */,
-				F7449EA522827DB900FA9B0C /* ty_device_function_add@3x.png in Resources */,
-				F7449EA422827DB900FA9B0C /* ty_device_function_sub@2x.png in Resources */,
 				F7449EB42282874200FA9B0C /* Localizable.strings in Resources */,
-				F7449EAF2282864000FA9B0C /* ty_device_function_select@3x.png in Resources */,
-				F7449EE62283B9FC00FA9B0C /* ty_device_function_min@2x.png in Resources */,
 				F838F1C321AA4B2600C309F2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1388,128 +1008,84 @@
 			buildActionMask = 2147483647;
 			files = (
 				F86F1BC721E43B260075462E /* PWSkinManager.m in Sources */,
-				F7449F412285808400FA9B0C /* TYSmartActionDialogTimerBaseView.m in Sources */,
 				F81C132321B3CE61009CF497 /* PWUserView.m in Sources */,
 				F87872C121B9760D00CA34CE /* UICollectionViewCell+PWItemView.m in Sources */,
 				F81C131A21B37DE0009CF497 /* PWMissionModel.m in Sources */,
 				F8FD7CDA21E5CA57000145D6 /* PWDismissAnimationTransition.m in Sources */,
 				F81C12AE21AC43F1009CF497 /* PWDataSource.m in Sources */,
-				F7449F2F2283BF3400FA9B0C /* TYSmartActionDialogSingleSectionDefaultModel.m in Sources */,
-				F7449EC82282CFBB00FA9B0C /* UIView+TYFrame.m in Sources */,
 				F86F1BBA21E34C9B0075462E /* PWBigTitleTableViewController.m in Sources */,
 				F81C135721B400DA009CF497 /* MBProgressHUD+PWUtils.m in Sources */,
 				F8FD7CC121E4D407000145D6 /* PWCategoryFooterItemView.m in Sources */,
 				F87872C421BC0B4800CA34CE /* PWCategorySectionModel.m in Sources */,
 				F887CC7E21D205A00009F5EC /* PWUpdateUtils.m in Sources */,
 				F81C133021B3DA43009CF497 /* PWKeepViewModel.m in Sources */,
-				F7449EBE2282AC3700FA9B0C /* UIImage+TPAlpha.m in Sources */,
 				F81C12AA21AC3BA2009CF497 /* PWTableViewController.m in Sources */,
-				F70EBB49227FC62400CFC03A /* PWDialogTestViewController.m in Sources */,
 				F81C128721AA4FA8009CF497 /* PWHomeViewController.m in Sources */,
 				F81C134321B3F3B2009CF497 /* PWNetworkService.m in Sources */,
-				F7A71D672289023A00B0E9A3 /* TYSmartActionDialogTimerSetCell.m in Sources */,
 				F81C133C21B3F257009CF497 /* PWUserManager.m in Sources */,
 				F8FD7CB821E49649000145D6 /* PWCategoryModel.m in Sources */,
-				F7449EBB2282A4E700FA9B0C /* UIImage+TYTrim.m in Sources */,
 				F86F1BCB21E442D70075462E /* PWCategoryUserItemView.m in Sources */,
-				F7449F4722859FD700FA9B0C /* TYSmartActionDialogTempColorSliderDefaultModel.m in Sources */,
-				F7449F1D2283BF3400FA9B0C /* TYSmartActionDialogCenterCollectionView.m in Sources */,
 				F86F1BAD21E336EC0075462E /* PWBigTitleView.m in Sources */,
 				F86F1BD621E44A160075462E /* PWImageConfigModel.m in Sources */,
 				F81C132D21B3D971009CF497 /* PWTodoListViewModel.m in Sources */,
-				F7F817712286AF48004330DC /* TYSmartActionDialogSingleCell.m in Sources */,
 				F81C131721B37DAC009CF497 /* PWMissionViewModel.m in Sources */,
 				F8FD7CD321E5B291000145D6 /* PWPresentAnimationTransition.m in Sources */,
 				F887CC7B21D204DD0009F5EC /* PWApplicationMessages.m in Sources */,
+				DEE1B31423822DCF00B23588 /* PWNetworkTestViewController.m in Sources */,
 				F86F1BCF21E4439B0075462E /* PWCategoryUserViewModel.m in Sources */,
-				F7A71D642287123100B0E9A3 /* TYSmartActionDialogTimerCell.m in Sources */,
-				F7449F302283BF3400FA9B0C /* TYSmartActionDialogSingleTableViewCell.m in Sources */,
 				F8FD7CD721E5C7FD000145D6 /* PWPresentationController.m in Sources */,
-				F7449F1F2283BF3400FA9B0C /* TYSmartActionDialogTimerSetView.m in Sources */,
-				F7449F282283BF3400FA9B0C /* TYAlertViewWindow.m in Sources */,
-				F7449F2E2283BF3400FA9B0C /* TYSmartActionDialogSliderNumberDefaultModel.m in Sources */,
 				F81C12A321AAFEE9009CF497 /* PWCollectionDelegate.m in Sources */,
-				F7449F1E2283BF3400FA9B0C /* TYSmartActionDialogTimerView.m in Sources */,
-				F7449F312283BF3400FA9B0C /* TYSmartActionDialogTableViewAgency.m in Sources */,
-				F7449F262283BF3400FA9B0C /* TYAlertView.m in Sources */,
-				F7449F2A2283BF3400FA9B0C /* TPSlider.m in Sources */,
 				F81C134621B3F981009CF497 /* PWSettingDataSource.m in Sources */,
 				F838F1C021AA4B2600C309F2 /* ViewController.m in Sources */,
 				F866B00D21E5F44D0058BDEB /* PWSearchViewController.m in Sources */,
 				F81C130321B269B8009CF497 /* PWToDoListViewController.m in Sources */,
-				F7F817742286B54E004330DC /* TYSmartActionDialogNumberSliderCell.m in Sources */,
 				F838F1CB21AA4B2700C309F2 /* main.m in Sources */,
 				F81C130621B269DE009CF497 /* PWKeepViewController.m in Sources */,
 				F81C12E921B2667B009CF497 /* AMButtonFactory.m in Sources */,
 				F81C12CA21AC4EBB009CF497 /* PWMoreViewModel.m in Sources */,
 				F838F1BD21AA4B2600C309F2 /* AppDelegate.m in Sources */,
 				F86F1BC321E43A750075462E /* PWCategoryItemView.m in Sources */,
-				F7449F242283BF3400FA9B0C /* TYSmartActionDialogTimerPickerView.m in Sources */,
-				F70EBB51227FC9EC00CFC03A /* TYActionDialogView.m in Sources */,
 				F81C133621B3DB65009CF497 /* PWKeepItemView.m in Sources */,
 				F81C127B21AA4EC6009CF497 /* PWNavigationViewController.m in Sources */,
 				F81C129121AA551F009CF497 /* PWRouter.m in Sources */,
 				F81C134C21B3FA77009CF497 /* PWSettingItemView.m in Sources */,
-				F7449F222283BF3400FA9B0C /* TYSmartActionDialogTimerPickerColumnView.m in Sources */,
 				F8FD7CC721E5884B000145D6 /* NSArray+PWAddition.m in Sources */,
-				F7A71D612287090A00B0E9A3 /* TYSmartActionDialogColoursSaturabilityIntensityCell.m in Sources */,
 				F8FD7CC421E4D451000145D6 /* PWCagegoryFooterViewModel.m in Sources */,
 				F81C12B321AC4524009CF497 /* PWViewModel.m in Sources */,
 				F81C132021B38118009CF497 /* UIView+ALMAdditons.m in Sources */,
-				F7449F2C2283BF3400FA9B0C /* TYAlertViewTextField.m in Sources */,
-				F7F8177A2286CF6A004330DC /* TYSmartActionDialogColoursSaturabilityCell.m in Sources */,
 				F81C132721B3D0E0009CF497 /* PWUserViewController.m in Sources */,
-				F7449F4422858FA700FA9B0C /* TYSmartActionDialogColoursSaturabilitySliderView.m in Sources */,
 				F81C129C21AAF60E009CF497 /* PWSettingViewController.m in Sources */,
-				F7449F212283BF3400FA9B0C /* TYSmartActionDialogTimerTableView.m in Sources */,
-				F7449F232283BF3400FA9B0C /* TYSmartActionDialogTimerPickerColumnCell.m in Sources */,
-				F7449F3A22855C5000FA9B0C /* TYSmartActionDialogPaletteSliderView.m in Sources */,
 				F81C12C221AC4B7C009CF497 /* UITableViewCell+PWItemView.m in Sources */,
-				F7F817772286C92B004330DC /* TYSmartActionDialogColoursSliderCell.m in Sources */,
 				F81C129721AA5607009CF497 /* PWRouterAction.m in Sources */,
-				F7449F252283BF3400FA9B0C /* TYSmartActionDialogNumberSliderView.m in Sources */,
 				F81C133321B3DA52009CF497 /* PWKeepDataSource.m in Sources */,
-				F7449EC52282CDE200FA9B0C /* UIColor+TYHex.m in Sources */,
-				F7449EEC2283BBE000FA9B0C /* TYSmartActionDialogSimpleTitleLabel.m in Sources */,
 				F81C132A21B3D950009CF497 /* PWToDoListDataSource.m in Sources */,
 				F87872B821B96DFF00CA34CE /* PWCategoryViewController.m in Sources */,
 				F81C12BC21AC461B009CF497 /* PWItemView.m in Sources */,
-				F70EBB4E227FC85400CFC03A /* TYSmartActionDialog.m in Sources */,
 				F81C134921B3F99A009CF497 /* PWSettingViewModel.m in Sources */,
 				F81C12C721AC4DFB009CF497 /* PWMoreDataSource.m in Sources */,
 				F8FD7CBB21E4A23C000145D6 /* NSString+PWEmpty.m in Sources */,
 				F81C12B721AC4559009CF497 /* PWSectionModel.m in Sources */,
 				F86F1BBF21E358260075462E /* PWInteractor.m in Sources */,
-				F7449ECB2282D30600FA9B0C /* TYSmartActionDialogCollectionTopView.m in Sources */,
-				F7449F292283BF3400FA9B0C /* TYAlertViewWindowObserver.m in Sources */,
 				F81C12FE21B2682F009CF497 /* PWMissionViewController.m in Sources */,
-				F7449F2D2283BF3400FA9B0C /* TYAlertShadowView.m in Sources */,
-				F7449ECE2282D39200FA9B0C /* TYSmartActionDialogTopCollectionViewCell.m in Sources */,
-				F7449F2B2283BF3400FA9B0C /* TYAlertViewWindowContainer.m in Sources */,
 				F87872BE21B9721D00CA34CE /* PWCollectionViewViewController.m in Sources */,
 				F81C133921B3DD13009CF497 /* PWTableViewAutoAlyoutDelegate.m in Sources */,
 				F81C133F21B3F25F009CF497 /* PWUser.m in Sources */,
 				F87872BB21B9705E00CA34CE /* PWCategoryDataSource.m in Sources */,
-				F7449F202283BF3400FA9B0C /* TYSmartActionDialogTimerDefaultModel.m in Sources */,
 				F81C128321AA4F32009CF497 /* PWTestHomeViewController.m in Sources */,
 				F81C129F21AAF676009CF497 /* PWMoreViewController.m in Sources */,
 				F86F1BB321E343AD0075462E /* PWBigTitleCollectionViewController.m in Sources */,
 				F8FD7CCA21E58A4A000145D6 /* NSDictionary+PWAddition.m in Sources */,
 				F81C12A621AAFEFA009CF497 /* PWTableViewDelegate.m in Sources */,
-				F7F8176A228661CE004330DC /* TYSmartActionDialogColoursSaturabilityIntensitySliderView.m in Sources */,
 				F8FD7CCE21E5A3FF000145D6 /* PWHomeCategoryTransition.m in Sources */,
 				F87872C721BC0BA200CA34CE /* PWCategoryViewModel.m in Sources */,
-				F7449F3622855B4800FA9B0C /* TYSmartActionDialogSliderColoursModel.m in Sources */,
 				F86F1BD321E4495F0075462E /* UIImageView+PWWebCatch.m in Sources */,
 				F81C128B21AA4FF0009CF497 /* PWLocalConfig.m in Sources */,
 				F81C128E21AA4FFE009CF497 /* PWLocalManager.m in Sources */,
-				F7449F272283BF3400FA9B0C /* TYAlertViewController.m in Sources */,
 				F86F1BB021E33DDC0075462E /* PWBigTitleViewModel.m in Sources */,
 				F81C131421B37A24009CF497 /* PWMissionDataSource.m in Sources */,
 				F81C131D21B37E10009CF497 /* PWMissionItemView.m in Sources */,
 				F838F1F221AA4C2900C309F2 /* PWViewController.m in Sources */,
 				F81C12EE21B2667B009CF497 /* AMIconFont.m in Sources */,
-				F7F8176D22866780004330DC /* TYSmartActionDialogSliderColoursSaturabilityIntensityDefaultModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1575,6 +1151,120 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DECAA98A22A77316004FAE5C /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Test;
+		};
+		DECAA98B22A77316004FAE5C /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAF7BBEEB21A3F759D0C8D18 /* Pods-PWNote.test.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AH8FHU45PG;
+				INFOPLIST_FILE = PWNote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pwyxgs.PWNote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Test;
+		};
+		DECAA98C22A77316004FAE5C /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PWNoteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pwyxgs.PWNoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PWNote.app/PWNote";
+			};
+			name = Test;
+		};
+		DECAA98D22A77316004FAE5C /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PWNoteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pwyxgs.PWNoteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PWNote;
+			};
+			name = Test;
+		};
 		F838F1E221AA4B2700C309F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1804,6 +1494,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F838F1E221AA4B2700C309F2 /* Debug */,
+				DECAA98A22A77316004FAE5C /* Test */,
 				F838F1E321AA4B2700C309F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1813,6 +1504,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F838F1E521AA4B2700C309F2 /* Debug */,
+				DECAA98B22A77316004FAE5C /* Test */,
 				F838F1E621AA4B2700C309F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1822,6 +1514,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F838F1E821AA4B2700C309F2 /* Debug */,
+				DECAA98C22A77316004FAE5C /* Test */,
 				F838F1E921AA4B2700C309F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1831,6 +1524,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F838F1EB21AA4B2700C309F2 /* Debug */,
+				DECAA98D22A77316004FAE5C /* Test */,
 				F838F1EC21AA4B2700C309F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

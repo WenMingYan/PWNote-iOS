@@ -9,8 +9,9 @@
 #import "AppDelegate.h"
 #import "PWNavigationViewController.h"
 #import "PWHomeViewController.h"
-#import "PWDialogTestViewController.h"
 #import "PWRouter.h"
+
+#import "PWNetworkTestViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,12 +21,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // 初始化Router
-    PWDialogTestViewController *test = [[PWDialogTestViewController alloc] init];
-//    PWHomeViewController *home = [[PWHomeViewController alloc] init];
-    PWNavigationViewController *vc = [[PWNavigationViewController alloc] initWithRootViewController:test];
-    self.window.rootViewController = vc;
+//    PWHomeViewController *vc = [[PWHomeViewController alloc] init];
+//    PWNavigationViewController *navigator = [[PWNavigationViewController alloc] initWithRootViewController:vc];
+//    [[PWRouter sharedInstance] setupWithNavigation:navigator];
+//    self.window.rootViewController = navigator;
+//    [self.window makeKeyAndVisible];
+    
+    
+    //TODO: wmy PWNetworkTestViewController test
+    PWNetworkTestViewController *vc = [[PWNetworkTestViewController alloc] init];
+//    PWHomeViewController *vc = [[PWHomeViewController alloc] init];
+    PWNavigationViewController *navigator = [[PWNavigationViewController alloc] initWithRootViewController:vc];
+    [[PWRouter sharedInstance] setupWithNavigation:navigator];
+    self.window.rootViewController = navigator;
     [self.window makeKeyAndVisible];
-    [[PWRouter sharedInstance] setupWithNavigation:vc];
+    
     
     return YES;
 }

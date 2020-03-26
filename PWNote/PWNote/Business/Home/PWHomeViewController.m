@@ -60,14 +60,13 @@ __PW_ROUTER_REGISTER__
     [self initData];
     [self initView];
     @weakify(self);
-    // TODO: wmy test
     [PWUpdateUtils checkUpdateWithSuccess:^(BOOL canUpdate, NSString *updateAdd) {
         @strongify(self);
         if (canUpdate) {
             [self showUpdateAlert:updateAdd];
         }
     } fail:^(NSError *err) {
-        NSLog(@"");
+        
     }];
 }
 
@@ -124,12 +123,12 @@ __PW_ROUTER_REGISTER__
     [self setupCategoryVC];
     UIBarButtonItem *settingItem = [[UIBarButtonItem alloc] initWithCustomView:self.settingBtn];
     UIBarButtonItem *refreshItem = [[UIBarButtonItem alloc] initWithCustomView:self.synchronizationBtn];
-#if DEBUG
+//#if DEBUG
     UIBarButtonItem *testItem = [[UIBarButtonItem alloc] initWithCustomView:self.testBtn];
     self.navigationItem.rightBarButtonItems = @[testItem,settingItem,refreshItem];
-#else
-    self.navigationItem.rightBarButtonItems = @[settingItem];
-#endif
+//#else
+//    self.navigationItem.rightBarButtonItems = @[settingItem];
+//#endif
     UIBarButtonItem *categoryItem = [[UIBarButtonItem alloc] initWithCustomView:self.categoryBtn];
     self.navigationItem.leftBarButtonItems = @[categoryItem];
     

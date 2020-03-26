@@ -78,6 +78,7 @@ __PW_ROUTER_REGISTER__
              @"pwnote://home",
              @"pwnote://search",
              @"pwnote://tydialog",
+             @"pwnote://networkTest",
              ];
 }
 
